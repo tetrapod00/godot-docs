@@ -87,7 +87,7 @@ project).
 
 Scroll down to the section where the Android settings are located:
 
-.. image:: img/androidsdk.png
+.. image:: img/androidsdk.webp
 
 In that screen, 2 paths need to be set:
 
@@ -96,6 +96,8 @@ In that screen, 2 paths need to be set:
 
 - The debug ``.keystore`` file
   - It can be found in the folder where you put the ``debug.keystore`` file you created above.
+
+- ``Java SDK Path`` should be the location where OpenJDK 17 was installed.
 
 Once that is configured, everything is ready to export to Android!
 
@@ -144,6 +146,7 @@ keystore file; such file can be generated like this:
     keytool -v -genkey -keystore mygame.keystore -alias mygame -keyalg RSA -validity 10000
 
 This keystore and key are used to verify your developer identity, remember the password and keep it in a safe place!
+It is suggested to use only upper and lowercase letters and numbers. Special characters may cause errors.
 Use Google's Android Developer guides to learn more about `APK signing <https://developer.android.com/studio/publish/app-signing>`__.
 
 Now fill in the following forms in your Android Export Presets:

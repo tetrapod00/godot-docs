@@ -16,7 +16,7 @@ interacting with gameplay objects e.g. ladders, jump pads or teleports.
 :ref:`NavigationLink3D<class_NavigationLink3D>` respectively.
 
 Different NavigationRegions can connect their navigation meshes without the need for a NavigationLink
-as long as they are within navigation map ``edge_connection_margin`` and have compatible ``navigation_layers``.
+as long as they have overlapping edges or edges that are within navigation map ``edge_connection_margin``.
 As soon as the distance becomes too large, building valid connections becomes a problem - a problem that NavigationLinks can solve.
 
 See :ref:`doc_navigation_using_navigationregions` to learn more about the use of navigation regions.
@@ -44,13 +44,12 @@ If no valid polygon is found within the search radius the navigation link gets d
 The link debug visuals can be changed in the Editor :ref:`ProjectSettings<class_ProjectSettings>` under ``debug/shapes/navigation``.
 The visibility of the debug can also be controlled in the Editor 3D Viewport gizmo menu.
 
-.. note::
-
-    NavigationLinks do not move agents between the two link positions by themselves.
-
-A navigation link does not provide any automated movement through the link. Instead, when
-an agent reaches the position of a link, game code needs to react (e.g. through area triggers) and provide means for the agent
-to move through the link to end up at the links other position (e.g. through teleport or animation) to continue along the path.
+A navigation link does not provide any specialized movement through the link. Instead, when
+an agent reaches the position of a link, game code needs to react (e.g. through area triggers)
+and provide means for the agent to move through the link to end up at the links other position
+(e.g. through teleport or animation). Without that an agent will attempt to move itself along
+the path of the link. You could end up with an agent walking over a bottomless pit instead of
+waiting for a moving platform, or walking through a teleporter and proceeding through a wall.
 
 Navigation link script templates
 --------------------------------

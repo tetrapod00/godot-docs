@@ -489,10 +489,13 @@ get_string_from_utf8       StringExtensions.GetStringFromUtf8 (Consider using `S
 hex_encode                 StringExtensions.HexEncode (Consider using `System.Convert.ToHexString`_)
 =========================  ==============================================================
 
-* .NET contains many path utility methods available under the
-  `System.IO.Path`_
-  class that can be used when not dealing with Godot paths (paths that start
-  with ``res://`` or ``user://``)
+.. note::
+
+    .NET provides path utility methods under the
+    `System.IO.Path`_
+    class. They can only be used with native OS paths, not Godot paths
+    (paths that start with ``res://`` or ``user://``).
+    See :ref:`doc_data_paths`.
 
 .. _$ string interpolation: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
 .. _double.ToString: https://learn.microsoft.com/en-us/dotnet/api/system.double.tostring
@@ -810,7 +813,7 @@ Variant
 -------
 
 ``Godot.Variant`` is used to represent Godot's native :ref:`Variant <class_Variant>` type.
-Any Variant-compatible type can be converted from/to it.
+Any :ref:`Variant-compatible type <c_sharp_variant_compatible_types>` can be converted from/to it.
 
 See also: :ref:`doc_c_sharp_variant`.
 
