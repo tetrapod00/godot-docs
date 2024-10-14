@@ -506,3 +506,111 @@ examples with the ``:kbd:`` tag left as-is for better visibility:
 - Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Opt + Cmd + T``` on macOS).
 - Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D editor.
 - Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels.
+
+
+Manual style guidelines
+-----------------------
+
+Try to follow these formatting guidelines while writing documentation. Use your best judgement. 
+If you can write more clearly by ignoring these guidelines, do so.
+
+Text styles
+~~~~~~~~~~~
+
+There are a few styles that the manual uses.
+
++-----------------------------------+------------------------------------------------------------------------+
+| Style                             | Typical usage                                                          |
++===================================+========================================================================+
+| Plaintext                         | Used for most body text.                                               |
++-----------------------------------+------------------------------------------------------------------------+
+| "Quoted plaintext"                | Used for some literal or quoted values. In many cases, another         |
+|                                   | style is preferred.                                                    |
++-----------------------------------+------------------------------------------------------------------------+
+| *Italics*                         | Used for emphasis within body text.                                    |
++-----------------------------------+------------------------------------------------------------------------+
+| **Bold**                          | Used for emphasis within body text, editor menus and windows,          |
+|                                   | and editor navigation paths.                                           |
++-----------------------------------+------------------------------------------------------------------------+
+| ``Code``                          | Used for variable names, literal values, and code snippets. ``code`` is|
+|                                   | used in many cases where you would use "quoted plaintext" in typical   |
+|                                   | English.                                                               |
++-----------------------------------+------------------------------------------------------------------------+
+
+Literals
+~~~~~~~~
+
+Style literals as ``code``.
+
+- Ints: ``0``, ``2``, ``-5``, ``100``.
+- Floats include the decimal: ``0.0``, ``0.5``, ``2.0``, ``-5.0``, ``1000.0``.
+- Vectors include the decimal, and have a space between each field: ``(0.0, 0.0)``, ``(0.5, -0.5, 0.5)``, ``(1.0, 2.0, 3.0, 4.0)``.
+
+Editor input fields
+~~~~~~~~~~~~~~~~~~~
+
+Editor input fields should be styled as ``code``.
+
+Classes, properties, and methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When discussing a class, link to the class reference the first time you mention it within a section.
+After the first mention of the class, do not link to the class reference. If the class is very common,
+like ``Node``, ``Node3D``, ``Control``, or ``Viewport``, you don't have to link. When discussing an instance of
+a class, do not link to the class reference.
+
+When mentioning a class property or method, link to the class reference the first time you mention it in a section.
+If the class member is very common, like a Node2D's ``position``, you don't have to link. Instead, either style as plaintext
+or ``code``.
+
+
+Editor menus and windows
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Editor menus and windows should be styled **Bold Title Case** or **Bold sentence case** 
+(depending on how they appear in the editor). Plaintext is also okay, if it's more natural. 
+For example, use **bold** style when referring specifically to **Project Settings** window,
+but use plaintext when referring to the concept of project settings in general.
+
+**Good**:
+
+- **Editor Settings**
+- The **Editor Settings** window.
+
+Navigation paths should use **bold** style, and use ``>``, ``->``, or ``→`` as a separator,
+with spaces on both sides. Avoid plaintext, quotes, italics, and code.
+
+**Good**:
+
+- **Editor > Editor Settings > Shortcuts**
+- **Editor -> Editor Settings -> Shortcuts**
+- **Editor → Editor Settings → Shortcuts**
+
+**Bad**:
+
+- Editor > Editor Settings > Shortcuts
+- "Editor > Editor Settings > Shortcuts"
+- *Editor > Editor Settings > Shortcuts*
+- ``Editor > Editor Settings > Shortcuts``
+
+
+Project settings
+~~~~~~~~~~~~~~~~
+
+When discussing a project setting, link to the project setting. Either include the full path of the setting in the link text,
+or specify the path and the link separately.
+
+When specifying the path separately, specify at least enough information to reach the project settings page. The setting name is styled as ``Title Case``, as it appears in the project settings. The project setting navigation path is styled as **Bold > With > Arrows**.
+
+**Good**:
+
+- Set :ref:`Max FPS<class_ProjectSettings_property_application/run/max_fps>` in **Project Settings > Application > Run** to ``60``.
+- In **Project Settings > Application > Run**, set :ref:`Max FPS<class_ProjectSettings_property_application/run/max_fps>` to ``60``.
+- Set the :ref:`ProjectSettings.application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>` project setting to ``60``.
+
+**Bad**:
+
+- Set **Project Settings > Application > Run > Max FPS** to ``60``.
+- In **Project Settings**, set :ref:`Max FPS<class_ProjectSettings_property_application/run/max_fps>` to ``60``.
+- Under ``Project Settings > Application > Run``, set :ref:`Max FPS<class_ProjectSettings_property_application/run/max_fps>` to ``60``.
+
