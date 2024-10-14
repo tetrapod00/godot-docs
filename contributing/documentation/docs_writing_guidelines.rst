@@ -519,23 +519,25 @@ Text styles
 
 There are a few styles that the manual uses.
 
-+-----------------------------------+------------------------------------------------------------------------+
-| Style                             | Typical usage                                                          |
-+===================================+========================================================================+
-| Plaintext                         | Used for most body text.                                               |
-+-----------------------------------+------------------------------------------------------------------------+
-| "Quoted plaintext"                | Used for some literal or quoted values. In many cases, another         |
-|                                   | style is preferred.                                                    |
-+-----------------------------------+------------------------------------------------------------------------+
-| *Italics*                         | Used for emphasis within body text.                                    |
-+-----------------------------------+------------------------------------------------------------------------+
-| **Bold**                          | Used for emphasis within body text, editor menus and windows,          |
-|                                   | and editor navigation paths.                                           |
-+-----------------------------------+------------------------------------------------------------------------+
-| ``Code``                          | Used for variable names, literal values, and code snippets. ``code`` is|
-|                                   | used in many cases where you would use "quoted plaintext" in typical   |
-|                                   | English.                                                               |
-+-----------------------------------+------------------------------------------------------------------------+
+
++---------------------+--------------------------+------------------------------------------------------------------------+
+| Style               | RST formatting           | Typical usage                                                          |
++=====================+==========================+========================================================================+
+| Plaintext           | ``Plaintext``            | Used for most body text.                                               |
++---------------------+--------------------------+------------------------------------------------------------------------+
+| "Quotes"            | ``"Quotes"``             | Used for some literal or quoted values. In many cases, another         |
+|                     |                          | style is preferred.                                                    |
++---------------------+--------------------------+------------------------------------------------------------------------+
+| *Italics*           | ``*Italics*``            | Used for emphasis within body text.                                    |
++---------------------+--------------------------+------------------------------------------------------------------------+
+| **Bold**            | ``**Bold**``             | Used for emphasis within body text, editor menus and windows,          |
+|                     |                          | and editor navigation paths.                                           |
++---------------------+--------------------------+------------------------------------------------------------------------+
+| ``Code``            | `` Code ``               | Used for variable names, literal values, and code snippets. ``code`` is|
+|                     |                          | used in many cases where you would use "quoted plaintext" in typical   |
+|                     |                          | English.                                                               |
++---------------------+--------------------------+------------------------------------------------------------------------+
+
 
 Literals
 ~~~~~~~~
@@ -577,7 +579,11 @@ but use plaintext when referring to the concept of project settings in general.
 - **Editor Settings**
 - The **Editor Settings** window.
 
-Navigation paths should use **bold** style, and use ``>``, ``->``, or ``→`` as a separator,
+Editor navigation paths
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Editor navigation paths are used to describe a series of menus and actions that a user should
+follow. Navigation paths should use **bold** style, and use ``>``, ``->``, or ``→`` as a separator,
 with spaces on both sides. Avoid plaintext, quotes, italics, and code.
 
 **Good**:
