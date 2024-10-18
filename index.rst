@@ -155,3 +155,15 @@ the ``GodotEngine.epub`` file in an e-book reader application.
    :name: sec-class-ref
 
    classes/index
+
+.. To ensure all pages are reachable from the sidebar, we use the rubric 
+   directive to create fake headers instead of real semantic headers in some
+   index pages.
+
+.. fake-h1 is not needed, since that would be a page title.
+.. role:: fake-h2
+    :class: class-fake-h2
+.. role:: fake-h3
+    :class: class-fake-h3
+.. fake-h4 and smaller are not needed, since the index pages only have two
+   levels of header nesting.
