@@ -537,3 +537,8 @@ Follow these guidelines for when to refer to a specific Godot version:
 - If a feature was added in a 3.x major or minor version, **do not specify** when 
   the feature was added. These features are old enough that the exact version
   in which they were added is not relevant.
+
+Use roles for editor UI
+-----------------------
+
+Available roles:
