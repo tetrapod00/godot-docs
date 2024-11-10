@@ -29,11 +29,11 @@ depending on whether you have a GitHub account or not.
 If you have a GitHub account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Open the pull request page. Click the **Checks** tab near the top of the page:
+- Open the pull request page. Click the :btn:`Checks` tab near the top of the page:
 
 .. image:: img/testing_pull_requests_access_checks.webp
 
-- Click the **Artifacts** dropdown on the right of the page:
+- Click the :btn:`Artifacts` dropdown on the right of the page:
 
 .. image:: img/testing_pull_requests_checks_artifacts.webp
 
@@ -67,7 +67,7 @@ to generate a universal download link.
 
 - Open the `nightly.link <https://nightly.link>`__ website and paste the URL you just copied
   into the text field located below the heading **Paste a GitHub link, get a nightly.link!**.
-  After pasting the URL, click **Get links** on the right.
+  After pasting the URL, click :btn:`Get links` on the right.
   If the format of the URL you pasted is correct, you should be presented
   with a page like this:
 
@@ -97,8 +97,8 @@ Downloading a zipped pull request branch
 
 .. image:: img/testing_pull_requests_access_fork.png
 
-- Now that you are on the fork's branch page, click the green **Code** button on the right of the page
-  then choose **Download ZIP** in the dropdown:
+- Now that you are on the fork's branch page, click the green :btn:`Code` button on the right of the page
+  then choose :btn:`Download ZIP` in the dropdown:
 
 .. image:: img/testing_pull_requests_fork_zip.png
 

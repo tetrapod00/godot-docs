@@ -18,7 +18,7 @@ An overview of the profiler
 +++++++++++++++++++++++++++
 
 You can open the profiler by opening the **Debugger** panel and clicking on the
-**Profiler** tab.
+:tab:`Profiler` tab.
 
 .. image:: img/profiler.png
 
@@ -27,9 +27,9 @@ performance-intensive. It has to continually measure everything happening in the
 game and report back to the debugger, so it's off by default.
 
 To begin profiling, run your game then focus back on the editor. Click on the
-**Start** button in the top-left corner of the **Profiler** tab. You can also
-check **Autostart**, which will make the profiler automatically start when the
-project is run the next time. Note that the **Autostart** checkbox's state is not
+:btn:`Start` button in the top-left corner of the :tab:`Profiler` tab. You can also
+check :btn:`Autostart`, which will make the profiler automatically start when the
+project is run the next time. Note that the :btn:`Autostart` checkbox's state is not
 preserved across editor sessions.
 
 .. note::
@@ -37,7 +37,7 @@ preserved across editor sessions.
     The profiler does not currently support C# scripts. C# scripts can be profiled
     using JetBrains Rider and JetBrains dotTrace with the Godot support plugin.
 
-You can clear the data by clicking the **Clear** button anytime. Use the
+You can clear the data by clicking the :btn:`Clear` button anytime. Use the
 **Measure** drop-down menu to change the type of data you measure. The
 measurements panel and the graph will update accordingly.
 

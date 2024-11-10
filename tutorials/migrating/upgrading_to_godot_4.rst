@@ -119,9 +119,9 @@ Using the Project Manager
 To use the project upgrade tool:
 
 1. Open the Godot 4 Project Manager.
-2. Import the Godot 3.x project using the **Import** button, or use the **Scan**
+2. Import the Godot 3.x project using the :btn:`Import` button, or use the **Scan**
    button to find the project within a folder.
-3. Double-click the imported project (or select the project then choose **Edit**).
+3. Double-click the imported project (or select the project then choose :btn:`Edit`).
 4. You will see a dialog appearing with two options: **Convert project.godot
    Only** and **Convert Full Project**. After ensuring your project is backed up
    (see the above warning), choose **Convert Full Project**. **Convert
@@ -130,7 +130,7 @@ To use the project upgrade tool:
 5. Wait until the project conversion process finishes. This can take up to a few
    minutes for large projects with lots of scenes.
 6. When the Project Manager interface becomes available again, double-click the
-   project (or select the project then choose **Edit**) to open it in the
+   project (or select the project then choose :btn:`Edit`) to open it in the
    editor.
 
 If you hit conversion issues due to some project files being too large or long,
@@ -378,7 +378,7 @@ table to find its new name.
 
 .. tip::
 
-    You can use the **Replace in Files** dialog to speed up replacement by pressing
+    You can use the :wndw:`Replace in Files` dialog to speed up replacement by pressing
     :kbd:`Ctrl + Shift + R` while the script editor is open. However, be careful
     as the Replace in Files dialog doesn't offer any way to undo a replacement.
     Use version control to commit your upgrade work regularly.
@@ -487,7 +487,7 @@ Checking project settings
 
 Several project settings were renamed, and some of them had their enums changed
 in incompatible ways (such as shadow filter quality). This means you may need to
-set some project settings' values again. Make sure the **Advanced** toggle is
+set some project settings' values again. Make sure the :btn:`Advanced Settings` toggle is
 enabled in the project settings dialog so you can see all project settings.
 
 Checking Environment settings

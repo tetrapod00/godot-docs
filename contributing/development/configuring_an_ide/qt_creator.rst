@@ -8,7 +8,7 @@ Qt Creator
 Importing the project
 ---------------------
 
-- From the Qt Creator's main screen select **New Project > Import Project > Import Existing Project**.
+- From the Qt Creator's main screen select :path:`New Project > Import Project > Import Existing Project`.
 
 .. figure:: img/qtcreator-new-project.png
    :figclass: figure-w480
@@ -45,14 +45,14 @@ Importing the project
    :figclass: figure-w480
    :align: center
 
-- From the left-side menu select **Projects** and open the **Build** tab.
+- From the left-side menu select :btn:`Projects` and open the :tab:`Build` tab.
 - Delete the predefined ``make`` build step.
 
 .. figure:: img/qtcreator-projects-build.png
    :figclass: figure-w480
    :align: center
 
-- Click **Add Build Step > Custom Process Step** to add a new build step
+- Click :btn:`Add Build Step > Custom Process Step` to add a new build step
   with the following settings:
 
   +-----------+------------------------------------------------------------------------------+
@@ -72,14 +72,14 @@ Importing the project
 Debugging the project
 ---------------------
 
-- From the left-side menu select **Projects** and open the **Run** tab.
+- From the left-side menu select :btn:`Projects` and open the :tab:`Run` tab.
 - Under **Executable** specify the path to your executable located in
   the ``<Godot root directory>/bin`` folder. The name depends on your build configuration,
   e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with
   ``platform=editor`` and ``dev_build=yes``.
   You can use ``%{buildDir}`` to reference the project root, e.g: ``%{buildDir}/bin/godot.linuxbsd.editor.dev.x86_64``.
 - If you want to run a specific project, specify its root folder under **Working directory**.
-- If you want to run the editor, add ``-e`` to the **Command line arguments** field.
+- If you want to run the editor, add ``-e`` to the :field:`Command line arguments` field.
 
 .. figure:: img/qtcreator-run-command.png
    :figclass: figure-w480
@@ -94,14 +94,14 @@ Code style configuration
 Developers must follow the project's :ref:`code style <doc_code_style_guidelines>`
 and the IDE should help them follow it. By default, Qt Creator uses spaces
 for indentation which doesn't match the Godot code style guidelines. You can
-change this behavior by changing the **Code Style** in **Tools > Options > C++**.
+change this behavior by changing the :ui:`Code Style` in :path:`Tools > Options > C++`.
 
 .. figure:: img/qtcreator-options-cpp.png
    :figclass: figure-w480
    :align: center
 
-Click on **Edit** to change the current settings, then click on
-**Copy Built-in Code Style** button to set a new code style. Set a name for it
+Click on :btn:`Edit` to change the current settings, then click on
+:btn:`Copy Built-in Code Style` button to set a new code style. Set a name for it
 (e.g. Godot) and change the Tab policy to be **Tabs Only**.
 
 .. figure:: img/qtcreator-edit-codestyle.png

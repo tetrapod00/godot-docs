@@ -70,7 +70,7 @@ Step by step
 3. Compile Godot export templates and set them as custom export templates
    in the export preset options.
 
-4. Set the encryption key in the **Encryption** tab of the export preset:
+4. Set the encryption key in the :tab:`Encryption` tab of the export preset:
 
    .. image:: img/encryption_key.png
 

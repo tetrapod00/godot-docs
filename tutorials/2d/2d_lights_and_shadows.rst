@@ -107,7 +107,7 @@ point light texture (right-click > **Save Image As…**):
 
 If you need different falloff, you can procedurally create a texture by assigning
 a **New GradientTexture2D** on the light's **Texture** property. After creating
-the resource, expand its **Fill** section and set the fill mode to **Radial**.
+the resource, expand its :uisection:`Fill` section and set the fill mode to **Radial**.
 You will then have to adjust the gradient itself to start from opaque white to
 transparent white, and move its starting location to be in the center.
 
@@ -193,7 +193,7 @@ LightOccluder2D nodes have 2 properties:
   difference and has no performance cost, so this is enabled by default for
   convenience.
 - **Occluder Light Mask:** This is used in tandem with PointLight2D and
-  DirectionalLight2D's **Shadow > Item Cull Mask** property to control which
+  DirectionalLight2D's :uiproperty:`Shadow > Item Cull Mask` property to control which
   objects cast shadows for each light. This can be used to prevent specific
   objects from casting shadows.
 
@@ -207,7 +207,7 @@ node, clicking the **Sprite2D** menu at the top of the 2D editor then choosing
 **Create LightOccluder2D Sibling**.
 
 In the dialog that appears, an outline will surround your sprite's edges. If the
-outline matches the sprite's edges closely, you can click **OK**. If the outline
+outline matches the sprite's edges closely, you can click :btn:`OK`. If the outline
 is too far away from the sprite's edges (or is "eating" into the sprite's
 edges), adjust **Grow (pixels)** and **Shrink (pixels)**, then click **Update
 Preview**. Repeat this operation until you get satisfactory results.
@@ -235,7 +235,7 @@ The following properties can be adjusted on 2D lights that have shadows enabled:
   **Filter** is set to **PCF5** or **PCF13**. Higher values result in a softer
   shadow, but may cause banding artifacts to be visible (especially with PCF5).
 - **Item Cull Mask:** Controls which LightOccluder2D nodes cast shadows,
-  depending on their respective **Occluder Light Mask** properties.
+  depending on their respective :uiproperty:`Occluder Light Mask` properties.
 
 .. figure:: img/2d_lights_and_shadows_hard_shadow.webp
    :align: center
@@ -364,5 +364,5 @@ However, additive sprites have a few downsides compared to 2D lights:
 To display a sprite with additive blending, create a Sprite2D node and assign a
 texture to it. In the inspector, scroll down to the **CanvasItem > Material**
 section, unfold it and click the dropdown next to the **Material** property.
-Choose **New CanvasItemMaterial**, click the newly created material to edit it,
+Choose :btn:`New CanvasItemMaterial`, click the newly created material to edit it,
 then set **Blend Mode** to **Add**.

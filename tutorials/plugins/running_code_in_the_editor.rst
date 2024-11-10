@@ -474,7 +474,7 @@ This provides a way to run individual scripts in the editor without having to
 create an editor plugin.
 
 To create an EditorScript, right-click a folder or empty space in the FileSystem
-dock then choose **New > Script...**. In the script creation dialog, click the
+dock then choose New > Script...**. In the script creation dialog, click the
 tree icon to choose an object to extend from (or enter ``EditorScript`` directly
 in the field on the left, though note this is case-sensitive):
 

@@ -64,8 +64,8 @@ C# support in Godot's built-in script editor is minimal. Consider using an
 external IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/>`__
 or MonoDevelop. These provide autocompletion, debugging, and other
 useful features for C#. To select an external editor in Godot,
-click on **Editor → Editor Settings** and scroll down to
-**Dotnet**. Under **Dotnet**, click on **Editor**, and select your
+click on :path:`Editor > Editor Settings` and scroll down to
+**Dotnet**. Under **Dotnet**, click on :btn:`Editor`, and select your
 external editor of choice. Godot currently supports the following
 external editors:
 
@@ -83,9 +83,9 @@ JetBrains Rider
 After reading the "Prerequisites" section, you can download and install
 `JetBrains Rider <https://www.jetbrains.com/rider/download>`__.
 
-In Godot's **Editor → Editor Settings** menu:
+In Godot's :path:`Editor > Editor Settings`` menu:
 
-- Set **Dotnet** -> **Editor** -> **External Editor** to **JetBrains Rider**.
+- Set :path:`Dotnet > Editor > External Editor` to **JetBrains Rider**.
 
 In Rider:
 
@@ -98,9 +98,9 @@ Visual Studio Code
 After reading the "Prerequisites" section, you can download and install
 `Visual Studio Code <https://code.visualstudio.com/download>`__ (aka VS Code).
 
-In Godot's **Editor → Editor Settings** menu:
+In Godot's :path:`Editor > Editor Settings`` menu:
 
-- Set **Dotnet** -> **Editor** -> **External Editor** to **Visual Studio Code**.
+- Set :path:`Dotnet > Editor > External Editor` to **Visual Studio Code**.
 
 In Visual Studio Code:
 
@@ -167,9 +167,9 @@ While installing Visual Studio, select this workload:
 
 - .NET desktop development
 
-In Godot's **Editor → Editor Settings** menu:
+In Godot's :path:`Editor > Editor Settings`` menu:
 
-- Set **Dotnet** -> **Editor** -> **External Editor** to **Visual Studio**.
+- Set :path:`Dotnet > Editor > External Editor` to **Visual Studio**.
 
 .. note:: If you see an error like "Unable to find package Godot.NET.Sdk",
           your NuGet configuration may be incorrect and need to be fixed.
@@ -181,8 +181,8 @@ In Godot's **Editor → Editor Settings** menu:
 
 To debug your C# scripts using Visual Studio, open the .sln file that is generated
 after opening the first C# script in the editor. In the **Debug** menu, go to the
-**Debug Properties** menu item for your project. Click the **Create a new profile**
-button and choose **Executable**. In the **Executable** field, browse to the path
+**Debug Properties** menu item for your project. Click the :btn:`Create a new profile`
+button and choose :btn:`Executable`. In the :field:`Executable` field, browse to the path
 of the C# version of the Godot editor, or type ``%GODOT4%`` if you have created an
 environment variable for the Godot executable path. It must be the path to the main Godot
 executable, not the 'console' version. For the **Working Directory**, type a single period,
@@ -276,7 +276,7 @@ For more information, see the :ref:`doc_c_sharp_differences` page.
 
     You need to (re)build the project assemblies whenever you want to see new
     exported variables or signals in the editor. This build can be manually
-    triggered by clicking the **Build** button in the top right corner of the
+    triggered by clicking the :btn:`Build` button in the top right corner of the
     editor.
 
     .. image:: img/build_dotnet.webp

@@ -695,8 +695,8 @@ After a second has passed, we emit our signal and reset our counter. We can add
 our parameter values directly to ``emit_signal``.
 
 Once the GDExtension library is compiled, we can go into Godot and select our sprite
-node. In the **Node** dock, we can find our new signal and link it up by pressing
-the **Connect** button or double-clicking the signal. We've added a script on
+node. In the :dock:`Node` dock, we can find our new signal and link it up by pressing
+the :btn:`Connect` button or double-clicking the signal. We've added a script on
 our main node and implemented our signal like this:
 
 .. code-block:: gdscript

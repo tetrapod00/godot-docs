@@ -143,23 +143,23 @@ scene contains a label displaying the scene name and a button with its
 Creating the script
 ~~~~~~~~~~~~~~~~~~~~~
 
-Open the **Script** window and create a new script called ``global.gd``.
+Open the :wndw:`Script` window and create a new script called ``global.gd``.
 Make sure it inherits from ``Node``:
 
 .. image:: img/autoload_script.webp
 
 The next step is to add this script to the autoLoad list.
 Starting from the menu, open
-**Project > Project Settings > Globals > Autoload** and
-select the script by clicking the browse button or typing its path:
-``res://global.gd``. Press **Add** to add it to the autoload list:
+:path:`Project > Project Settings > Globals > Autoload` and
+select the script by clicking the :btn:`Browse` button or typing its path:
+``res://global.gd``. Press :btn:`Add` to add it to the autoload list:
 
 .. image:: img/autoload_tutorial1.webp
 
 Now whenever we run any scene in the project, this script will always be loaded.
 
 Returning to the script, it needs to fetch the current scene in the
-`_ready()` function. Both the current scene (the one with the button) and
+``_ready()`` function. Both the current scene (the one with the button) and
 ``global.gd`` are children of root, but autoloaded nodes are always first. This
 means that the last child of root is always the loaded scene.
 

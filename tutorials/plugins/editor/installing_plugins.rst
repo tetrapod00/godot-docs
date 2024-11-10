@@ -13,7 +13,7 @@ Finding plugins
 The preferred way to find Godot plugins is to use the
 `Asset Library <https://godotengine.org/asset-library/>`_. While it can be
 browsed online, it's more convenient to use it directly from the editor.
-To do so, click the **AssetLib** tab at the top of the editor:
+To do so, click the :tab:`AssetLib` tab at the top of the editor:
 
 .. image:: img/installing_plugins_assetlib_tab.webp
 
@@ -35,14 +35,14 @@ Installing a plugin
 ~~~~~~~~~~~~~~~~~~~
 
 To install a plugin, download it as a ZIP archive. On the Asset Library, this
-can be done using the **Download** button, either from the editor or using the
+can be done using the :btn:`Download` button, either from the editor or using the
 Web interface.
 
-On GitHub, if a plugin has *tags* (versions) declared, go to the **Releases**
+On GitHub, if a plugin has *tags* (versions) declared, go to the :tab:`Releases`
 tab to download a stable release. This ensures you download a version that was
 declared to be stable by its author.
 
-On GitHub, if the plugin doesn't have any *tags* declared, use the **Download ZIP**
+On GitHub, if the plugin doesn't have any *tags* declared, use the :btn:`Download ZIP`
 button to download a ZIP of the latest revision:
 
 .. image:: img/installing_plugins_github_download_zip.png
@@ -56,10 +56,10 @@ into the folder; answer **Yes**. No files will be overwritten in the process.
 Enabling a plugin
 ~~~~~~~~~~~~~~~~~
 
-To enable the freshly installed plugin, open **Project > Project Settings** at
-the top of the editor then go the **Plugins** tab. If the plugin was packaged
+To enable the freshly installed plugin, open :menu:`Project > Project Settings` at
+the top of the editor then go the :tab:`Plugins` tab. If the plugin was packaged
 correctly, you should see it in the list of plugins. Click on the
-**Enable** checkbox to enable the plugin.
+:btn:`Enable` checkbox to enable the plugin.
 
 .. image:: img/installing_plugins_project_settings.webp
 

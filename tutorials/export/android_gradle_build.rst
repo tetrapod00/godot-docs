@@ -34,7 +34,7 @@ Editing these files is not needed unless you really need to modify the project.
 Enabling the gradle build and exporting
 ---------------------------------------
 
-When setting up the Android project in the **Project > Export** dialog,
+When setting up the Android project in the :wndw:`Project > Export` dialog,
 **Gradle Build** needs to be enabled:
 
 .. image:: img/gradle_build_enable.webp

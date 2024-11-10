@@ -37,8 +37,8 @@ It is this folder that you want to copy in its entirety to your Godot project fo
 
 Now open up your project in Godot, if you haven't already, and give it a minute or so to import all the resources of the plugin.
 
-Next open the ``Project`` menu and select ``Project Settings..``.
-Now go to the ``Plugins`` tab and enable the plugin.
+Next open the :menu:`Project` menu and select :btn:`Project Settings..`.
+Now go to the :tab:`Plugins` tab and enable the plugin.
 
 .. image:: img/godot_xr_tools_enable.webp
 
@@ -53,7 +53,7 @@ As a reliable alternative Godot XR Tools comes with a number of rigged hand scen
 These hands come in low and high poly versions, come in a few configurations, a number of animation files to control finger positions and a number of different textures.
 
 In your scene tree select your left hand :ref:`XRController3D <class_xrcontroller3d>` node.
-Now click on the ``instantiate Child Scene`` button to add a child scene.
+Now click on the :btn:`Instantiate Child Scene` button to add a child scene.
 And select ``addons/godot-xr-tools/hands/scenes/lowpoly/left_hand_low.tscn``.
 
 As you can see from the path of this scene, low poly models are in the ``lowpoly`` subfolder while high poly models are in the ``highpoly`` subfolder.

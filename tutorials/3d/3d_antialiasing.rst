@@ -251,7 +251,7 @@ Roughness limiting on import works by specifying a normal map to use as a guide
 for limiting roughness. This is done by selecting the roughness map in the
 FileSystem dock, then going to the Import dock and setting **Roughness > Mode**
 to the color channel the roughness map is stored in (typically **Green**), then
-setting the path to the material's normal map. Remember to click **Reimport**
+setting the path to the material's normal map. Remember to click :btn:`Reimport`
 at the bottom of the Import dock after setting the path to the normal map.
 
 Since this processing occurs purely on import, it has no performance cost

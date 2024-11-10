@@ -19,7 +19,7 @@ forums (also known as `bulletin boards`, hence the "BB" in "BBCode").
 Unlike Label, RichTextLabel also comes with its own vertical scrollbar. This
 scrollbar is automatically displayed if the text does not fit within the
 control's size. The scrollbar can be disabled by unchecking the
-**Scroll Active** property in the RichTextLabel inspector.
+:uiproperty:`Scroll Active` property in the RichTextLabel inspector.
 
 Note that the BBCode tags can also be used to some extent in the XML source of
 the class reference. For more information, see :ref:`doc_class_reference_primer`.
@@ -173,7 +173,7 @@ There are several ways to alleviate this:
   parsing BBCode from the entire ``text`` property.
 - Use ``push_[tag]()`` and ``pop()`` functions to add tags to RichTextLabel instead of
   using BBCode.
-- Enable the **Threading > Threaded** property in RichTextLabel. This won't
+- Enable the :uiproperty:`Threading > Threaded` property in RichTextLabel. This won't
   speed up processing, but it will prevent the main thread from blocking, which
   avoids stuttering during gameplay. Only enable threading if it's actually
   needed in your project, as threading has some overhead.
@@ -366,7 +366,7 @@ Reference
       | ``[/opentype_features]``
 
   * - | **lang**
-      | Overrides the language for ``{text}`` that is set by the **BiDi > Language** property
+      | Overrides the language for ``{text}`` that is set by the :uiproperty:`BiDi > Language` property
         in :ref:`class_RichTextLabel`. ``{code}`` must be an ISO :ref:`language code <doc_locales>`.
         This can be used to enforce the use of a specific script for a language without
         starting a new paragraph. Some font files may contain script-specific substitutes,
@@ -913,7 +913,7 @@ BBCode can also be used to create different text effects that can optionally be
 animated. Five customizable effects are provided out of the box, and you can
 easily create your own. By default, animated effects will pause
 :ref:`when the SceneTree is paused <doc_pausing_games>`. You can change this
-behavior by adjusting the RichTextLabel's **Process > Mode** property.
+behavior by adjusting the RichTextLabel's :uiproperty:`Process > Mode` property.
 
 All examples below mention the default values for options in the listed tag format.
 
@@ -1015,7 +1015,7 @@ animation backwards.
 
 Font outlines are *not* affected by the rainbow effect (they keep their original color).
 Existing font colors are overridden by the rainbow effect. However, CanvasItem's
-**Modulate** and **Self Modulate** properties will affect how the rainbow effect
+:uiproperty:`Modulate` and :uiproperty:`Self Modulate` properties will affect how the rainbow effect
 looks, as modulation multiplies its final colors.
 
 Custom BBCode tags and text effects
@@ -1039,7 +1039,7 @@ the Inspector by adding it to the **Markup > Custom Effects** array, or in code 
 .. warning::
 
     If the custom effect is not registered within the RichTextLabel's
-    **Markup > Custom Effects** property, no effect will be visible and the original
+    :uiproperty:`Markup > Custom Effects` property, no effect will be visible and the original
     tag will be left as-is.
 
 There is only one function that you need to extend: ``_process_custom_fx(char_fx)``.

@@ -56,8 +56,8 @@ Enabling the vendors plugin
 ---------------------------
 
 The vendors plugin needs to be enabled before the export settings become accessible.
-Open **Project** and select **Project Settings...**.
-Go to the **Plugins** tab.
+Open **Project** and select :btn:`Project Settings...`.
+Go to the :tab:`Plugins` tab.
 Enable the **GodotOpenXRVendors** plugin.
 
 .. image:: img/xr_enable_vendors_plugin.webp
@@ -72,11 +72,11 @@ Creating the export presets
 ---------------------------
 You will need to setup a separate export preset for each device, as each device will need its own loader included.
 
-Open **Project** and select **Export..**.
-Click on **Add..** and select **Android**.
+Open :btn:`Project` and select :btn:`Export..`.
+Click on :btn:`Add..` and select :btn:`Android`.
 Next change the name of the export preset for the device you're setting this up for, say **Meta Quest**.
-And enable **Use Gradle Build**.
-If you want to use one-click deploy (described below), ensure that **Runnable** is enabled.
+And enable :btn:`Use Gradle Build`.
+If you want to use one-click deploy (described below), ensure that :btn:`Runnable` is enabled.
 
 If the vendors plugins were installed correctly you should find entries for the different headsets, select the entry for meta:
 

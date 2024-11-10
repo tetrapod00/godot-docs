@@ -20,7 +20,7 @@ performance.
 
 There are several ways to improve performance and battery life:
 
-- In 3D, click the **Perspective** button in the top left corner and enable
+- In 3D, click the :btn:`Perspective` button in the top left corner and enable
   **Half Resolution**. The 3D viewport will now be rendered at half resolution,
   which can be up to 4 times faster.
 - Open the Editor Settings and increase the value of **Low Processor Mode Sleep (µsec)**
@@ -156,10 +156,10 @@ If the editor or project appears overly sharp, this is likely due to image
 sharpening being forced on all Vulkan or OpenGL applications by your graphics
 driver. You can disable this behavior in the graphics driver's control panel:
 
-- **NVIDIA (Windows):** Open the start menu and choose **NVIDIA Control Panel**.
+- **NVIDIA (Windows):** Open the start menu and choose :btn:`NVIDIA Control Panel`.
   Open the **Manage 3D settings** tab on the left. In the list in the middle,
   scroll to **Image Sharpening** and set it to **Sharpening Off**.
-- **AMD (Windows):** Open the start menu and choose **AMD Software**. Click the
+- **AMD (Windows):** Open the start menu and choose :btn:`AMD Software`. Click the
   settings "cog" icon in the top-right corner. Go to the **Graphics** tab then
   disable **Radeon Image Sharpening**.
 
@@ -167,16 +167,16 @@ If the editor or project appears overly blurry, this is likely due to
 :abbr:`FXAA (Fast Approximate AntiAliasing)` being forced on all Vulkan or
 OpenGL applications by your graphics driver.
 
-- **NVIDIA (Windows):** Open the start menu and choose **NVIDIA Control Panel**.
+- **NVIDIA (Windows):** Open the start menu and choose :btn:`NVIDIA Control Panel`.
   Open the **Manage 3D settings** tab on the left. In the list in the middle,
   scroll to **Fast Approximate Antialiasing** and set it to **Application
   Controlled**.
 - **NVIDIA (Linux):** Open the applications menu and choose **NVIDIA X Server
   Settings**. Select to **Antialiasing Settings** on the left, then uncheck
   **Enable FXAA**.
-- **AMD (Windows):** Open the start menu and choose **AMD Software**. Click the
+- **AMD (Windows):** Open the start menu and choose :btn:`AMD Software`. Click the
   settings "cog" icon in the top-right corner. Go to the **Graphics** tab,
-  scroll to the bottom and click **Advanced** to unfold its settings. Disable
+  scroll to the bottom and click :btn:`Advanced` to unfold its settings. Disable
   **Morphological Anti-Aliasing**.
 
 Third-party vendor-independent utilities such as vkBasalt may also force

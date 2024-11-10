@@ -79,7 +79,7 @@ AudioStream and select a target bus for playback:
 
 .. image:: img/audio_buses3.png
 
-Finally, toggle the **Playing** property to **On** and sound will flow.
+Finally, toggle the :uiproperty:`Playing` property to **On** and sound will flow.
 
 .. seealso::
 

@@ -198,7 +198,7 @@ Script editor debug tools and options
 -------------------------------------
 
 The script editor has its own set of debug tools for use with breakpoints and
-two options. The breakpoint tools can also be found in the **Debugger** tab
+two options. The breakpoint tools can also be found in the :tab:`Debugger` tab
 of the debugger.
 
 .. tip::
@@ -217,13 +217,13 @@ of the debugger.
 
 .. image:: img/overview_script_editor.webp
 
-The **Break** button causes a break in the script like a breakpoint would.
-**Continue** makes the game continue after pausing at a breakpoint.
-**Step Over** goes to the next line of code, and **Step Into** goes into
-a function if possible. Otherwise, it does the same thing as **Step Over**.
+The :btn:`Break` button causes a break in the script like a breakpoint would.
+:btn:`Continue` makes the game continue after pausing at a breakpoint.
+:btn:`Step Over` goes to the next line of code, and :btn:`Step Into` goes into
+a function if possible. Otherwise, it does the same thing as :btn:`Step Over`.
 
-The **Debug with External Editor** option lets you debug your game with an external editor.
-This option is also accessible in **Editor Settings > Debugger**.
+The :btn:`Debug with External Editor` option lets you debug your game with an external editor.
+This option is also accessible in :path:`Editor Settings > Debugger`.
 
 When the debugger breaks on a breakpoint, a green triangle arrow is visible in
 the script editor's gutter. This arrow indicates the line of code the debugger
@@ -232,14 +232,14 @@ broke on.
 Debug project settings
 ----------------------
 
-In the project settings, there is a **Debug** category with subcategories which
-control different things. Enable **Advanced Settings** to change these settings.
+In the project settings, there is a :ui:`Debug` category with subcategories which
+control different things. Enable :btn:`Advanced Settings` to change these settings.
 
 Settings
 ++++++++
 
 These are some general settings such as printing the current FPS
-to the **Output** panel, the maximum amount of functions when profiling
+to the :ui:`Output` panel, the maximum amount of functions when profiling
 and others.
 
 File Logging
@@ -274,11 +274,11 @@ debugging purposes, such as collision and navigation shapes.
 Remote in scene dock
 --------------------
 
-When running a game in the editor two options appear at the top of the **Scene**
-dock, **Remote** and **Local**. While using **Remote** you can inspect or change
+When running a game in the editor two options appear at the top of the :ui:`Scene`
+dock, :btn:`Remote` and :btn:`Local`. While using :btn:`Remote` you can inspect or change
 the nodes' parameters in the running project.
 
 .. image:: img/overview_remote.webp
 
 .. note:: Some editor settings related to debugging can be found inside
-          the **Editor Settings**, under the **Network > Debug** and **Debugger** sections.
+          the :wndw:`Editor Settings`, under the :path:`Network > Debug` and :ui:`Debugger` sections.

@@ -40,7 +40,7 @@ Setting up VideoStreamPlayer
      :ref:`doc_playing_videos_recommended_theora_encoding_settings`.
 
 3. If you want the video to play as soon as the scene is loaded, check
-   **Autoplay** in the inspector. If not, leave **Autoplay** disabled and call
+   :uiproperty:`Autoplay` in the inspector. If not, leave :uiproperty:`Autoplay` disabled and call
    ``play()`` on the VideoStreamPlayer node in a script to start playback when
    desired.
 
@@ -49,10 +49,10 @@ Handling resizing and different aspect ratios
 
 By default in Godot 4.0, the VideoStreamPlayer will automatically be resized to match
 the video's resolution. You can make it follow usual :ref:`class_Control` sizing
-by enabling **Expand** on the VideoStreamPlayer node.
+by enabling :uiproperty:`Expand` on the VideoStreamPlayer node.
 
 To adjust how the VideoStreamPlayer node resizes depending on window size,
-adjust the anchors using the **Layout** menu at the top of the 2D editor
+adjust the anchors using the :ui:`Layout` menu at the top of the 2D editor
 viewport. However, this setup may not be powerful enough to handle all use
 cases, such as playing fullscreen videos without distorting the video (but with
 empty space on the edges instead). For more control, you can use an
@@ -75,7 +75,7 @@ a float. Otherwise, the division's result will always be an integer.
 
 
 Once you've configured the AspectRatioContainer, reparent your VideoStreamPlayer
-node to be a child of the AspectRatioContainer node. Make sure **Expand** is
+node to be a child of the AspectRatioContainer node. Make sure :uiproperty:`Expand` is
 enabled on the VideoStreamPlayer. Your video should now scale automatically
 to fit the whole screen while avoiding distortion.
 
@@ -97,20 +97,20 @@ This can be done with the following steps:
 1. Create a :ref:`class_SubViewport` node. Set its size to match your video's size
    in pixels.
 2. Create a VideoStreamPlayer node *as a child of the SubViewport node* and specify
-   a video path in it. Make sure **Expand** is disabled, and enable **Autoplay** if needed.
+   a video path in it. Make sure :uiproperty:`Expand` is disabled, and enable :uiproperty:`Autoplay` if needed.
 3. Create a MeshInstance3D node with a PlaneMesh or QuadMesh resource in its Mesh property.
    Resize the mesh to match the video's aspect ratio (otherwise, it will appear distorted).
-4. Create a new StandardMaterial3D resource in the **Material Override** property
+4. Create a new StandardMaterial3D resource in the :uiproperty:`Material Override` property
    in the GeometryInstance3D section.
-5. Enable **Local To Scene** in the StandardMaterial3D's Resource section (at the bottom).
+5. Enable :uiproperty:`Local To Scene` in the StandardMaterial3D's Resource section (at the bottom).
    This is *required* before you can use a ViewportTexture in its Albedo Texture property.
-6. In the StandardMaterial3D, set the **Albedo > Texture** property to **New ViewportTexture**.
+6. In the StandardMaterial3D, set the :uiproperty:`Albedo > Texture` property to **New ViewportTexture**.
    Edit the new resource by clicking it, then specify the path to the SubViewport node
-   in the **Viewport Path** property.
-7. Enable **Albedo Texture Force sRGB** in the StandardMaterial3D to prevent colors
+   in the :uiproperty:`Viewport Path` property.
+7. Enable :uiproperty:`Albedo > Texture Force sRGB` in the StandardMaterial3D to prevent colors
    from being washed out.
 8. If the billboard is supposed to emit its own light,
-   set **Shading Mode** to **Unshaded** to improve rendering performance.
+   set :uiproperty:`Shading Mode` to **Unshaded** to improve rendering performance.
 
 See :ref:`doc_viewports` and the
 `GUI in 3D demo <https://github.com/godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d>`__
@@ -119,7 +119,7 @@ for more information on setting this up.
 Looping a video
 ^^^^^^^^^^^^^^^
 
-For looping a video, the **Loop** property can be enabled. This will seamlessly
+For looping a video, the :uiproperty:`Loop` property can be enabled. This will seamlessly
 restart the video when it reaches its end.
 
 Note that setting the project setting **Video Delay Compensation** to a non-zero

@@ -79,7 +79,7 @@ node (or GPUParticles3D, CPUParticles3D, ...).
 
 To make an OBJ file have mesh LOD generated for it, select it in the FileSystem
 dock, go to the Import dock, change its **Import As** option to **Scene** then
-click **Reimport**:
+click :btn:`Reimport`:
 
 .. figure:: img/mesh_lod_obj_import.png
    :align: center
@@ -156,13 +156,13 @@ in quality. Higher values will make LOD transitions happen sooner when the
 camera moves away, resulting in higher performance, but lower quality.
 
 If you need to perform per-object adjustments to mesh LOD, you can adjust how
-aggressive LOD transitions should be by adjusting the **LOD Bias** property on
+aggressive LOD transitions should be by adjusting the :uiproperty:`LOD Bias` property on
 any node that inherits from GeometryInstance3D. Values *above* ``1.0`` will make
 LOD transitions happen later than usual (resulting in higher quality, but lower
 performance). Values *below* ``1.0`` will make LOD transitions happen sooner than
 usual (resulting in lower quality, but higher performance).
 
-Additionally, ReflectionProbe nodes have their own **Mesh LOD Threshold** property
+Additionally, ReflectionProbe nodes have their own :uiproperty:`Mesh LOD Threshold` property
 that can be adjusted to improve rendering performance when the reflection probe
 updates. This is especially important for ReflectionProbes that use the **Always**
 update mode.

@@ -161,7 +161,7 @@ to make V-Sync available as an option for players to toggle.
 When using the Forward+ or Mobile rendering methods, another way to reduce
 visual latency when V-Sync is enabled is to use double-buffered V-Sync instead
 of the default triple-buffered V-Sync. Since Godot 4.3, this can be achieved by
-reducing the **Display > Window > V-Sync > Swapchain Image Count** project
+reducing the :path:`Display > Window > V-Sync > Swapchain Image Count` project
 setting to ``2``.  The downside of using double buffering is that framerate will
 be less stable if the display refresh rate can't be reached due to a CPU or GPU
 bottleneck. For instance, on a 60 Hz display, if the framerate would normally
@@ -173,7 +173,7 @@ possible). As a result, double-buffered V-Sync is only recommended if you can
 Increasing the number of physics iterations per second can also reduce
 physics-induced input latency. This is especially noticeable when using physics
 interpolation (which improves smoothness but increases latency). To do so, set
-**Physics > Common > Physics Ticks Per Second** to a value higher than the
+:path:`Physics > Common > Physics Ticks Per Second` to a value higher than the
 default ``60``, or set ``Engine.physics_ticks_per_second`` at runtime in a
 script. Values that are a multiple of the monitor refresh rate (typically
 ``60``) work best when physics interpolation is disabled, as they will avoid

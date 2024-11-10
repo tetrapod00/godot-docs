@@ -78,7 +78,7 @@ root node quickly. "2D Scene" adds a :ref:`Node2D <class_Node2D>` node,
 and "User Interface" adds a :ref:`Control <class_Control>` node.
 These presets are here for convenience; they are not mandatory.
 "Other Node" lets you select any node to be the root node.
-In an empty scene, "Other Node" is equivalent to pressing the "Add Child Node"
+In an empty scene, "Other Node" is equivalent to pressing the :btn:`Add Child Node`
 button at the top-left of the Scene dock, which usually adds
 a new node as a child of the currently selected node.
 

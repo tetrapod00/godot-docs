@@ -54,9 +54,9 @@ Create a new **TileMapLayer** node, then select it and create a new TileSet reso
 After creating the TileSet resource, click the value to unfold it in the
 inspector. The default tile shape is Square, but you can also choose Isometric,
 Half-Offset Square or Hexagon (depending on the shape of your tile images). If
-using a tile shape other than Square, you may also need to adjust the **Tile
-Layout** and **Tile Offset Axis** properties. Lastly, enabling the
-**Rendering > UV Clipping** property may be useful if you wish tiles to be clipped
+using a tile shape other than Square, you may also need to adjust the **Tile Layout** 
+and :uiproperty:`Tile Offset Axis` properties. Lastly, enabling the
+:uiproperty:`Rendering > UV Clipping` property may be useful if you wish tiles to be clipped
 by their tile coordinates. This ensures tiles cannot draw outside their allocated
 area on the tilesheet.
 
@@ -101,7 +101,7 @@ you wish to remove:
 
    Using the Eraser tool to remove unwanted tiles from the TileSet atlas
 
-You can also right-click a tile and choose **Delete**, as an alternative to the
+You can also right-click a tile and choose :btn:`Delete`, as an alternative to the
 Eraser tool.
 
 .. tip::
@@ -216,7 +216,7 @@ atlas for easier organization.
 
 To do so, you must have more than one atlas created in the TileSet resource.
 Use the "three vertical dots" menu button located at the bottom of the list of
-atlases, then choose **Open Atlas Merging Tool**:
+atlases, then choose :btn:`Open Atlas Merging Tool`:
 
 .. figure:: img/using_tilesets_open_atlas_merging_tool.webp
    :align: center
@@ -233,11 +233,11 @@ This will open a dialog, in which you can select several atlases by holding
 
    Using the atlas merging tool dialog
 
-Choose **Merge** to merge the selected atlases into a single atlas image (which
+Choose :btn:`Merge` to merge the selected atlases into a single atlas image (which
 translates to a single atlas within the TileSet). The unmerged atlases will be
 removed within the TileSet, but *the original tilesheet images will be kept on
 the filesystem*. If you don't want the unmerged atlases to be removed from the
-TileSet resource, choose **Merge (Keep Original Atlases)** instead.
+TileSet resource, choose :btn:`Merge (Keep Original Atlases)` instead.
 
 .. tip::
 
@@ -246,7 +246,7 @@ TileSet resource, choose **Merge (Keep Original Atlases)** instead.
     set of tile identifiers should be replaced by another one.
 
     Tile proxies are automatically set up when merging different atlases, but
-    they can also be set manually thanks to the **Manage Tile Proxies** dialog
+    they can also be set manually thanks to the :wndw:`Manage Tile Proxies` dialog
     you can access using the "three vertical dots" menu mentioned above.
 
     Manually creating tile proxies may be useful when you changed an atlas ID or
@@ -273,8 +273,8 @@ This requires defining occluder polygons for "solid" tiles on the TileSet.
 To be able to define collision, navigation and occlusion shapes for each tile,
 you will need to create a physics, navigation or occlusion layer for the TileSet
 resource first. To do so, select the TileMapLayer node, click the TileSet property
-value in the inspector to edit it then unfold **Physics Layers** and choose
-**Add Element**:
+value in the inspector to edit it then unfold :ui:`Physics Layers` and choose
+:btn:`Add Element`:
 
 .. figure:: img/using_tilesets_create_physics_layer.webp
    :align: center
@@ -309,7 +309,7 @@ If you need support for light polygon occluders, now is a good time to create an
     **Rendering** subsection in the atlas inspector. Make sure to unfold this
     section so you can edit the polygon.
 
-After creating a physics layer, you have access to the **Physics Layer** section
+After creating a physics layer, you have access to the :ui:`Physics Layer` section
 in the TileSet atlas inspector:
 
 .. figure:: img/using_tilesets_selecting_collision_editor.webp
@@ -466,7 +466,7 @@ After creating a terrain set, you **must** create one or more terrains *within* 
    Creating a terrain within the terrain set
 
 In the TileSet editor, switch to Select mode and click a tile. In the middle
-column, unfold the **Terrains** section then assign a terrain set ID and a
+column, unfold the :uisection:`Terrains` section then assign a terrain set ID and a
 terrain ID for the tile. ``-1`` means "no terrain set" or "no terrain", which
 means you must set **Terrain Set** to ``0`` or greater before you can set
 **Terrain** to ``0`` or greater.
@@ -482,7 +482,7 @@ means you must set **Terrain Set** to ``0`` or greater before you can set
 
    Configuring terrain on a single tile in the TileSet editor's Select mode
 
-After doing so, you can now configure the **Terrain Peering Bits** section which
+After doing so, you can now configure the :uisection:`Terrain Peering Bits` section which
 becomes visible in the middle column. The peering bits determine which tile will
 be placed depending on neighboring tiles. ``-1`` is a special value which refers
 to empty space.
@@ -592,7 +592,7 @@ can be done using *alternative tiles*.
       toolbar.
 
 To create an alternative tile, right-click a base tile in the atlas displayed by
-the TileSet editor, then choose **Create an Alternative Tile**:
+the TileSet editor, then choose :btn:`Create an Alternative Tile`:
 
 .. figure:: img/using_tilesets_create_alternative_tile.webp
    :align: center
@@ -645,7 +645,7 @@ properties is different compared to base tiles:
 
 You can create an additional alternative tile variant by clicking the large "+"
 icon next to the alternative tile. This is equivalent to selecting the base tile
-and right-clicking it to choose **Create an Alternative Tile** again.
+and right-clicking it to choose :btn:`Create an Alternative Tile` again.
 
 .. note::
 

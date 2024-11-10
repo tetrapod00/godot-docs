@@ -22,7 +22,7 @@ For compiling under Windows, the following is required:
       version 2019 or later. Visual Studio 2022 is recommended.
       **Make sure to enable C++ in the list of workflows to install.**
       If you've already installed Visual Studio without C++ support, run the installer
-      again; it should present you a **Modify** button.
+      again; it should present you a :btn:`Modify` button.
       Supports ``x86_64``, ``x86_32``, and ``arm64``.
     - `MinGW-w64 <https://mingw-w64.org/>`_ with GCC can be used as an alternative to
       Visual Studio. Be sure to install/configure it to use the ``posix`` thread model.
@@ -100,9 +100,9 @@ The tutorial will assume from now on that you placed the source code in
     software.
 
     For Windows Defender, hit the :kbd:`Windows` key, type "Windows Security"
-    then hit :kbd:`Enter`. Click on **Virus & threat protection** on the left
-    panel. Under **Virus & threat protection settings** click on **Manage Settings**
-    and scroll down to **Exclusions**. Click **Add or remove exclusions** then
+    then hit :kbd:`Enter`. Click on :btn:`Virus & threat protection` on the left
+    panel. Under **Virus & threat protection settings** click on :btn:`Manage Settings`
+    and scroll down to **Exclusions**. Click :btn:`Add or remove exclusions` then
     add the Godot source folder.
 
 Compiling
@@ -320,7 +320,7 @@ the ``vsproj=yes`` parameter, like this::
    scons platform=windows vsproj=yes
 
 You will be able to open Godot's source in a Visual Studio solution now,
-and able to build Godot using Visual Studio's **Build** button.
+and able to build Godot using Visual Studio's :btn:`Build` button.
 
 .. seealso:: See :ref:`doc_configuring_an_ide_vs` for further details.
 

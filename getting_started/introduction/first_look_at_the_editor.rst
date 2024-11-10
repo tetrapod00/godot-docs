@@ -34,7 +34,7 @@ source asset library, which includes many projects developed by the community:
 
 .. image:: img/editor_intro_project_templates.webp
 
-The Project Manager's settings can be opened using the **Settings** menu:
+The Project Manager's settings can be opened using the :ui:`Settings` menu:
 
 .. image:: img/editor_intro_settings.webp
 

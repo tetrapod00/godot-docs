@@ -74,7 +74,7 @@ resource, you can edit the following properties:
   background sky. If set to ``0.0``, volumetric fog won't affect sky rendering
   at all (including FogVolumes).
 
-Two additional properties are offered in the **Temporal Reprojection** section:
+Two additional properties are offered in the :uisection:`Temporal Reprojection` section:
 
 - **Temporal Reprojection > Enabled:** Enables temporal reprojection in the
   volumetric fog. Temporal reprojection blends the current frame's volumetric
@@ -104,7 +104,7 @@ Light interaction with volumetric fog
 
 To simulate fog light scattering behavior in real life, all light types will
 interact with volumetric fog. How much each light will affect volumetric fog can
-be adjusted using the **Volumetric Fog Energy** property on each light. Enabling
+be adjusted using the :uiproperty:`Volumetric Fog Energy` property on each light. Enabling
 shadows on a light will also make those shadows visible on volumetric fog.
 
 If fog light interaction is not desired for artistic reasons, this can be
@@ -167,7 +167,7 @@ Here's a quick start guide to using FogVolumes:
 - Make sure **Volumetric Fog** is enabled in the Environment properties. If
   global volumetric fog is undesired, set its **Density** to ``0.0``.
 - Create a FogVolume node.
-- Assign a new FogMaterial to the FogVolume node's **Material** property.
+- Assign a new FogMaterial to the FogVolume node's :uiproperty:`Material` property.
 - In the FogMaterial, set **Density** to a positive value to increase density
   within the FogVolume, or a negative value to subtract the density from global
   volumetric fog.
@@ -189,14 +189,14 @@ FogVolume properties
 - **Extents:** The size of the FogVolume when **Shape** is **Ellipsoid**,
   **Cone**, **Cylinder** or **Box**. If **Shape** is **Cone** or **Cylinder**,
   the cone/cylinder will be adjusted to fit within the extents. Non-uniform
-  scaling of cone/cylinder shapes via the **Extents** property is not supported,
+  scaling of cone/cylinder shapes via the :uiproperty:`Extents` property is not supported,
   but you can scale the FogVolume node instead.
 - **Shape:** The shape of the FogVolume. This can be set to **Ellipsoid**,
   **Cone**, **Cylinder**, **Box** or **World** (acts as global volumetric fog).
 - **Material:** The material used by the FogVolume. Can be either a
   built-in FogMaterial or a custom ShaderMaterial (:ref:`doc_fog_shader`).
 
-After choosing **New FogMaterial** in the **Material** property, you can adjust
+After choosing :btn:`New FogMaterial` in the :uiproperty:`Material` property, you can adjust
 the following properties in FogMaterial:
 
 - **Density:** The density of the FogVolume. Denser objects are more opaque, but
@@ -236,9 +236,9 @@ textures, which can result in more detailed fog effects:
    Screenshot taken with **Volume Size** project setting set to 192 to make
    high-frequency detail more visible in the fog.
 
-To do so, select the **Density Texture** property and choose **New NoiseTexture3D**.
-Edit this NoiseTexture3D by clicking it, then click **Noise** at the bottom of the
-NoiseTexture3D properties and choose **New FastNoiseLite**. Adjust the noise texture's
+To do so, select the :uiproperty:`Density Texture` property and choose :btn:`New NoiseTexture3D`.
+Edit this NoiseTexture3D by clicking it, then click :btn:`Noise` at the bottom of the
+NoiseTexture3D properties and choose :btn:`New FastNoiseLite`. Adjust the noise texture's
 width, height and depth according to your fog volume's dimensions.
 
 To improve performance, it's recommended to use low texture sizes (64×64×64 or lower),
@@ -287,20 +287,20 @@ To create a QuadMesh-based fog sprite:
 
 1. Create a MeshInstance3D node with a QuadMesh resource in the **Mesh**
    property. Set the size as desired.
-2. Create a new StandardMaterial3D in the mesh's **Material** property.
-3. In the StandardMaterial3D, set **Shading > Shading Mode** to **Unshaded**,
-   **Billboard > Mode** to **Enabled**, enable **Proximity Fade** and set
-   **Distance Fade** to **Pixel Alpha**.
-4. Set the **Albedo > Texture** to the texture below (right-click and choose **Save as…**):
+2. Create a new StandardMaterial3D in the mesh's :uiproperty:`Material` property.
+3. In the StandardMaterial3D, set :uiproperty:`Shading > Shading Mode` to **Unshaded**,
+   :uiproperty:`Billboard > Mode` to **Enabled**, enable :uiproperty:`Proximity Fade` and set
+   :uiproperty:`Distance Fade` to **Pixel Alpha**.
+4. Set the **Albedo > Texture** to the texture below (right-click and choose :btn:`Save as…`):
 
    .. image:: img/volumetric_fog_quad_mesh_texture.webp
 
 5. *After* setting the albedo texture, go to the Import dock, select the texture
    and change its compression mode to **Lossless** to improve quality.
 
-The fog's color is set using the **Albedo > Color** property; its density is set
+The fog's color is set using the :uiproperty:`Albedo > Color` property; its density is set
 using the color's alpha channel. For best results, you will have to adjust
-**Proximity Fade > Distance** and **Distance Fade > Max Distance** depending on
+:uiproperty:`Proximity Fade > Distance` and :uiproperty:`Distance Fade > Max Distance` depending on
 the size of your QuadMesh.
 
 Optionally, billboarding may be left disabled if you place the quad in a way

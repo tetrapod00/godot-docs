@@ -94,7 +94,7 @@ In most scenarios, this is the best approach to use. The only downside is that,
 on large models, unwrapping can take a while on import. Nonetheless, Godot will
 cache the UV2 across reimports, so it will only be regenerated when needed.
 
-Select the imported scene in the filesystem dock, then go to the **Import** dock.
+Select the imported scene in the filesystem dock, then go to the :dock:`Import` dock.
 There, the following option can be modified:
 
 .. image:: img/lightmap_gi_import.webp
@@ -184,7 +184,7 @@ create an area light that follows the shape of a torus.
 
 By default, primitive meshes do not have UV2 generated to save resources (as
 these meshes may be created during gameplay). You can edit a primitive mesh in
-the inspector and enable **Add UV2** to make the engine procedurally generate
+the inspector and enable :uiproperty:`Add UV2` to make the engine procedurally generate
 UV2 for a primitive mesh. The default **UV2 Padding** value is tuned to avoid
 most lightmap bleeding, without wasting too much space on the edges. If you
 notice lightmap bleeding on a specific primitive mesh only, you may have to
@@ -252,7 +252,7 @@ lighting effects such as explosions and weapon effects.
 
     Hiding a light has no effect on the resulting lightmap bake. This means
     you must use the Disabled bake mode instead of hiding the Light node by
-    disabling its **Visible** property.
+    disabling its :uiproperty:`Visible` property.
 
 Dynamic
 ^^^^^^^
@@ -298,7 +298,7 @@ on them.
 Baking
 ------
 
-To begin the bake process, click the **Bake Lightmaps** button at the top of the
+To begin the bake process, click the :btn:`Bake Lightmaps` button at the top of the
 3D editor viewport when selecting the LightmapGI node:
 
 .. image:: img/lightmap_gi_bake.webp
@@ -517,7 +517,7 @@ There are 2 ways to add light probes to a scene:
 Lightmap data
 -------------
 
-The **Data > Light Data** property in the LightmapGI node contains the lightmap
+The :uiproperty:`Data > Light Data` property in the LightmapGI node contains the lightmap
 data after baking. Textures are saved to disk, but this also contains the
 capture data for dynamic objects, which can be heavy. If you are using a scene
 in ``.tscn`` format, you should save this resource to an external binary

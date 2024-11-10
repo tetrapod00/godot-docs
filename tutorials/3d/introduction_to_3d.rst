@@ -273,7 +273,7 @@ following sequence in order (Y+ is upwards in Godot):
 :kbd:`G`-:kbd:`Y`-:kbd:`2`-:kbd:`.`-:kbd:`5`-:kbd:`Enter`
 
 To use Blender-style transform shortcuts in Godot, go to the Editor Settings'
-**Shortcuts** tab, then in the Spatial Editor section:
+:tab:`Shortcuts` tab, then in the Spatial Editor section:
 
 - Bind **Begin Translate Transformation** to :kbd:`G`.
 - Bind **Begin Rotate Transformation** to :kbd:`R`.

@@ -41,7 +41,7 @@ resource in the FileSystem dock:
 
 .. image:: img/import_process_example.webp
 
-After adjusting the parameters, click **Reimport**. Be careful: if you select
+After adjusting the parameters, click :btn:`Reimport`. Be careful: if you select
 another file in the FileSystem dock before clicking **Reimport**, changes will
 be discarded. After clicking **Reimport**, the chosen parameters will only be
 used for this asset and on future reimports.
@@ -111,7 +111,7 @@ Changing import resource type
 -----------------------------
 
 Some source assets can be imported as different types of resources. For this,
-select the relevant type of resource desired then click **Reimport**:
+select the relevant type of resource desired then click :btn:`Reimport`:
 
 .. image:: img/import_process_changing_import_type.webp
 
@@ -132,7 +132,7 @@ settings can be saved and cleared too:
 .. image:: img/import_process_change_preset.webp
 
 The default import parameters for a given resource type can be changed
-project-wide using the **Import Defaults** tab of the Project Settings dialog:
+project-wide using the :tab:`Import Defaults` tab of the Project Settings dialog:
 
 .. image:: img/import_process_import_defaults.webp
 

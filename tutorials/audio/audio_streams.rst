@@ -83,7 +83,7 @@ Reverb buses
 Godot allows for 3D audio streams that enter a specific Area3D node to send dry
 and wet audio to separate buses. This is useful when you have several reverb
 configurations for different types of rooms. This is done by enabling this type
-of reverb in the **Reverb Bus** section of the Area3D's properties:
+of reverb in the :uisection:`Reverb Bus` section of the Area3D's properties:
 
 .. image:: img/audio_stream_reverb_bus.webp
 
@@ -93,7 +93,7 @@ in each reverb bus to complete the setup for the desired effect:
 
 .. image:: img/audio_stream_reverb_bus2.webp
 
-The Area3D's **Reverb Bus** section also has a parameter named **Uniformity**.
+The Area3D's :uisection:`Reverb Bus` section also has a property named :uiproperty:`Uniformity`.
 Some types of rooms bounce sounds more than others (like a warehouse), so
 reverberation can be heard almost uniformly across the room even though the
 source may be far away. Playing around with this parameter can simulate

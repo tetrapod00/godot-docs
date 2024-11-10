@@ -24,7 +24,7 @@ textures larger than 4096×4096 and use a power of two size if the texture needs
 to repeat.
 
 To limit the size of a specific texture that may be too large to render, you can
-set the **Process > Size Limit** import option to a value greater than ``0``.
+set the :path:`Process > Size Limit` import option to a value greater than ``0``.
 This will reduce the texture's dimensions on import (preserving aspect ratio)
 without affecting the source file.
 
@@ -48,7 +48,7 @@ There are two main ways to alleviate banding:
 
 - If using the Forward+ or Forward Mobile rendering methods, enable 
   :ref:`Use Debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`
-  in **Project Settings > Rendering > Anti Aliasing**. This applies a fullscreen debanding
+  in :projsection:`Project Settings > Rendering > Anti Aliasing`. This applies a fullscreen debanding
   shader as a post-processing effect and is very cheap.
 - Alternatively, bake some noise into your textures. This is mainly effective in
   2D, e.g. for vignetting effects. In 3D, you can also use a `custom debanding
@@ -79,15 +79,15 @@ occur. This will materialize as textures flickering back and forth as the camera
 moves or rotates.
 
 To make the depth buffer more precise over the rendered area, you should
-*increase* the Camera node's **Near** property. However, be careful: if you set
+*increase* the Camera node's :uiproperty:`Near` property. However, be careful: if you set
 it too high, players will be able to see through nearby geometry. You should
-also *decrease* the Camera node's **Far** property to the lowest permissible value
+also *decrease* the Camera node's :uiproperty:`Far` property to the lowest permissible value
 for your use case, though keep in mind it won't impact precision as much as the
-**Near** property.
+:uiproperty:`Near` property.
 
 If you only need high precision when the player can see far away, you could
 change it dynamically based on the game conditions. For instance, if the player
-enters an airplane, the **Near** property can be temporarily increased to avoid
+enters an airplane, the :uiproperty:`Near` property can be temporarily increased to avoid
 Z-fighting in the distance. It can then be decreased once the player leaves the
 airplane.
 
@@ -131,7 +131,7 @@ this feature. There are still several ways to avoid this problem:
   use alpha testing instead of alpha blending. This transparency mode is faster
   to render and doesn't suffer from transparency issues. Enable **Transparency >
   Transparency** to **Alpha Scissor** in StandardMaterial3D, and adjust
-  **Transparency > Alpha Scissor Threshold** accordingly if needed. Note that
+  :path:`Transparency > Alpha Scissor Threshold` accordingly if needed. Note that
   MSAA will not antialias the texture's edges unless alpha antialiasing is
   enabled in the material's properties. However, FXAA, TAA and supersampling
   will be able to antialias the texture's edges regardless of whether alpha
@@ -139,7 +139,7 @@ this feature. There are still several ways to avoid this problem:
 
 - If you need to render semi-transparent areas of the texture, alpha scissor
   isn't suitable. Instead, setting the StandardMaterial3D's
-  **Transparency > Transparency** property to **Depth Pre-Pass** can sometimes
+  :path:`Transparency > Transparency** property to **Depth Pre-Pass` can sometimes
   work (at a performance cost). You can also try the **Alpha Hash** mode.
 
 - If you want a material to fade with distance, use the StandardMaterial3D

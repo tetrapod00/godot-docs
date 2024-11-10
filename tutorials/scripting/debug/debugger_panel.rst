@@ -4,7 +4,7 @@ Debugger panel
 ==============
 
 Many of Godot's debugging tools, including the debugger, can be found in the
-debugger panel at the bottom of the screen. Click on **Debugger** to open it.
+debugger panel at the bottom of the screen. Click on :btn:`Debugger` to open it.
 
 .. image:: img/overview_debugger.webp
 
@@ -53,7 +53,7 @@ Errors
 
 This is where error and warning messages are printed while running the game.
 
-You can disable specific warnings in **Project Settings > Debug > GDScript**.
+You can disable specific warnings in :projsection:`Project Settings > Debug > GDScript`.
 
 Evaluator
 ----------
@@ -128,7 +128,7 @@ of potential CPU and GPU bottlenecks caused by rendering.
     Profiler tab to track non-rendering-related CPU tasks.
 
 To use the visual profiler, run the project, switch to the **Visual Profiler**
-tab within the Debugger bottom panel, then click **Start**:
+tab within the Debugger bottom panel, then click :btn:`Start`:
 
 .. figure:: img/debugger_visual_profiler_results.webp
    :alt: Visual Profiler tab after clicking Start, waiting for a few seconds, then clicking Stop
@@ -145,7 +145,7 @@ You will see categories and results appearing as the profiler is running. Graph
 lines also appear, with the left side being a CPU framegraph and the right side
 being a GPU framegraph.
 
-Click **Stop** to finish profiling, which will keep the results visible but
+Click :btn:`Stop` to finish profiling, which will keep the results visible but
 frozen in place. Results remain visible after stopping the running project, but
 not after exiting the editor.
 
@@ -229,7 +229,7 @@ is running, you can open it later and see how the values changed.
 Video RAM
 ---------
 
-The **Video RAM** tab shows the video RAM usage of the game while it is running.
+The :tab:`Video RAM` tab shows the video RAM usage of the game while it is running.
 It provides a list of every resource using video RAM by resource path, the type
 of resource it is, what format it is in, and how much Video RAM that resource is
 using. There is also a total video RAM usage number at the top right of the panel.
@@ -239,7 +239,7 @@ using. There is also a total video RAM usage number at the top right of the pane
 Misc
 ----
 
-The **Misc** tab contains tools to identify the control nodes you are clicking
+The :tab:`Misc` tab contains tools to identify the control nodes you are clicking
 at runtime:
 
 - **Clicked Control** tells you where the clicked node is in the scene tree.

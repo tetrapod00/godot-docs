@@ -63,7 +63,7 @@ elements* that can be present in the current camera view. A clustered element is
 an omni light, a spot light, a :ref:`decal <doc_using_decals>` or a
 :ref:`reflection probe <doc_reflection_probes>`. This limit can be increased by adjusting
 :ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
-in **Project Settings > Rendering > Limits > Cluster Builder**.
+in :projsection:`Project Settings > Rendering > Limits > Cluster Builder`.
 
 When using the Forward Mobile renderer, there is a limitation of 8 OmniLights +
 8 SpotLights per mesh resource. There is also a limit of 256 OmniLights + 256
@@ -75,7 +75,7 @@ rendered per mesh resource. This limit can be increased in the advanced Project
 Settings by adjusting
 :ref:`Max Renderable Elements<class_ProjectSettings_property_rendering/limits/opengl/max_renderable_elements>`
 and/or :ref:`Max Lights per Object<class_ProjectSettings_property_rendering/limits/opengl/max_lights_per_object>`
-in **Rendering > Limits > OpenGL**, at the cost of performance and longer shader
+in :projsection:`Rendering > Limits > OpenGL`, at the cost of performance and longer shader
 compilation times. The limit can also be decreased to reduce shader compilation
 times and improve performance slightly.
 
@@ -85,7 +85,7 @@ effective shadow resolution of each DirectionalLight. This is because
 directional shadow atlas is shared between all lights.
 
 If the rendering limit is exceeded, lights will start popping in and out during
-camera movement, which can be distracting. Enabling **Distance Fade** on light
+camera movement, which can be distracting. Enabling :uiproperty:`Distance Fade` on light
 nodes can help reduce this issue while also improving performance. Splitting
 your meshes into smaller portions can also help, especially for level geometry
 (which also improves culling efficiency).

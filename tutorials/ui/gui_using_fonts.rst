@@ -8,7 +8,7 @@ Godot allows you to set specific fonts for different UI nodes.
 There are three different places where you can setup font usage.
 The first is the theme editor. Choose the node you want to set the
 font for and select the font tab. The second is in the inspector
-for control nodes under **Theme Overrides > Fonts**. Lastly, in
+for control nodes under :path:`Theme Overrides > Fonts`. Lastly, in
 the inspector settings for themes under **Default Font**.
 
 If no font override is specified anywhere,
@@ -19,7 +19,7 @@ is used as the default project font.
 
     Since Godot 4.0, font sizes are no longer defined in the font itself but are
     instead defined in the node that uses the font. This is done in the
-    **Theme Overrides > Font Sizes** section of the inspector.
+    :uisection:`Theme Overrides > Font Sizes` section of the inspector.
 
     This allows changing the font size without having to duplicate the font
     resource for every different font size.
@@ -72,7 +72,7 @@ Alternatively, you can import any image to be used as a bitmap font. This is
 only supported for **monospaced** fonts (fonts where each character has the same
 width). To do so, select the image in the FileSystem dock, go to the
 Import dock, change its import type to **Font Data (Monospace Image Font)** then
-click **Reimport**:
+click :btn:`Reimport`:
 
 .. figure:: img/using_fonts_bitmap_font_from_image_import_options.webp
    :align: center
@@ -443,7 +443,7 @@ After downloading the generated font file, load it in your Godot project then
 specify it as a custom font for a Label, RichTextLabel or Label3D node. Switch
 over to the Fontello web interface, then copy the character by selecting it then
 pressing :kbd:`Ctrl + C` (:kbd:`Cmd + C` on macOS). Paste the character in the
-**Text** property of your Label node. The character will appear as a placeholder
+:uiproperty:`Text` property of your Label node. The character will appear as a placeholder
 glyph in the inspector, but it should appear correctly in the 2D/3D viewport.
 
 To use an icon font alongside a traditional font in the same Control, you can
@@ -455,7 +455,7 @@ reserved for use by custom fonts and doesn't contain standard glyphs by design.
 
     Several modern icon fonts such as `Font Awesome 6 <https://fontawesome.com/download>`__
     have a desktop variant that uses *ligatures* to specify icons. This allows you to
-    specify icons by entering their name directly in the **Text** property of any
+    specify icons by entering their name directly in the :uiproperty:`Text` property of any
     node that can display fonts. Once the icon's name is fully entered as text
     (such as ``house``), it will be replaced by the icon.
 
@@ -474,18 +474,18 @@ to be displayed. There are 2 main use cases for defining font fallbacks:
   be able to display text another character set such as Cyrillic.
 - Use a font to render text, and another font to render emoji or icons.
 
-Open the Advanced Import Settings dialog by double-clicking the font file in the
+Open the :wndw:`Advanced Import Settings` dialog by double-clicking the font file in the
 FileSystem dock. You can also select the font in the FileSystem dock, go to the
-Import dock then choose **Advanced…** at the bottom:
+Import dock then choose :btn:`Advanced…` at the bottom:
 
 .. figure:: img/using_fonts_advanced_import_settings.webp
    :align: center
 
    Import dock
 
-In the dialog that appears, look for **Fallbacks** section
+In the dialog that appears, look for :lbl:`Fallbacks` section
 on the sidebar on the right, click the **Array[Font] (size 0)** text to expand
-the property, then click **Add Element**:
+the property, then click :btn:`Add Element`:
 
 .. figure:: img/using_fonts_font_fallbacks_add.webp
    :align: center
@@ -501,7 +501,7 @@ Click the dropdown arrow on the new element, then choose a font file using the
    Loading font fallback
 
 It is possible to add fallback fonts while using the default project font. To do
-so, leave the **Base Font** property empty while adding one or more font
+so, leave the :uiproperty:`Base Font` property empty while adding one or more font
 fallbacks.
 
 .. note::
@@ -533,8 +533,8 @@ FontVariation resource:
 
    Loading a font file into the FontVariation resource
 
-Scroll down to the FontVariation's **Variation** section, then click the
-**Variation Coordinates** text to expand the list of axes that can be adjusted:
+Scroll down to the FontVariation's :uisection:`Variation` section, then click the
+:btn:`Variation Coordinates` text to expand the list of axes that can be adjusted:
 
 .. figure:: img/using_fonts_font_variation_variable_font.webp
    :align: center
@@ -625,7 +625,7 @@ between ``0.5`` and ``1.2`` depending on the font.
 
 Faux italic is created by skewing the text, which is done by modifying the
 per-character transform. This is also provided in FontVariation using the
-**Variation > Transform** property. Setting the ``yx`` component of the
+:uiproperty:`Variation > Transform` property. Setting the ``yx`` component of the
 character transform to a positive value will italicize the text. Recommended
 values are between ``0.2`` and ``0.4`` depending on the font.
 
@@ -636,7 +636,7 @@ For stylistic purposes or for better readability, you may want to adjust how a
 font is presented in Godot.
 
 Create a FontVariation resource in a property where a Font resource is expected.
-There are 4 properties available in the **Variation > Extra Spacing** section,
+There are 4 properties available in the :uisection:`Variation > Extra Spacing` section,
 which accept positive and negative values:
 
 - **Glyph:** Additional spacing between every glyph.
@@ -648,7 +648,7 @@ which accept positive and negative values:
   but also to calculate the minimum size of controls such as :ref:`class_Label`
   and :ref:`class_Button`.
 
-The **Variation > Transform** property can also be adjusted to stretch
+The :uiproperty:`Variation > Transform` property can also be adjusted to stretch
 characters horizontally or vertically. This is specifically done by adjusting
 the ``xx`` (horizontal scale) and ``yy`` (vertical scale) components. Remember
 to adjust glyph spacing to account for any changes, as glyph transform doesn't
@@ -676,17 +676,17 @@ There are 2 ways to use OpenType font features:
 
 Open the Advanced Import Settings dialog by double-clicking the font file in the
 FileSystem dock. You can also select the font in the FileSystem dock, go to the
-Import dock then choose **Advanced…** at the bottom:
+Import dock then choose :btn:`Advanced…` at the bottom:
 
 .. figure:: img/using_fonts_advanced_import_settings.webp
    :align: center
 
    Import dock
 
-In the dialog that appears, look for the **Metadata Overrides > OpenType
-Features** section on the sidebar on the right, click the
-**Features (0 of N set)** text to expand the property, then click
-**Add Feature**:
+In the dialog that appears, look for the :path:`Metadata Overrides > OpenType Features`
+section on the sidebar on the right, click the
+:btn:`Features (0 of N set)` text to expand the property, then click
+:btn:`Add Feature`:
 
 .. figure:: img/using_fonts_advanced_import_settings_opentype_features.webp
    :align: center
@@ -709,8 +709,8 @@ within the FontVariation resource:
 
    Loading a font file into a FontVariation resource
 
-Scroll down to the FontVariation's **OpenType Features** section, click the
-**Features (0 of N set)** text to expand the property, then click **Add Feature**
+Scroll down to the FontVariation's :uisection:`OpenType Features` section, click the
+:btn:`Features (0 of N set)` text to expand the property, then click :btn:`Add Feature`
 and select the desired feature in the dropdown:
 
 .. figure:: img/using_fonts_font_variation_opentype_features.webp
@@ -854,14 +854,14 @@ rasterized on-the-fly as usual.
 
 Open the Advanced Import Settings dialog by double-clicking the font file in the
 FileSystem dock. You can also select the font in the FileSystem dock, go to the
-Import dock then choose **Advanced…** at the bottom:
+Import dock then choose :btn:`Advanced…` at the bottom:
 
 .. figure:: img/using_fonts_advanced_import_settings.webp
    :align: center
 
    Import dock
 
-Move to the **Pre-render Configurations** tab of the Advanced Import Settings dialog,
+Move to the :tab:`Pre-render Configurations` tab of the Advanced Import Settings dialog,
 then add a configuration by clicking the "plus" symbol:
 
 .. figure:: img/using_fonts_advanced_import_settings_prerender_new_configuration.webp
@@ -885,14 +885,14 @@ it can only be used if your project supports
 the "Using custom text" approach described below.
 
 After adding translations to the Project Settings, use the
-**Glyphs from the Translations** tab to check translations by double-clicking them,
-then click **Shape All Strings in the Translations and Add Glyphs** at the bottom:
+:tab:`Glyphs from the Translations` tab to check translations by double-clicking them,
+then click :btn:`Shape All Strings in the Translations and Add Glyphs` at the bottom:
 
 .. figure:: img/using_fonts_advanced_import_settings_prerender_translation.webp
    :align: center
    :alt: Enabling prerendering in the Advanced Import Settings dialog with the Glyphs from the Translations tab
 
-   Enabling prerendering in the Advanced Import Settings dialog with the **Glyphs from the Translations** tab
+   Enabling prerendering in the Advanced Import Settings dialog with the :tab:`Glyphs from the Translations` tab
 
 .. note::
 
@@ -909,14 +909,14 @@ distributed app.
 
 To use existing text as a baseline for prerendering, go to the **Glyphs from the
 Text** sub-tab of the Advanced Import Settings dialog, enter text in the window
-on the right, then click **Shape Text and Add Glyphs** at the bottom of the
+on the right, then click :btn:`Shape Text and Add Glyphs` at the bottom of the
 dialog:
 
 .. figure:: img/using_fonts_advanced_import_settings_prerender_text.webp
    :align: center
    :alt: Enabling prerendering in the Advanced Import Settings dialog, Glyphs from the Text tab
 
-   Enabling prerendering in the Advanced Import Settings dialog with the **Glyphs from the Text** tab
+   Enabling prerendering in the Advanced Import Settings dialog with the :tab:`Glyphs from the Text` tab
 
 .. tip::
 
@@ -940,7 +940,7 @@ Character Map** sub-tab of the Advanced Import Settings dialog, then
    :align: center
    :alt: Enabling prerendering in the Advanced Import Settings dialog, Glyphs from the Character Map tab
 
-   Enabling prerendering in the Advanced Import Settings dialog with the **Glyphs from the Character Map** tab
+   Enabling prerendering in the Advanced Import Settings dialog with the :tab:`Glyphs from the Character Map` tab
 
 To ensure full prerendering, the character sets you need to enable depend on
 which languages are supported in your game. For English, only **Basic Latin**
@@ -951,7 +951,7 @@ covering many more languages, such as French, German and Spanish. For Russian,
 Default project font properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the **GUI > Theme** section of the advanced Project Settings, you can choose
+In the :projsection:`GUI > Theme` section of the advanced Project Settings, you can choose
 how the default font should be rendered:
 
 - **Default Font Antialiasing:** Controls the
@@ -976,5 +976,5 @@ how the default font should be rendered:
     is hardcoded in the engine binary).
 
     Custom fonts' properties are governed by their respective import options
-    instead. You can use the **Import Defaults** section of the Project Settings
+    instead. You can use the :projsection:`Import Defaults` section of the Project Settings
     dialog to override default import options for custom fonts.

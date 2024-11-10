@@ -11,7 +11,7 @@ Default editor shortcuts
 Many Godot editor functions can be executed with keyboard shortcuts. This page
 lists functions which have associated shortcuts by default, but many others are
 available for customization in editor settings as well. To change keys associated
-with these and other actions navigate to **Editor > Editor Settings > Shortcuts**.
+with these and other actions navigate to :path:`Editor > Editor Settings > Shortcuts`.
 
 While some actions are universal, a lot of shortcuts are specific to individual
 tools. For this reason it is possible for some key combinations to be assigned

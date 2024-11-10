@@ -339,7 +339,7 @@ and ``light()`` functions of CanvasItem shaders. Custom functions may also use t
 as they called from supported functions.
 
 The signed distance field is generated from :ref:`class_LightOccluder2D` nodes
-present in the scene with the **SDF Collision** property enabled (which is the
+present in the scene with the :uiproperty:`SDF Collision` property enabled (which is the
 default). See the :ref:`2D lights and shadows <doc_2d_lights_and_shadows_setting_up_shadows>`
 documentation for more information.
 

@@ -87,7 +87,7 @@ are seven different processor functions.
 .. warning::
 
     The ``light()`` function won't run if the ``vertex_lighting`` render mode is
-    enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** is
+    enabled, or if :path:`Rendering > Quality > Shading > Force Vertex Shading` is
     enabled in the Project Settings. It's enabled by default on mobile
     platforms.
 

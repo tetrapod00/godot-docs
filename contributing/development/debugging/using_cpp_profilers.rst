@@ -69,8 +69,8 @@ VerySleepy
 
 .. image:: img/cpp_profiler_verysleepy_select_process.png
 
-- Click the **Profile All** button on the right to start profiling.
-- Perform the actions you wish to profile in the editor or project. When you're done, click **Stop** (*not* Abort).
+- Click the :btn:`Profile All` button on the right to start profiling.
+- Perform the actions you wish to profile in the editor or project. When you're done, click :btn:`Stop` (*not* Abort).
 - Wait for the results window to appear.
 - Once the results window appears, filter the view to remove external modules (such as the graphics driver).
   You can filter by module by finding a line whose **Module** matches the Godot
@@ -83,7 +83,7 @@ VerySleepy
 HotSpot
 ^^^^^^^
 
-- Open HotSpot. Click **Record Data**:
+- Open HotSpot. Click :btn:`Record Data`:
 
 .. image:: img/cpp_profiler_hotspot_welcome.png
 
@@ -92,27 +92,27 @@ HotSpot
 - The path to the working directory can be anything if an absolute path is used
   for the ``--path`` command line argument. Otherwise, it must be set to that
   the relative path to the project is valid.
-- Make sure **Elevate Privileges** is checked if you have administrative privileges.
+- Make sure :btn:`Elevate Privileges` is checked if you have administrative privileges.
   While not essential for profiling Godot, this will ensure all events can be captured.
   Otherwise, some events may be missing in the capture.
   Your settings should now look something like this:
 
 .. image:: img/cpp_profiler_hotspot_record.png
 
-- Click **Start Recording** and perform the actions you wish to profile in the editor/project.
-- Quit the editor/project normally or use the **Stop Profiling** button in HotSpot
+- Click :btn:`Start Recording` and perform the actions you wish to profile in the editor/project.
+- Quit the editor/project normally or use the :btn:`Stop Profiling` button in HotSpot
   to stop profiling early. Stopping profiling early can result in cleaner profiles
   if you're not interested in the engine's quit procedure.
-- Click **View Results** and wait for the profiling visualization to be generated:
+- Click :btn:`View Results` and wait for the profiling visualization to be generated:
 
 .. image:: img/cpp_profiler_hotspot_view_results.png
 
 - Use the tabs at the top to navigate between the different views. These views
-  show the same data, but in different ways. The **Flame Graph** tab is a good
+  show the same data, but in different ways. The :tab:`Flame Graph` tab is a good
   way to see which functions take up the most time at a glance. These functions
   are therefore the most important ones to optimize, since optimizing them will
   improve performance the most.
-- At the bottom of all tabs except **Summary**, you will also see a list of CPU threads
+- At the bottom of all tabs except :tab:`Summary`, you will also see a list of CPU threads
   started by the engine among with the CPU utilization for each thread.
   This lets you see threads that can be a bottleneck at a given point in time.
 
@@ -121,8 +121,8 @@ HotSpot
 .. note::
 
     If you don't want the startup procedure to be included in the profile, you
-    can also attach HotSpot to a running process by clicking **Record Data**
-    then setting the **Launch Application** dropdown option to **Attach To
+    can also attach HotSpot to a running process by clicking :btn:`Record Data`
+    then setting the :btn:`Launch Application` dropdown option to **Attach To
     Process(es)**.
 
     This process attachment-based workflow is similar to the one used by VerySleepy.
@@ -131,11 +131,11 @@ Xcode Instruments
 ^^^^^^^^^^^^^^^^^
 
 - Open Xcode. Select **Open Developer Tool** - **Instruments** from the **Xcode** app menu:
-- Double-click on **Time Profiler** in the **Instruments** window:
+- Double-click on :btn:`Time Profiler` in the :wndw:`Instruments` window:
 
 .. image:: img/cpp_profiler_xcode_menu.png
 
-- In the Time Profiler window, click on the **Target** menu, select **Choose target...**
+- In the Time Profiler window, click on the **Target** menu, select :btn:`Choose target...`
   and specify the path to the Godot binary, command line arguments and environment variables
   in the next window.
 
@@ -149,7 +149,7 @@ Xcode Instruments
 .. image:: img/cpp_profiler_time_profiler_record.png
 
 - Perform the actions you wish to profile in the editor or project. When you're done,
-  click the **Stop** button.
+  click the :btn:`Stop` button.
 
 - Wait for the results to appear.
 - At the bottom of the window you will see a call tree for all CPU threads started, and

@@ -81,21 +81,21 @@ the top-right of every page.
 Doing so takes you to the GitHub text editor. You need to have a GitHub account
 and to log in to use it. Once logged in, you can propose change like so:
 
-1. Click the **Edit on GitHub** button.
+1. Click the :btn:`Edit on GitHub` button.
 
 2. On the GitHub page you're taken to, make sure the current branch is "master".
    Click the pencil icon in the top-right corner
-   near the **Raw**, **Blame**, and **Delete** buttons.
+   near the :btn:`Raw`, :btn:`Blame`, and :btn:`Delete` buttons.
    It has the tooltip "Fork this project and edit the file".
 
 3. Edit the text in the text editor.
 
-4. Click "Commit changes...", summarize the changes you made
+4. Click :btn:`Commit changes...`, summarize the changes you made
    and make sure to replace the placeholder "Update file.rst" by a short,
    but clear one-line description, as this is the commit title.
-   Click the button **Propose changes**.
+   Click the button :btn:`Propose changes`.
 
-5. On the following screens, click the **Create pull request** button until you
+5. On the following screens, click the :btn:`Create pull request` button until you
    see a message like *Username wants to merge 1 commit into godotengine:master
    from Username:patch-1*.
 

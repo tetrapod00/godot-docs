@@ -12,7 +12,7 @@ Enabling navigation debug
 -------------------------
 
 The navigation debug visualizations are enabled by default inside the editor.
-To visualize navigation meshes and connections at runtime too, enable the option **Visible Navigation** in the editor **Debug** menu.
+To visualize navigation meshes and connections at runtime too, enable the option :btn:`Visible Navigation` in the editor :ui:`Debug` menu.
 
 .. image:: img/navigation_debug_toggle.png
 

@@ -23,7 +23,7 @@ themes.
 
 Themes also can be created from any control node. Select a control node in the scene
 hierarchy, then in the inspector go to the ``theme`` property. From there you can
-select **New Theme**.
+select :btn:`New Theme`.
 
 .. figure:: img/new_theme.png
    :align: center
@@ -49,7 +49,7 @@ Theme editor overview
 The theme editor has two main parts. The main theme editor, located at the bottom of
 the Godot editor, aims to provide users with tools to quickly create, edit, and delete
 theme items and types. It gives visual tools for picking and changing controls, abstracting
-the underlying theme concepts. The **Manage Theme Items** dialog, on the other hand,
+the underlying theme concepts. The :wndw:`Manage Theme Items` dialog, on the other hand,
 tries to address the needs of those who want to change themes manually. It's also
 useful for creating a new editor theme.
 
@@ -65,7 +65,7 @@ states. Previews are interactive, so intermediate states (e.g. hover) can be pre
 
 Additional tabs can be created from arbitrary scenes in your project. The scene
 must have a control node as its root to function as a preview. To add a new tab
-click the **Add Preview** button and select the saved scene from your file system.
+click the :btn:`Add Preview` button and select the saved scene from your file system.
 
 .. figure:: img/scene_preview.png
    :align: center
@@ -96,10 +96,10 @@ are displayed.
    :align: center
 
 Individual items from the default theme can be added to the current theme by
-clicking on the **Override** button next to the item. You can also override all
+clicking on the :btn:`Override` button next to the item. You can also override all
 the default items of the selected theme type by clicking on the **Override All**
-button. Overridden properties can then be removed with the **Remove Item** button.
-Properties can also be renamed using the **Rename Item** button, and completely
+button. Overridden properties can then be removed with the :btn:`Remove Item` button.
+Properties can also be renamed using the :btn:`Rename Item` button, and completely
 custom properties can be added to the list using the text field below it.
 
 Overridden theme items can be edited directly in the right-hand panel, unless they
@@ -130,8 +130,8 @@ nodes.
 Manage and import items
 -----------------------
 
-Clicking the **Manage Items** button brings up the **Manage Theme Items** dialog. In
-the **Edit Items** tab you can view and add theme types, as well as view and edit
+Clicking the :btn:`Manage Items` button brings up the :wndw:`Manage Theme Items` dialog. In
+the :tab:`Edit Items` tab you can view and add theme types, as well as view and edit
 the theme items of the selected type.
 
 .. figure:: img/manage_items.png
@@ -145,7 +145,7 @@ have customized for a control node type. **Remove Custom Items** will remove all
 the custom theme items for the selected type. Finally, **Remove All Items** will
 remove everything from the type.
 
-From the **Import Items** tab you can import theme items from other themes. You can
+From the :tab:`Import Items` tab you can import theme items from other themes. You can
 import items from the default Godot theme, the Godot editor theme, or another custom
 theme. You can import individual or multiple items, and you can decide whether to
 copy or omit their data as well. There are several ways you can select and deselect the

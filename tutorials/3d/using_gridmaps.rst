@@ -91,7 +91,7 @@ additional nodes can be added as source geometry just for baking the navmesh.
 Exporting the MeshLibrary
 -------------------------
 
-To export the library, click on **Scene > Export As... > MeshLibrary...**, and save it
+To export the library, click on :path:`Scene > Export As... > MeshLibrary...`, and save it
 as a resource.
 
 .. image:: img/gridmap_export.png

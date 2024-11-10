@@ -21,12 +21,12 @@ Importing the project
 .. figure:: img/vscode_configure_task.png
    :align: center
 
-- Select the **Create tasks.json file from template** option.
+- Select the :btn:`Create tasks.json file from template` option.
 
 .. figure:: img/vscode_create_tasksjson.png
    :align: center
 
-- Then select **Others**.
+- Then select :btn:`Others`.
 
 .. figure:: img/vscode_create_tasksjson_others.png
    :align: center

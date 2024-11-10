@@ -203,9 +203,9 @@ reasons.
 Configuration
 -------------
 
-In the **Editor > Movie Writer** section of the Project Settings, there are
+In the :projsection:`Editor > Movie Writer` section of the Project Settings, there are
 several options you can configure. Some of them are only visible after enabling
-the **Advanced** toggle in the top-right corner of the Project Settings dialog.
+the :btn:`Advanced Settings` toggle in the top-right corner of the Project Settings dialog.
 
 - **Mix Rate Hz:** The audio mix rate to use in the recorded audio when writing
   a movie. This can be different from the project's mix rate, but this
@@ -350,7 +350,7 @@ resolution is set using the **Display > Window > Size > Viewport Width** and
 higher resolution than the screen resolution.
 
 To make the window smaller during recording without affecting the output video
-resolution, you can set the **Display > Window > Size > Window Width Override**
+resolution, you can set the :path:`Display > Window > Size > Window Width Override`
 and **Window Height Override** advanced project settings to values greater than
 ``0``.
 

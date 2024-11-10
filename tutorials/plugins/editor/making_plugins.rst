@@ -30,9 +30,9 @@ functionality. Plugins have a standard path like ``addons/plugin_name`` inside
 the project folder. Godot provides a dialog for generating those files and
 placing them where they need to be.
 
-In the main toolbar, click the ``Project`` dropdown. Then click
-``Project Settings...``. Go to the ``Plugins`` tab and then click
-on the ``Create New Plugin`` button in the top-right.
+In the main toolbar, click the :menu:`Project` dropdown. Then click
+:btn:`Project Settings...`. Go to the :tab:`Plugins` tab and then click
+on the :btn:`Create New Plugin` button in the top-right.
 
 You will see the dialog appear, like so:
 
@@ -68,10 +68,10 @@ To continue with the example, use the following values:
 
 .. warning::
 
-    Unchecking the ``Activate now?`` option in C# is always required because,
+    Unchecking the :btn:`Activate now?` option in C# is always required because,
     like every other C# script, the EditorPlugin script needs to be compiled which
     requires building the project. After building the project the plugin can be
-    enabled in the ``Plugins`` tab of ``Project Settings``.
+    enabled in the :tab:`Plugins` tab of :wndw:`Project Settings`.
 
 You should end up with a directory structure like this:
 
@@ -269,7 +269,7 @@ dialog. For that, change the ``custom_node.gd`` script to the following:
     #endif
 
 With that done, the plugin should already be available in the plugin list in the
-**Project Settings**, so activate it as explained in `Checking the results`_.
+:wndw:`Project Settings`, so activate it as explained in `Checking the results`_.
 
 Then try it out by adding your new node:
 
@@ -400,14 +400,14 @@ the user can freely change its position and save the resulting layout.
 Checking the results
 ^^^^^^^^^^^^^^^^^^^^
 
-It's now time to check the results of your work. Open the **Project
-Settings** and click on the **Plugins** tab. Your plugin should be the only one
+It's now time to check the results of your work. Open the :wndw:`Project
+Settings` and click on the :tab:`Plugins` tab. Your plugin should be the only one
 on the list.
 
 .. image:: img/making_plugins-project_settings.webp
 
 You can see the plugin is not enabled.
-Click the **Enable** checkbox to activate the plugin.
+Click the :btn:`Enable` checkbox to activate the plugin.
 The dock should become visible before you even close
 the settings window. You should now have a custom dock:
 

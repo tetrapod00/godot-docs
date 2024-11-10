@@ -99,8 +99,8 @@ Creating decals in the editor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a Decal node in the 3D editor.
-2. In the inspector, expand the **Textures** section and load a texture in
-   **Textures > Albedo**.
+2. In the inspector, expand the :uisection:`Textures` section and load a texture in
+   :uiproperty:`Textures > Albedo`.
 3. Move the Decal node towards an object, then rotate it so the decal is visible
    (and in the right orientation). If the decal appears mirrored, try to rotate
    it by 180 degrees. You can double-check whether it's in the right orientation
@@ -108,10 +108,10 @@ Creating decals in the editor
    from being projected on surfaces that are not facing the decal.
 4. If your decal is meant to affect static objects only, configure it to prevent
    affecting dynamic objects (or vice versa). To do so, change the decal's
-   **Cull Mask** property to exclude certain layers. After doing this, modify
+   :uiproperty:`Cull Mask` property to exclude certain layers. After doing this, modify
    your dynamic objects' MeshInstance3D nodes to change their visibility layers.
    For instance, you can move them from layer 1 to layer 2, then disable layer 2
-   in the decal's **Cull Mask** property.
+   in the decal's :uiproperty:`Cull Mask` property.
 
 Decal node properties
 ---------------------
@@ -201,7 +201,7 @@ closer to the camera are rendered first, which means that decal rendering order
 can sometimes appear to change depending on camera position if some decals are
 positioned at the same location.
 
-To resolve this, you can adjust the **Sorting Offset** property in the
+To resolve this, you can adjust the :uiproperty:`Sorting Offset` property in the
 VisualInstance3D section of the Decal node inspector. This offset is not a
 strict priority order, but a *guideline* that the renderer will use as the AABB
 size still affects how decal sorting works. Therefore, higher values will
@@ -265,7 +265,7 @@ elements* that can be present in the current camera view. A clustered element is
 an omni light, a spot light, a :ref:`decal <doc_using_decals>` or a
 :ref:`reflection probe <doc_reflection_probes>`. This limit can be increased by adjusting
 :ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
-in **Project Settings > Rendering > Limits > Cluster Builder**.
+in :projsection:`Project Settings > Rendering > Limits > Cluster Builder`.
 
 When using the Forward Mobile backend, only 8 decals can be applied on each
 individual Mesh *resource*. If there are more decals affecting a single mesh,

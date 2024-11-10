@@ -9,7 +9,7 @@ download it from the Mac App Store.
 Importing the project
 ---------------------
 
-- From Xcode's main screen create a new project using the **Other > External Build System** template.
+- From Xcode's main screen create a new project using the :path:`Other > External Build System` template.
 
 .. figure:: img/xcode_1_create_external_build_project.webp
    :figclass: figure-w480
@@ -36,13 +36,13 @@ Importing the project
   +------------+------------------------------------------------------------------------------+
 
 - Add a Command Line Tool target which will be used for indexing the project by
-  choosing **File > New > Target...**.
+  choosing :path:`File > New > Target...`.
 
 .. figure:: img/xcode_4_add_new_target.webp
    :figclass: figure-w480
    :align: center
 
-- Select **macOS > Application > Command Line Tool**.
+- Select :path:`macOS > Application > Command Line Tool`.
 
 .. figure:: img/xcode_5_select_command_line_target.webp
    :figclass: figure-w480
@@ -89,7 +89,7 @@ To enable debugging support you need to edit the external build target's build a
 
 - Build the external build target.
 
-- Open the scheme editor again and select **Run**.
+- Open the scheme editor again and select :btn:`Run`.
 
 .. figure:: img/xcode_8_setup_run_scheme.webp
    :figclass: figure-w480

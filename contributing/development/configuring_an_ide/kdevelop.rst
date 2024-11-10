@@ -8,7 +8,7 @@ KDevelop
 Importing the project
 ---------------------
 
-- From the KDevelop's main screen select **Open Project**.
+- From the KDevelop's main screen select :btn:`Open Project`.
 
 .. figure:: img/kdevelop_newproject.png
    :figclass: figure-w480
@@ -74,7 +74,7 @@ Debugging the project
    :figclass: figure-w480
    :align: center
 
-- Click **Add** to create a new launch configuration.
+- Click :btn:`Add` to create a new launch configuration.
 - Select **Executable** option and specify the path to your executable located in
   the ``<Godot root directory>/bin`` folder. The name depends on your build configuration,
   e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with

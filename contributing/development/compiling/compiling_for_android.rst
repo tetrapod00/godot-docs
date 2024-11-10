@@ -56,8 +56,8 @@ Setting up the buildsystem
    the folder where you extracted the contents of the ZIP archive.
 
     -  Windows: Press :kbd:`Windows + R`, type "control system",
-       then click on **Advanced system settings** in the left pane,
-       then click on **Environment variables** on the window that appears.
+       then click on :btn:`Advanced system settings` in the left pane,
+       then click on :btn:`Environment variables` on the window that appears.
 
     -  Linux or macOS: Add the text ``export ANDROID_HOME="/path/to/android-sdk"``
        to your ``.bashrc`` or ``.zshrc`` where ``/path/to/android-sdk`` points to

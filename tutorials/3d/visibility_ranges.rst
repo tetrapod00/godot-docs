@@ -181,12 +181,12 @@ This is done to minimize visible pop-in. Depending on your :abbr:`HLOD
 
 .. note::
 
-    Nodes hidden via the **Visible** property are essentially removed from the
+    Nodes hidden via the :uiproperty:`Visible` property are essentially removed from the
     visibility dependency tree, so dependent instances will not take the hidden
     node or its ancestors into account.
 
     In practice, this means that if the target of the **Visibility Parent** node
-    is hidden by setting its **Visible** property to ``false``, the node will
+    is hidden by setting its :uiproperty:`Visible` property to ``false``, the node will
     not be hidden according to the **Visibility Range Begin** value specified in
     the visibility parent.
 

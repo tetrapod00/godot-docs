@@ -88,7 +88,7 @@ flipbook images online, or pre-render them using external tools such as `Blender
 
 Using an animation flipbook requires additional configuration compared to a
 single texture. For demonstration purposes, we'll use this texture with 5
-columns and 7 rows (right-click and choose **Save as…**):
+columns and 7 rows (right-click and choose :btn:`Save as…`):
 
 .. figure:: img/particles_flipbook_example.webp
    :align: center
@@ -107,7 +107,7 @@ Material section of the GPUParticles2D (or CPUParticles2D) node:
 
    Creating a CanvasItemMaterial at the bottom of the particles node inspector
 
-In this CanvasItemMaterial, enable **Particle Animation** and set **H Frames** and **V Frames**
+In this CanvasItemMaterial, enable :uiproperty:`Particle Animation` and set :uiproperty:`H Frames` and :uiproperty:`V Frames`
 to the number of columns and rows present in your flipbook texture:
 
 .. figure:: img/particles_flipbook_configure_canvasitemmaterial.webp

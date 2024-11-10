@@ -70,8 +70,8 @@ Project Settings.
 Enable the project setting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open the Project Settings, enable the **Advanced** toggle then enable
-**Rendering > Lights And Shadows > Use Physical Light Units**. Restart the editor.
+Open the Project Settings, enable the :btn:`Advanced Settings` toggle then enable
+:path:`Rendering > Lights And Shadows > Use Physical Light Units`. Restart the editor.
 
 Configure the camera
 ^^^^^^^^^^^^^^^^^^^^
@@ -85,13 +85,13 @@ Configure the camera
     extremely bright if you have a visible DirectionalLight3D node.
 
 On the Camera3D node, you can add a :ref:`class_CameraAttributes`
-resource to its **Attributes** property. This resource is used to control the
+resource to its :uiproperty:`Attributes` property. This resource is used to control the
 camera's depth of field and exposure. When using
 :ref:`class_CameraAttributesPhysical`, its focal length property is also used to
 adjust the camera's field of view.
 
 When physical light units are enabled, the following additional properties
-become available in CameraAttributesPhysical's **Exposure** section:
+become available in CameraAttributesPhysical's :uisection:`Exposure` section:
 
 - **Aperture:** The size of the aperture of the camera, measured in f-stops. An
   f-stop is a unitless ratio between the focal length of the camera and the
@@ -147,8 +147,8 @@ Configure the environment
 
 If you haven't added a :ref:`class_WorldEnvironment` and :ref:`class_Camera3D`
 node to the current scene yet, do so now by clicking the 3 vertical dots at the
-top of the 3D editor viewport. Click **Add Sun to Scene**, open the dialog again
-then click **Add Environment to Scene**.
+top of the 3D editor viewport. Click :btn:`Add Sun to Scene`, open the dialog again
+then click :btn:`Add Environment to Scene`.
 
 After enabling physical light units, a new property becomes available to edit in
 the :ref:`class_Environment` resource:
@@ -225,7 +225,7 @@ Attributes** property of a Camera3D nodes, some properties such as **FOV** will
 no longer be editable. Instead, these properties are now governed by the
 CameraAttributesPhysical's properties, such as focal length and aperture.
 
-CameraAttributesPhysical offers the following properties in its **Frustum** section:
+CameraAttributesPhysical offers the following properties in its :uisection:`Frustum` section:
 
 - **Focus Distance:** Distance from camera of object that will be in focus,
   measured in meters. Internally, this will be clamped to be at least 1
@@ -262,7 +262,7 @@ depends on the viewport's aspect ratio, with wider aspect ratios automatically
 resulting in a wider *horizontal* field of view.
 
 Automatic exposure adjustment based on the camera's average brightness level can
-also be enabled in the **Auto Exposure** section, with the following properties:
+also be enabled in the :uisection:`Auto Exposure` section, with the following properties:
 
 - **Min Sensitivity:** The darkest brightness the camera is allowed to get to,
   measured in EV100.

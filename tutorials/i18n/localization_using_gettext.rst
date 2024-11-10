@@ -63,8 +63,8 @@ specified scene and GDScript files. This POT generation also supports translatio
 contexts and pluralization if used in a script, with the optional second
 argument of ``tr()`` and the ``tr_n()`` method.
 
-Open the Project Settings' **Localization > POT Generation** tab, then use the
-**Add…** button to specify the path to your project's scenes and scripts that
+Open the Project Settings' :path:`Localization > POT Generation` tab, then use the
+:btn:`Add…` button to specify the path to your project's scenes and scripts that
 contain localizable strings:
 
 .. figure:: img/localization_using_gettext_pot_generation.webp
@@ -73,7 +73,7 @@ contain localizable strings:
 
    Creating a PO template in the **Localization > POT Generation** tab of the Project Settings
 
-After adding at least one scene or script, click **Generate POT** in the
+After adding at least one scene or script, click :btn:`Generate POT` in the
 top-right corner, then specify the path to the output file. This file can be
 placed anywhere in the project directory, but it's recommended to keep it in a
 subdirectory such as ``locale``, as each locale will be defined in its own file.
@@ -152,8 +152,8 @@ Loading a messages file in Godot
 --------------------------------
 
 To register a messages file as a translation in a project, open the
-**Project Settings**, then go to the **Localization** tab.
-In **Translations**, click **Add…** then choose the ``.po`` or ``.mo`` file
+:wndw:`Project Settings`, then go to the :tab:`Localization` tab.
+In :ui:`Translations`, click :btn:`Add…` then choose the ``.po`` or ``.mo`` file
 in the file dialog. The locale will be inferred from the
 ``"Language: <code>\n"`` property in the messages file.
 

@@ -24,7 +24,7 @@ cursor:
 Using project settings
 ----------------------
 
-Open the **Project Settings** and go to **Display > Mouse Cursor**. You will see the settings
+Open the :wndw:`Project Settings` and go to :path:`Display > Mouse Cursor`. You will see the settings
 :ref:`Custom Image <class_ProjectSettings_property_display/mouse_cursor/custom_image>`,
 :ref:`Custom Image Hotspot <class_ProjectSettings_property_display/mouse_cursor/custom_image_hotspot>`,
 and :ref:`Tooltip Position Offset <class_ProjectSettings_property_display/mouse_cursor/tooltip_position_offset>`.

@@ -41,7 +41,7 @@ It is also possible to instruct Godot to use alternate versions of
 assets (resources) depending on the current language. This can be used for
 localized images such as in-game billboards or localized voices.
 
-The **Remaps** tab can be used for this:
+The :tab:`Remaps` tab can be used for this:
 
 .. image:: img/localization_remaps.png
 
@@ -275,7 +275,7 @@ Adding break iterator data to exported project
 
 Some languages are written without spaces, and word and line breaking requires more than rules over character sequences.
 Godot includes ICU rule and dictionary based, break iterator data, but this data is not included into exported projects by default.
-To include it go to **Project → Project Settings → Localization → Text Server Data** and click **Install support data...**. Break iterator data is about 4 MB large.
+To include it go to :path:`Project > Project Settings > Localization > Text Server Data` and click :btn:`Install support data...`. Break iterator data is about 4 MB large.
 
 .. image:: img/icu_data.png
 

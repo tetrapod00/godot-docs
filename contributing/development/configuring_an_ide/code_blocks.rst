@@ -8,13 +8,13 @@ Code::Blocks
 Creating a new project
 ----------------------
 
-From Code::Blocks' main screen, click **Create a new project** or select **File > New > Project...**.
+From Code::Blocks' main screen, click :btn:`Create a new project` or select :menu:`File > New > Project...`.
 
 .. figure:: img/code_blocks_file_new_project.png
    :figclass: figure-w480
    :align: center
 
-In the **New from template** window, from **Projects**, select **Empty project**, and click **Go**.
+In the :wndw:`New from template` window, from **Projects**, select :btn:`Empty project`, and click :btn:`Go`.
 
 .. figure:: img/code_blocks_new_empty_project.png
    :figclass: figure-w480
@@ -28,13 +28,13 @@ Click Next, to pass the welcome to the new empty project wizard.
 
 The project file should be created in the root of the cloned project folder. To achieve this, first, ensure that the **Project title** is the same as the folder name that Godot was cloned into. Unless you cloned the project into a folder with a different name, this will be ``godot``.
 
-Second, ensure that the **Folder to create project in** is the folder you ran the Git clone command from, not the ``godot`` project folder. Confirm that the **Resulting filename** field will create the project file in the root of the cloned project folder.
+Second, ensure that the **Folder to create project in** is the folder you ran the Git clone command from, not the ``godot`` project folder. Confirm that the :field:`Resulting filename`` field will create the project file in the root of the cloned project folder.
 
 .. figure:: img/code_blocks_project_title_and_location.png
    :figclass: figure-w480
    :align: center
 
-The compiler and configuration settings are managed through **SCons** and will be configured later. However, it's worth deselecting the **Create "Release" configuration** option; so only a single build target is created before clicking **Finish**.
+The compiler and configuration settings are managed through **SCons** and will be configured later. However, it's worth deselecting the :btn:`Create "Release" configuration` option; so only a single build target is created before clicking :btn:`Finish`.
 
 .. figure:: img/code_blocks_compiler_and_configuration.png
    :figclass: figure-w480
@@ -43,7 +43,7 @@ The compiler and configuration settings are managed through **SCons** and will b
 Configuring the build
 ---------------------
 
-The first step is to change the project properties. Right-click on the new project and select **Properties...**.
+The first step is to change the project properties. Right-click on the new project and select :ui:`Properties...`.
 
 .. figure:: img/code_blocks_open_properties.png
    :figclass: figure-w480
@@ -55,13 +55,13 @@ Check the **This is a custom Makefile** property. Click OK to save the changes.
    :figclass: figure-w480
    :align: center
 
-The next step is to change the build options. Right-click on the new project and select **Build Options...**.
+The next step is to change the build options. Right-click on the new project and select :ui:`Build Options...`.
 
 .. figure:: img/code_blocks_open_build_options.png
    :figclass: figure-w480
    :align: center
 
-Select the **"Make" commands** tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the **Build project/target** field. The minimum is ``scons``. For details on the **SCons** build options, see :ref:`doc_introduction_to_the_buildsystem`. It's also useful to add the ``scons --clean`` command in the **Clean project/target** field to the project's default commands.
+Select the :tab:`"Make" commands` tab and remove all the existing commands for all the build targets. For each build target enter the **SCons** command for creating the desired build in the :field:`Build project/target` field. The minimum is ``scons``. For details on the **SCons** build options, see :ref:`doc_introduction_to_the_buildsystem`. It's also useful to add the ``scons --clean`` command in the :field:`Clean project/target` field to the project's default commands.
 
 If you're using Windows, all the commands need to be preceded with ``cmd /c`` to initialize the command interpreter.
 
@@ -79,12 +79,12 @@ Windows example:
    :figclass: figure-w480
    :align: center
 
-Code::Blocks should now be configured to build Godot; so either select **Build > Build**, click the gear button, or press :kbd:`Ctrl + F9`.
+Code::Blocks should now be configured to build Godot; so either select :path:`Build > Build`, click the gear button, or press :kbd:`Ctrl + F9`.
 
 Configuring the run
 -------------------
 
-Once **SCons** has successfully built the desired target, reopen the project **Properties...** and select the **Build targets** tab. In the **Output filename** field, browse to the ``bin`` folder and select the compiled file.
+Once **SCons** has successfully built the desired target, reopen the project :ui:`Properties...` and select the :tab:`Build targets` tab. In the :field:`Output filename` field, browse to the ``bin`` folder and select the compiled file.
 
 Deselect the **Auto-generate filename prefix** and **Auto-generate filename extension** options.
 
@@ -92,20 +92,20 @@ Deselect the **Auto-generate filename prefix** and **Auto-generate filename exte
    :figclass: figure-w480
    :align: center
 
-Code::Blocks should now be configured to run your compiled Godot executable; so either select **Build > Run**, click the green arrow button, or press :kbd:`Ctrl + F10`.
+Code::Blocks should now be configured to run your compiled Godot executable; so either select :ui:`Build > Run`, click the green arrow button, or press :kbd:`Ctrl + F10`.
 
-There are two additional points worth noting. First, if required, the **Execution working dir** field can be used to test specific projects, by setting it to the folder containing the ``project.godot`` file. Second, the **Build targets** tab can be used to add and remove build targets for working with and creating different builds.
+There are two additional points worth noting. First, if required, the :field:`Execution working dir` field can be used to test specific projects, by setting it to the folder containing the ``project.godot`` file. Second, the :tab:`Build targets` tab can be used to add and remove build targets for working with and creating different builds.
 
 Adding files to the project
 ---------------------------
 
-To add all the Godot code files to the project, right-click on the new project and select **Add files recursively...**.
+To add all the Godot code files to the project, right-click on the new project and select :btn:`Add files recursively...`.
 
 .. figure:: img/code_blocks_add_files_recursively.png
    :figclass: figure-w480
    :align: center
 
-It should automatically select the project folder; so simply click **Open**. By default, all code files are included, so simply click **OK**.
+It should automatically select the project folder; so simply click :btn:`Open`. By default, all code files are included, so simply click :btn:`OK`.
 
 .. figure:: img/code_blocks_select_files.png
    :figclass: figure-w480

@@ -82,9 +82,9 @@ To import an existing project, the current process is as follows:
   The Godot Project Manager should appear after 10-20 seconds.
   On slower machines or connections, loading may take up to a minute.
 - In the dialog that appears at the middle of the window, specify a name for
-  the folder to create then click the **Create Folder** button
+  the folder to create then click the :btn:`Create Folder` button
   (it doesn't have to match the ZIP archive's name).
-- Click **Install & Edit** and the project will open in the editor.
+- Click :btn:`Install & Edit` and the project will open in the editor.
 
 .. attention::
 
@@ -105,8 +105,8 @@ Instead, when you run the project by clicking the Run button or pressing
 
 The web editor offers an alternative way to deal with the editor and game
 windows (which are now "tabs"). You can switch between the **Editor** and
-**Game** tabs using the buttons on the top. You can also close the running game
-or editor by clicking the **×** button next to those tabs.
+:tab:`Game` tabs using the buttons on the top. You can also close the running game
+or editor by clicking the :btn:`×` button next to those tabs.
 
 Where are my project files?
 ---------------------------

@@ -22,9 +22,9 @@ information on how to optimize Godot see :ref:`doc_performance`.
 Creating a profile
 ------------------
 
-To manage editor features go to **Editor > Manage Editor Features**. This
-will open the **Manage Editor Feature Profiles** window. By default there
-will be no profile. Click on **Create Profile** and give it a name. You will
+To manage editor features go to :path:`Editor > Manage Editor Features`. This
+will open the :wndw:`Manage Editor Feature Profiles` window. By default there
+will be no profile. Click on :btn:`Create Profile` and give it a name. You will
 then see a list of all the features in the Godot editor.
 
 .. image:: img/configure_profile.png
@@ -40,9 +40,9 @@ individually disabled.
 Sharing a profile
 -----------------
 
-To share profiles between editors click on the **Export** button. Save the custom
+To share profiles between editors click on the :btn:`Export` button. Save the custom
 profile somewhere as a ``.profile`` file. To use this in another editor open that
-editor's **Manage Editor Feature Profiles** window and click import, then select the
+editor's :wndw:`Manage Editor Feature Profiles` window and click import, then select the
 ``.profile`` file.
 
 This process is potentially cumbersome however if a large amount of computers need

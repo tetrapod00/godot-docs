@@ -134,7 +134,7 @@ also prevents a firewall popup from appearing when you use one-click deploy for
 the web platform.
 
 To make the local web server accessible over the local network, you'll need to
-change the **Export > Web > HTTP Host** editor setting to ``0.0.0.0``. You will
+change the :path:`Export > Web > HTTP Host` editor setting to ``0.0.0.0``. You will
 also need to enable **Export > Web > Use TLS** as SharedArrayBuffer requires the
 use of a secure connection to work, *unless* connecting to ``localhost``.
 However, since other clients will be connecting to a remote device, the use of

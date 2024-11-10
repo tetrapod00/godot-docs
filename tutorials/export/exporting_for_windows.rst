@@ -40,14 +40,14 @@ Setup
 ~~~~~
 
 Settings need to be changed in two places. First, in the editor settings, under
-**Export > Windows**. Click on the folder next to the ``Sign Tool`` setting, if
+:path:`Export > Windows`. Click on the folder next to the ``Sign Tool`` setting, if
 you're using Windows navigate to and select ``SignTool.exe``, if you're on a different
 OS select ``osslsigncode``.
 
 .. image:: img/windows_editor_settings.webp
 
 The second location is the Windows export preset, which can be found in
-**Project > Export...**. Add a windows desktop preset if you haven't already.
+:path:`Project > Export...`. Add a windows desktop preset if you haven't already.
 Under options there is a code signing category.
 
 .. image:: img/windows_export_codesign.webp

@@ -608,7 +608,7 @@ The syntax is as follows:
 .. tip::
 
     To create a code region quickly, select several lines in the script editor,
-    right-click the selection then choose **Create Code Region**. The region
+    right-click the selection then choose :btn:`Create Code Region`. The region
     description will be selected automatically for editing.
 
     It is possible to nest code regions within other code regions.

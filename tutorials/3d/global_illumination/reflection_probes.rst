@@ -189,7 +189,7 @@ elements* that can be present in the current camera view. A clustered element is
 an omni light, a spot light, a :ref:`decal <doc_using_decals>` or a
 :ref:`reflection probe <doc_reflection_probes>`. This limit can be increased by adjusting
 :ref:`Max Clustered Elements<class_ProjectSettings_property_rendering/limits/cluster_builder/max_clustered_elements>`
-in **Project Settings > Rendering > Limits > Cluster Builder**.
+in :projsection:`Project Settings > Rendering > Limits > Cluster Builder`.
 
 When using the Forward Mobile backend, only 8 reflection probes can be applied on each
 individual Mesh *resource*. If there are more reflection probes affecting a single mesh,

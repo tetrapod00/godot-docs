@@ -27,8 +27,8 @@ Requirements
 Export a Godot project to Xcode
 -------------------------------
 
-In the Godot editor, open the **Export** window from the **Project** menu. When the
-Export window opens, click **Add..** and select **iOS**.
+In the Godot editor, open the :wndw:`Export` window from the :ui:`Project` menu. When the
+Export window opens, click :btn:`Add..` and select :btn:`iOS`.
 
 The **App Store Team ID** and (Bundle) **Identifier** options in the **Application** category
 are required. Leaving them blank will cause the exporter to throw an error.
@@ -39,7 +39,7 @@ are required. Leaving them blank will cause the exporter to throw an error.
           | The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and not, e.g., your name as Xcode likes to display in the *Signing & Capabilities* tab.
           | You can find the code over at `developer.apple.com <https://developer.apple.com/account/resources/certificates/list>`_ next to your name in the top right corner.
 
-After you click **Export Project**, there are still two important options left:
+After you click :btn:`Export Project`, there are still two important options left:
 
   * **Path** is an empty folder that will contain the exported Xcode project files.
   * **File** will be the name of the Xcode project and several project specific files and directories.

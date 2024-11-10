@@ -49,7 +49,7 @@ is running.
 .. image:: img/icon_taskbar_icon.png
 
 To change the taskbar icon, go to
-**Project → Project Settings → Application → Config → Windows Native Icon**.
+:path:`Project > Project Settings > Application > Config > Windows Native Icon`.
 Click on the folder icon and select your ICO file.
 
 .. image:: img/icon_project_settings.png
@@ -84,7 +84,7 @@ You can download it `here <https://github.com/electron/rcedit/releases>`_.
 
 After downloading, you need to tell Godot the path to the rcedit executable
 on your computer.
-Go to **Editor → Editor Settings → Export → Windows**.
+Go to :path:`Editor > Editor Settings > Export > Windows`.
 Click on the folder icon for the **rcedit** entry.
 Navigate to and select the rcedit executable.
 
@@ -100,9 +100,9 @@ Navigate to and select the rcedit executable.
 
 You should now have everything in place to change the file icon.
 To do that, you will need to specify the icon when exporting.
-Go to **Project → Export**. Assuming you have already created
+Go to :path:`Project > Export`. Assuming you have already created
 a Windows Desktop preset, select your icon in ICO format in
-the **Application → Icon** field.
+the :path:`Application > Icon` field.
 
 .. warning::
 

@@ -98,8 +98,8 @@ Setting up occlusion culling
 ----------------------------
 
 The first step to using occlusion culling is to enable the
-**Rendering > **Occlusion Culling > Use Occlusion Culling** project setting.
-(Make sure the **Advanced** toggle is enabled in the Project Settings dialog to
+**Rendering** > **Occlusion Culling > Use Occlusion Culling** project setting.
+(Make sure the :btn:`Advanced Settings` toggle is enabled in the Project Settings dialog to
 be able to see it.)
 
 This project setting applies immediately, so you don't need to restart the editor.
@@ -130,7 +130,7 @@ Automatically baking occluders (recommended)
 After enabling the occlusion culling project setting mentioned above, add an
 OccluderInstance3D node to the scene containing your 3D level.
 
-Select the OccluderInstance3D node, then click **Bake Occluders** at the top of
+Select the OccluderInstance3D node, then click :btn:`Bake Occluders` at the top of
 the 3D editor viewport. After baking, the OccluderInstance3D node will contain
 an Occluder3D resource that stores a simplified version of your level's
 geometry. This occluder geometry appears as purple wireframe lines in the 3D view
@@ -140,13 +140,13 @@ dynamic occludees.
 
 After baking, you may notice that your dynamic objects (such as the player,
 enemies, etc…) are included in the baked mesh. To prevent this, set the
-**Bake > Cull Mask** property on the OccluderInstance3D to exclude certain visual
+:uiproperty:`Bake > Cull Mask` property on the OccluderInstance3D to exclude certain visual
 layers from being baked.
 
 For example, you can disable layer 2 on the cull mask, then configure your
 dynamic objects' MeshInstance3D nodes to be located on the visual layer 2
 (instead of layer 1). To do so, select the MeshInstance3D node in question, then
-on the **VisualInstance3D > Layers** property, uncheck layer 1 then check layer
+on the :uiproperty:`VisualInstance3D > Layers` property, uncheck layer 1 then check layer
 2. After configuring both cull mask and layers, bake occluders again by
 following the above process.
 
@@ -176,13 +176,13 @@ Previewing occlusion culling
 
 You can enable a debug draw mode to preview what the occlusion culling is
 actually "seeing". In the top-left corner of the 3D editor viewport, click the
-**Perspective** button (or **Orthogonal** depending on your current camera
-mode), then choose **Display Advanced… > Occlusion Culling Buffer**. This will
+:btn:`Perspective` button (or :btn:`Orthogonal` depending on your current camera
+mode), then choose :path:`Display Advanced… > Occlusion Culling Buffer`. This will
 display the low-resolution buffer that is used by the engine for occlusion
 culling.
 
-In the same menu, you can also enable **View Information** and **View Frame
-Time** to view the number of draw calls and rendered primitives (vertices +
+In the same menu, you can also enable :ui:`View Information` and :ui:`View Frame Time`
+to view the number of draw calls and rendered primitives (vertices +
 indices) in the bottom-right corner, along with the number of frames per second
 rendered in the top-right corner.
 
@@ -249,8 +249,8 @@ Use the simplest possible occluder shapes
 
 If you notice low performance or stuttering in complex 3D scenes, it may mean
 that the CPU is overloaded as a result of rendering detailed occluders.
-Select the OccluderInstance3D node,
-increase the **Bake > Simplification** property then bake occluders again.
+Select the OccluderInstance3D node, increase the :uiproperty:`Bake > Simplification`
+property then bake occluders again.
 
 Remember to keep the simplification value reasonable. Values that are too high
 for the level's geometry may cause incorrect occlusion culling to occur, as in
@@ -260,8 +260,8 @@ If this still doesn't lead to low enough CPU usage,
 you can try adjusting the **Rendering > Occlusion Culling > BVH Build Quality**
 project setting and/or decreasing
 **Rendering > Occlusion Culling > Occlusion Rays Per Thread**.
-You'll need to enable the **Advanced** toggle in the Project Settings dialog to
-see those settings.
+You'll need to enable the :btn:`Advanced Settings` toggle in the Project Settings
+dialog to see those settings.
 
 Troubleshooting
 ---------------
@@ -271,7 +271,7 @@ My occludee isn't being culled when it should be
 
 **On the occluder side:**
 
-First, double-check that the **Bake > Cull Mask** property in the
+First, double-check that the :uiproperty:`Bake > Cull Mask` property in the
 OccluderInstance3D is set to allow baking the meshes you'd like. The visibility
 layer of the MeshInstance3D nodes must be present within the cull mask for the
 mesh to be included in the bake.
@@ -312,9 +312,9 @@ for occluder shapes that shouldn't be present, then
 
 The last possible cause for this is overly aggressive mesh simplification during
 the occluder baking process. Select the OccluderInstance3D node,
-decrease the **Bake > Simplification** property then bake occluders again.
+decrease the :uiproperty:`Bake > Simplification` property then bake occluders again.
 
-As a last resort, you can enable the **Ignore Occlusion Culling** property on
+As a last resort, you can enable the :uiproperty:`Ignore Occlusion Culling` property on
 the occludee. This will negate the performance improvements of occlusion culling
 for that object, but it makes sense to do this for objects that will never be
 culled (such as a first-person view model).

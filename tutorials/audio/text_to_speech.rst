@@ -14,10 +14,10 @@ Basic usage of text-to-speech involves the following one-time steps:
 
 By default, the Godot project-level setting for text-to-speech is disabled, to avoid unnecessary overhead. To enable it:
 
-- Go to **Project > Project Settings**
-- Make sure the **Advanced Settings** toggle is enabled
-- Click on **Audio > General**
-- Ensure the **Text to Speech** option is checked
+- Go to :menu:`Project > Project Settings`.
+- Make sure the :btn:`Advanced Settings` toggle is enabled.
+- Click on :projsection:`Audio > General`.
+- Ensure the :btn:`Text to Speech` option is checked.
 - Restart Godot if prompted to do so.
 
 Text-to-speech uses a specific voice. Depending on the user's system, they might have multiple voices installed. Once you have the voice ID, you can use it to speak some text:

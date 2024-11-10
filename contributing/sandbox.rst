@@ -9,7 +9,7 @@ Use roles for editor UI
 Adding a sprite and setting some properties
 -------------------------------------------
 
-In the :ui:`Scene` dock, click :btn:`2D Scene` to create a new scene.
+In the :dock:`Scene` dock, click :btn:`2D Scene` to create a new scene.
 
 Add a new :ref:`Sprite2D <class_Sprite2D>` to the scene by right-clicking on the
 root node and choosing :btn:`Add Child Node...`. In the :wndw:`Create New Node`

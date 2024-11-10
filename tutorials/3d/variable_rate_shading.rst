@@ -89,7 +89,7 @@ Using variable rate shading in Godot
     The Compatibility rendering method does **not** support variable rate
     shading.
 
-In the advanced Project Settings, the **Rendering > VRS** section offers settings
+In the advanced Project Settings, the :projsection:`Rendering > VRS` section offers settings
 to control variable rate shading on the root viewport:
 
 - **Mode:** Controls the variable rate shading mode. **Disabled** disables

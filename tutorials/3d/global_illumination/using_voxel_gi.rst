@@ -44,7 +44,7 @@ Setting up VoxelGI
    extents by dragging the red points in the 3D viewport (or enter values in the
    inspector). Make sure the VoxelGI's extents aren't unnecessarily large, or
    quality will suffer.
-4. Select the VoxelGI node and click **Bake** at the top of the 3D editor viewport.
+4. Select the VoxelGI node and click :btn:`Bake` at the top of the 3D editor viewport.
    This will take at least a few seconds to complete (depending on the number of VoxelGI
    subdivisions and scene complexity).
 
@@ -140,7 +140,7 @@ Additionally, there are 3 bake modes available for lights
     The amount of indirect energy emitted by a light depends on its color,
     energy *and* indirect energy properties. To make a specific light emit more
     or less indirect energy without affecting the amount of direct light emitted
-    by the light, adjust the **Indirect Energy** property in the Light3D inspector.
+    by the light, adjust the :uiproperty:`Indirect Energy` property in the Light3D inspector.
 
 .. seealso::
 
@@ -154,7 +154,7 @@ Since VoxelGI is relatively demanding, it will perform best on systems with rece
 dedicated GPUs. On older dedicated GPUs and integrated graphics,
 tweaking the settings is necessary to achieve reasonable performance.
 
-In the Project Settings' **Rendering > Global Illumination** section,
+In the Project Settings' :projsection:`Rendering > Global Illumination` section,
 VoxelGI quality can also be adjusted in two ways:
 
 - **Voxel Gi > Quality:** If set to **Low**
@@ -166,7 +166,7 @@ VoxelGI quality can also be adjusted in two ways:
   Enabling this option saves a lot of GPU time, but it can introduce visible
   aliasing around thin details.
 
-Note that the **Advanced** toggle must be enabled in the project settings dialog
+Note that the :btn:`Advanced Settings` toggle must be enabled in the project settings dialog
 for the above settings to be visible.
 
 Additionally, VoxelGI can be disabled entirely by hiding the VoxelGI node.

@@ -53,7 +53,7 @@ steps to enable:
     after selecting the 3D scene file in the FileSystem dock.
 
 2. Add a WorldEnvironment node and create an Environment resource for it.
-3. Edit the Environment resource, scroll down to the **SDFGI** section and unfold it.
+3. Edit the Environment resource, scroll down to the :uisection:`SDFGI` section and unfold it.
 4. Enable **SDFGI > Enabled**. SDFGI will automatically follow the camera when it
    moves, so you do not need to configure extents (unlike VoxelGI).
 
@@ -117,7 +117,7 @@ SDFGI interaction with lights and objects
 The amount of indirect energy emitted by a light is governed by its color,
 energy *and* indirect energy properties. To make a specific light emit more
 or less indirect energy without affecting the amount of direct light emitted
-by the light, adjust the **Indirect Energy** property in the Light3D inspector.
+by the light, adjust the :uiproperty:`Indirect Energy` property in the Light3D inspector.
 
 To ensure correct visuals when using SDFGI, you must configure your meshes
 and lights' global illumination properties according to their *purpose* in the
@@ -159,7 +159,7 @@ Additionally, there are 3 bake modes available for lights
     The amount of indirect energy emitted by a light depends on its color,
     energy *and* indirect energy properties. To make a specific light emit more
     or less indirect energy without affecting the amount of direct light emitted
-    by the light, adjust the **Indirect Energy** property in the Light3D inspector.
+    by the light, adjust the :uiproperty:`Indirect Energy` property in the Light3D inspector.
 
 .. seealso::
 
@@ -173,7 +173,7 @@ Since SDFGI is relatively demanding, it will perform best on systems with recent
 dedicated GPUs. On older dedicated GPUs and integrated graphics,
 tweaking the settings is necessary to achieve reasonable performance.
 
-In the Project Settings' **Rendering > Global Illumination** section,
+In the Project Settings' :projsection:`Rendering > Global Illumination` section,
 SDFGI quality can also be adjusted in several ways:
 
 - **Sdfgi > Probe Ray Count:** Higher values result in better quality,

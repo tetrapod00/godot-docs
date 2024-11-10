@@ -31,7 +31,7 @@ levels reusing the same tileset.
 
 The recommended way to reuse the same TileSet in several TileMapLayer nodes is to save
 the TileSet to an external resource. To do so, click the dropdown next to the TileSet
-resource and choose **Save**:
+resource and choose :btn:`Save`:
 
 .. figure:: img/using_tilemaps_save_tileset_to_resource.webp
    :align: center
@@ -288,7 +288,7 @@ Bucket Fill
 ^^^^^^^^^^^
 
 After selecting Bucket Fill mode, you can choose whether painting should be
-limited to contiguous areas only by toggling the **Contiguous** checkbox that
+limited to contiguous areas only by toggling the :btn:`Contiguous` checkbox that
 appears on the right of the toolbar.
 
 If you enable **Contiguous** (the default), only matching tiles that touch the
@@ -374,7 +374,7 @@ Saving and loading premade tile placements using patterns
 
 While you can copy and paste tiles while in Select mode, you may wish to save
 premade *patterns* of tiles to place together in a go. This can be done on a
-per-TileMap basis by choosing the **Patterns** tab of the TileMap editor.
+per-TileMap basis by choosing the :tab:`Patterns` tab of the TileMap editor.
 
 To create a new pattern, switch to Select mode, perform a selection and press
 :kbd:`Ctrl + C`. Click on empty space within the Patterns tab (a blue focus
@@ -386,7 +386,7 @@ rectangle should appear around the empty space), then press :kbd:`Ctrl + V`:
 
    Creating a new pattern from a selection in the TileMap editor
 
-To use an existing pattern, click its image in the **Patterns** tab, switch to
+To use an existing pattern, click its image in the :tab:`Patterns` tab, switch to
 any painting mode, then left-click somewhere in the 2D editor:
 
 .. figure:: img/using_tilemaps_use_pattern.webp

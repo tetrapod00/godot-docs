@@ -63,7 +63,7 @@ creates ``.gitignore`` and ``.gitattributes`` files in the project root:
    Creating version control metadata in the project manager's **New Project** dialog
 
 In existing projects, select the **Project** menu at the top of the editor, then
-choose **Version Control > Generate Version Control Metadata**. This creates the
+choose :path:`Version Control > Generate Version Control Metadata`. This creates the
 same files as if the operation was performed in the project manager.
 
 Working with Git on Windows

@@ -140,7 +140,7 @@ Now fill in the following forms in your Android Export Presets:
 - **Release User:** Replace with the key alias.
 - **Release Password:** Key password. Note that the keystore password and the key password currently have to be the same.
 
-Don't forget to uncheck the **Export With Debug** checkbox while exporting.
+Don't forget to uncheck the :btn:`Export With Debug` checkbox while exporting.
 
 .. image:: img/export-with-debug-button.png
 

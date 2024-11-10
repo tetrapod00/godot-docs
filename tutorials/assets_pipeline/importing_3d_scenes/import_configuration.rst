@@ -38,8 +38,8 @@ This import process is customizable using 3 separate interfaces, depending on yo
 
 - The **Import** dock, after selecting the 3D scene by clicking it once in the
   FileSystem dock.
-- The **Advanced Import Settings** dialog, which can be accessed by double-clicking
-  the 3D scene in the FileSystem dock or by clicking the **Advanced…** button in
+- The :wndw:`Advanced Import Settings` dialog, which can be accessed by double-clicking
+  the 3D scene in the FileSystem dock or by clicking the :btn:`Advanced…` button in
   the Import dock. This allows you to customize per-object options in Godot.
 - :ref:`Import hints <doc_importing_3d_scenes_node_type_customization>`, which are special
   suffixes added to object names in the 3D modeling software. This allows you to
@@ -175,7 +175,7 @@ exported from other tools such as Maya.
 Using the Advanced Import Settings dialog
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The first tab you'll see is the **Scene** tab. The options available in the
+The first tab you'll see is the :tab:`Scene` tab. The options available in the
 panel on the right are identical to the Import dock, but you have access to a 3D
 preview. The 3D preview can be rotated by holding down the left mouse button
 then dragging the mouse. Zoom can be adjusted using the mouse wheel.
@@ -250,10 +250,10 @@ These options are only visible if some of the above options are enabled:
 In the Advanced Import Settings dialog, there are 2 ways to select individual
 meshes or materials:
 
-- Switch to the **Meshes** or **Materials** tab in the top-left corner of the dialog.
-- Stay in the **Scene** tab, but unfold the options on the tree view on the
+- Switch to the :tab:`Meshes` or :tab:`Materials` tab in the top-left corner of the dialog.
+- Stay in the :tab:`Scene` tab, but unfold the options on the tree view on the
   left. After choosing a mesh or material, this presents the same information as
-  the **Meshes** and **Materials** tabs, but in a tree view instead of a list.
+  the :tab:`Meshes` and :tab:`Materials` tabs, but in a tree view instead of a list.
 
 If you select a mesh, different options will appear in the panel on the right:
 
@@ -367,7 +367,7 @@ file, the link between the original material and the extracted material will be
 lost. As a result, you'll need to use the Advanced Import Settings dialog to
 associate the renamed material to the existing extracted material.
 
-The above can be done in the dialog's **Materials** tab by selecting the
+The above can be done in the dialog's :tab:`Materials` tab by selecting the
 material, enabling **Save to File**, then specifying the save path using the
 **Path** option that appears after enabling **Save to File**.
 
@@ -381,7 +381,7 @@ This is great for post-processing, changing materials, doing funny stuff with
 the geometry, and more.
 
 Create a script that is not attached to any node by right-clicking in the
-FileSystem dock and choosing **New > Script…**. In the script editor, write the
+FileSystem dock and choosing :path:`New > Script…`. In the script editor, write the
 following:
 
 ::
@@ -430,7 +430,7 @@ mode to Animation Library in the Import dock:
 
    Changing the import type to Animation Library in the Import dock
 
-Click **Reimport** and restart the editor when prompted. After restarting, the
+Click :btn:`Reimport` and restart the editor when prompted. After restarting, the
 glTF file will be imported as an :ref:`class_AnimationLibrary` instead of a
 :ref:`class_PackedScene`. This animation library can then be referenced in an
 :ref:`class_AnimationPlayer` node.

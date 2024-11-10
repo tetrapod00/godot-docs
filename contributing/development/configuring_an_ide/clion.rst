@@ -28,49 +28,49 @@ CLion does not support compiling and debugging Godot via SCons out of the box. T
 
 To add a custom build target that invokes SCons for compilation:
 
-- Open CLion and navigate to **Preferences > Build, Execution, Deployment > Custom Build Targets**
+- Open CLion and navigate to :path:`Preferences > Build, Execution, Deployment > Custom Build Targets`
 
 .. figure:: img/clion-preferences.png
    :align: center
 
-- Click **Add target** and give the target a name, e.g. ``Godot debug``.
+- Click :btn:`Add target` and give the target a name, e.g. ``Godot debug``.
 
 .. figure:: img/clion-target.png
    :align: center
 
-- Click **...** next to the **Build:** selectbox, then click the **+** button in the **External Tools** dialog to add a new external tool.
+- Click :btn:`...` next to the **Build:** selectbox, then click the :btn:`+` button in the :wndw:`External Tools` dialog to add a new external tool.
 
 .. figure:: img/clion-external-tools.png
    :align: center
 
-- Give the tool a name, e.g. ``Build Godot debug``, set **Program** to ``scons``, set **Arguments** to the compilation settings you want (see :ref:`compiling Godot <toc-devel-compiling>`), and set the **Working directory** to ``$ProjectFileDir$``, which equals the Godot root directory. Click **OK** to create the tool.
+- Give the tool a name, e.g. ``Build Godot debug``, set **Program** to ``scons``, set **Arguments** to the compilation settings you want (see :ref:`compiling Godot <toc-devel-compiling>`), and set the **Working directory** to ``$ProjectFileDir$``, which equals the Godot root directory. Click :btn:`OK` to create the tool.
 
    .. note:: CLion does not expand shell commands like ``scons -j$(nproc)``. Use concrete values instead, e.g. ``scons -j8``.
 
 .. figure:: img/clion-create-build-tool.webp
    :align: center
 
-- Back in the **External Tools** dialog, click the **+** again to add a second external tool for cleaning the Godot build via SCons. Give the tool a name, e.g. ``Clean Godot debug``, set **Program** to ``scons``, set **Arguments** to ``-c`` (which will clean the build), and set the **Working directory** to ``$ProjectFileDir$``. Click **OK** to create the tool.
+- Back in the :wndw:`External Tools` dialog, click the **+** again to add a second external tool for cleaning the Godot build via SCons. Give the tool a name, e.g. ``Clean Godot debug``, set **Program** to ``scons``, set **Arguments** to ``-c`` (which will clean the build), and set the **Working directory** to ``$ProjectFileDir$``. Click :btn:`OK` to create the tool.
 
 .. figure:: img/clion-create-clean-tool.png
    :align: center
 
-- Close the **External Tools** dialog. In the **Custom Build Target** dialog for the custom ``Godot debug`` build target, select the **Build Godot debug** tool from the **Build** select box, and select the **Clean Godot debug** tool from the **Clean** select box. Click **OK** to create the custom build target.
+- Close the **External Tools** dialog. In the **Custom Build Target** dialog for the custom ``Godot debug`` build target, select the **Build Godot debug** tool from the **Build** select box, and select the **Clean Godot debug** tool from the **Clean** select box. Click :btn:`OK` to create the custom build target.
 
 .. figure:: img/clion-select-tools.png
    :align: center
 
-- In the main IDE window, click **Add Configuration**.
+- In the main IDE window, click :btn:`Add Configuration`.
 
 .. figure:: img/clion-add-configuration.png
    :align: center
 
-- In the **Run/Debug Configuration** dialog, click **Add new...**, then select **Custom Build Application** to create a new custom run/debug configuration.
+- In the **Run/Debug Configuration** dialog, click :btn:`Add new...`, then select :btn`Custom Build Application` to create a new custom run/debug configuration.
 
 .. figure:: img/clion-add-custom-build-application.png
    :align: center
 
-- Give the run/debug configuration a name, e.g. ``Godot debug``, select the ``Godot debug`` custom build target as the **Target**. Select the Godot executable in the ``bin/`` folder as the **Executable**, and set the **Program arguments** to ``--editor --path path-to-your-project/``, where ``path-to-your-project/`` should be a path pointing to an existing Godot project. If you omit the ``--path`` argument, you will only be able to debug the Godot Project Manager window. Click **OK** to create the run/debug configuration.
+- Give the run/debug configuration a name, e.g. ``Godot debug``, select the ``Godot debug`` custom build target as the **Target**. Select the Godot executable in the ``bin/`` folder as the **Executable**, and set the **Program arguments** to ``--editor --path path-to-your-project/``, where ``path-to-your-project/`` should be a path pointing to an existing Godot project. If you omit the ``--path`` argument, you will only be able to debug the Godot Project Manager window. Click :btn:`OK` to create the run/debug configuration.
 
 .. figure:: img/clion-run-configuration.png
    :align: center

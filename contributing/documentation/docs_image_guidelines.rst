@@ -92,20 +92,20 @@ Scaling down an image
 ^^^^^^^^^^^^^^^^^^^^^
 
 As explained earlier on this page, all images taken on a screen that is a higher resolution
-than 1080p should be scaled down. To do this in Krita click on **Image** on the top bar, and
-from the dropdown menu select **Scale Image To New Size**. This menu can also be opened by
+than 1080p should be scaled down. To do this in Krita click on :btn:`Image` on the top bar, and
+from the dropdown menu select :btn:`Scale Image To New Size`. This menu can also be opened by
 pressing :kbd:`Ctrl + Alt + I`. On this menu you want to adjust the pixel dimensions. For
 anything taken on a 4K monitor change the value of the width and height to half of its current
 value, for anything taken on a 1440p monitor multiply the width and height by 0.75. Make
-sure the **Constrain Proportions** box at the bottom of the menu is checked so you only have
+sure the :btn:`Constrain Proportions` box at the bottom of the menu is checked so you only have
 to change 1 value.
 
 Saving as WebP in Krita
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-To save an image as webp if it isn't already one, Go to **File > Save As**. Select **webp** from the
-**Save as type:** dropdown, then choose wherever you want to save it. After clicking **Save** a menu
-will popup with webp options. Make sure **Lossless** is checked and **Quality** is set to 100%. This
+To save an image as WebP if it isn't already one, go to :path:`File > Save As`. Select **webp** from the
+:btn:`Save as type:` dropdown, then choose wherever you want to save it. After clicking :btn:`Save` a menu
+will popup with webp options. Make sure :btn:`Lossless` is checked and :field:`Quality` is set to 100%. This
 means the image will not lose detail and will be as small as possible.
 
 If the image is over 300KB in size try compressing it losslessly using `Squoosh <https://squoosh.app/>`_.

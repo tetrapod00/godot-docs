@@ -73,7 +73,7 @@ Godot 4 offers several ways to control level of detail:
 - A manual approach configured in the 3D node using :ref:`doc_visibility_ranges`.
 - :ref:`Decals <doc_using_decals>` and :ref:`lights <doc_lights_and_shadows>`
   can also benefit from level of detail using their respective
-  **Distance Fade** properties.
+  :uiproperty:`Distance Fade` properties.
 
 While they can be used independently, these approaches are most effective when
 used together. For example, you can set up visibility ranges to hide particle

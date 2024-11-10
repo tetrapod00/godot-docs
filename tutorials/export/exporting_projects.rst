@@ -62,7 +62,7 @@ After many attempts at different export workflows, the current one has
 proven to work the best. At the time of this writing, not all platforms are
 supported yet, but the supported platforms continue to grow.
 
-To open the export menu, click the **Export** button:
+To open the export menu, click the :btn:`Export` button:
 
 .. image:: img/export.png
 
@@ -71,7 +71,7 @@ This is because we need to add an export preset.
 
 .. image:: img/export_dialog.png
 
-To create an export preset, click the **Add…** button at the top
+To create an export preset, click the :btn:`Add…` button at the top
 of the export menu. This will open a drop-down list of platforms
 to choose from for an export preset.
 

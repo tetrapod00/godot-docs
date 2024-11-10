@@ -178,7 +178,7 @@ Troubleshooting
 For particle collision to work, the particle's :ref:`visibility AABB <doc_3d_particles_properties_draw>`
 must overlap with the collider's AABB. If collisions appear to be not working
 despite colliders being set up, generate an updated visibility AABB by selecting
-the GPUParticles3D node and choosing **GPUParticles3D > Generate Visibility AABB…**
+the GPUParticles3D node and choosing :path:`GPUParticles3D > Generate Visibility AABB…`
 at the top of the 3D editor viewport.
 
 If the particles move fast and colliders are thin. There are two solutions for this:

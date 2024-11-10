@@ -14,7 +14,7 @@ post-processing system with many available effects right out of the box.
     individually to suit various hardware configurations.
 
     Note that most Environment performance/quality settings are only visible
-    after enabling the **Advanced** toggle in the Project Settings.
+    after enabling the :btn:`Advanced Settings` toggle in the Project Settings.
 
 Environment
 -----------
@@ -73,8 +73,8 @@ preview sun and sky into the scene as nodes.
 
 .. tip::
 
-    If you hold :kbd:`Shift` while clicking **Add Sun to Scene** or **Add
-    Environment to Scene** in the preview environment editor, this will add both
+    If you hold :kbd:`Shift` while clicking :btn:`Add Sun to Scene` or :btn:`Add
+    Environment to Scene` in the preview environment editor, this will add both
     a preview sun and environment to the current scene (as if you clicked both
     buttons separately). Use this to speed up project setup and prototyping.
 
@@ -195,7 +195,7 @@ You can find freely licensed HDRIs on `Poly Haven <https://polyhaven.com/hdris>`
     too high.
 
     To resolve this, select the panorama texture in the FileSystem dock, go to
-    the Import dock, enable **HDR Clamp Exposure** then click **Reimport**.
+    the Import dock, enable **HDR Clamp Exposure** then click :btn:`Reimport`.
 
 If you need a custom sky material (e.g. for procedural clouds), you can
 create a custom :ref:`sky shader <doc_sky_shader>`.
@@ -416,7 +416,7 @@ Screen-Space Ambient Occlusion (SSAO)
 *This feature is only available when using the Forward+ backend, not
 Mobile or Compatibility.*
 
-As mentioned in the **Ambient** section, areas where light from light nodes
+As mentioned in the `Ambient light`_ section, areas where light from light nodes
 does not reach (either because it's outside the radius or shadowed) are lit
 with ambient light. Godot can simulate this using VoxelGI, ReflectionProbe,
 the Sky, or a constant ambient color. The problem, however, is that all the
@@ -663,7 +663,7 @@ There are 2 ways to use glow in 2D:
     **Glow HDR Threshold** so that pixels that are not overbright will still
     glow. To prevent UI elements from glowing, make them children of a
     :ref:`class_CanvasLayer` node. You can control which layers are affected by
-    glow using the **Background > Canvas Max Layer** property of the Environment
+    glow using the :path:`Background > Canvas Max Layer`yer` property of the Environment
     resource.
 
 .. figure:: img/environment_and_post_processing_glow_in_2d.webp
@@ -696,7 +696,7 @@ when a menu is open. Only 3D rendering will be affected unless the environment's
 background mode is set to **Canvas**. To prevent UI elements from being blurred
 when using the Canvas background mode, make them children of a :ref:`class_CanvasLayer`
 node. You can control which layers are affected by this blurring effect using the
-**Background > Canvas Max Layer** property of the Environment resource.
+:path:`Background > Canvas Max Layer` property of the Environment resource.
 
 To use glow as a blurring solution:
 

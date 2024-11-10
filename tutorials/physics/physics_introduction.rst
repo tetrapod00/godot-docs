@@ -132,7 +132,7 @@ These properties can be configured via code, or by editing them in the Inspector
 
 Keeping track of what you're using each layer for can be difficult, so you
 may find it useful to assign names to the layers you're using. Names can
-be assigned in **Project Settings > Layer Names**.
+be assigned in :projsection:`Project Settings > Layer Names`.
 
 .. image:: img/physics_layer_names.png
 

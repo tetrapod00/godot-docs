@@ -38,7 +38,7 @@ The ``vsproj`` parameter signals that you want Visual Studio solution generated.
 The ``dev_build`` parameter makes sure the debug symbols are included, allowing to e.g. step through code using breakpoints.
 
 - If you have Rider setup as your main IDE for .sln, you can now open the project by double-clicking on the ``godot.sln`` in the project root
-  or by using the **Open** option inside of Rider.
+  or by using the :btn:`Open` option inside of Rider.
 
 .. note:: Rider could fail to build the solution.
           If that is the case, try running `git clean -xdf` to remove all traces of the previous build artifacts
@@ -48,7 +48,7 @@ The ``dev_build`` parameter makes sure the debug symbols are included, allowing 
 Compiling and debugging the project
 -----------------------------------
 Rider comes with a built-in debugger that can be used to debug the Godot project. You can launch the debugger
-by pressing the **Debug** icon at the top of the screen, this only works for the Project manager,
+by pressing the :btn:`Debug` icon at the top of the screen, this only works for the Project manager,
 if you want to debug the editor, you need to configure the debugger first.
 
 .. figure:: img/rider_run_debug.webp
@@ -72,11 +72,11 @@ Use the root path to the project folder, not ``project.godot`` file path.
 .. figure:: img/rider_configurations_changed.webp
    :align: center
 
-- Finally click on "Apply" and "OK" to save the changes.
+- Finally click on :btn:`Apply` and :btn:`OK` to save the changes.
 
-- When you press the **Debug** icon at the top of the screen, JetBrains Rider will launch the Godot editor with the debugger attached.
+- When you press the :btn:`Debug` icon at the top of the screen, JetBrains Rider will launch the Godot editor with the debugger attached.
 
-Alternatively you can use **Run > Attach to Process** to attach the debugger to a running Godot instance.
+Alternatively you can use :menu:`Run > Attach to Process` to attach the debugger to a running Godot instance.
 
 .. figure:: img/rider_attach_to_process.webp
    :align: center

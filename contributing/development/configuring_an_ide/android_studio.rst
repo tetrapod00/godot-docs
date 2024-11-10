@@ -12,7 +12,7 @@ work on Godot's core engine as well as the Android platform codebase.
 Importing the project
 ---------------------
 
-- From the Android Studio's welcome window select **Open**.
+- From the Android Studio's welcome window select :btn:`Open`.
 
 .. figure:: img/android_studio_setup_project_1.png
    :figclass: figure-w480
@@ -53,23 +53,23 @@ Building & debugging the editor module
       :figclass: figure-w480
       :align: center
 
-   - Select **Run > Run 'editor'** from the top menu or `click the Run icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
+   - Select :path:`Run > Run 'editor'` from the top menu or `click the Run icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
 - To debug the ``editor`` module:
-   - Open the **Build Variants** window using **View > Tools Windows > Build Variants** from the top menu.
-   - In the **Build Variants** window, make sure that in the **Active Build Variant** column, the ``:editor`` entry is set to **dev**.
+   - Open the :wndw:`Build Variants` window using :path:`View > Tools Windows > Build Variants` from the top menu.
+   - In the :wndw:`Build Variants` window, make sure that in the **Active Build Variant** column, the ``:editor`` entry is set to **dev**.
 
    .. figure:: img/android_studio_editor_build_variant.webp
       :figclass: figure-w480
       :align: center
 
-   - Open the **Run/Debug Configurations** window by clicking on **Run > Edit Configurations...** on the top menu.
-   - In the **Run/Debug Configurations** window, select the ``editor`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
+   - Open the :wndw:`Run/Debug Configurations` window by clicking on :path:`Run > Edit Configurations...` on the top menu.
+   - In the :wndw:`Run/Debug Configurations` window, select the ``editor`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
 
    .. figure:: img/android_studio_editor_debug_type_setup.webp
       :figclass: figure-w480
       :align: center
 
-   - Select **Run > Debug 'editor'** from the top menu or `click the Debug icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
+   - Select :path:`Run > Debug 'editor'` from the top menu or `click the Debug icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
 
 Building & debugging the app module
 -----------------------------------
@@ -86,23 +86,23 @@ Once that's done, you can follow the instructions below to run/debug the ``app``
       :figclass: figure-w480
       :align: center
 
-   - Select **Run > Run 'app'** from the top menu or `click the Run icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
+   - Select :path:`Run > Run 'app'` from the top menu or `click the Run icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
 - To debug the ``app`` module:
-   - Open the **Build Variants** window using **View > Tools Windows > Build Variants** from the top menu.
-   - In the **Build Variants** window, make sure that in the **Active Build Variant** column, the ``:app`` entry is set to **dev**.
+   - Open the :wndw:`Build Variants` window using :path:`View > Tools Windows > Build Variants` from the top menu.
+   - In the :wndw:`Build Variants` window, make sure that in the **Active Build Variant** column, the ``:app`` entry is set to **dev**.
 
    .. figure:: img/android_studio_app_build_variant.webp
       :figclass: figure-w480
       :align: center
 
-   - Open the **Run/Debug Configurations** window by clicking on **Run > Edit Configurations...** on the top menu.
-   - In the **Run/Debug Configurations** window, select the ``app`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
+   - Open the :wndw:`Run/Debug Configurations` window by clicking on :path:`Run > Edit Configurations...` on the top menu.
+   - In the :wndw:`Run/Debug Configurations` window, select the ``app`` entry, and under **Debugger** make sure the **Debug Type** is set to ``Dual (Java + Native)``
 
    .. figure:: img/android_studio_app_debug_type_setup.webp
       :figclass: figure-w480
       :align: center
 
-   - Select **Run > Debug 'app'** from the top menu or `click the Debug icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
+   - Select :path:`Run > Debug 'app'` from the top menu or `click the Debug icon <https://developer.android.com/studio/run/rundebugconfig#running>`_.
 
 
 If you run into any issues, ask for help in

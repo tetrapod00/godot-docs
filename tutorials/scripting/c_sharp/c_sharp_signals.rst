@@ -73,7 +73,7 @@ your delegate's name minus the final ``EventHandler`` part.
     If you want to connect to these signals in the editor, you will need to (re)build the project
     to see them appear.
 
-    You can click the **Build** button in the upper-right corner of the editor to do so.
+    You can click the :btn:`Build` button in the upper-right corner of the editor to do so.
 
 Signal emission
 ---------------

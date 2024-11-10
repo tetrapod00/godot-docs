@@ -8,7 +8,7 @@ you create, remove, import, or play game projects:
 
 .. image:: img/editor_ui_intro_project_manager_01.webp
 
-To change the editors language click on the **Settings** Button in the top right
+To change the editors language click on the :btn:`Settings` button in the top right
 corner:
 
 .. image:: img/editor_ui_intro_project_manager_02.webp
@@ -32,14 +32,14 @@ Creating and importing projects
 
 To create a new project:
 
-1. Click the **Create** button on the top-left of the window.
-2. Give the project a name, then open the file browser using the **Browse** button,
+1. Click the :btn:`Create` button on the top-left of the window.
+2. Give the project a name, then open the file browser using the :btn:`Browse` button,
    and choose an empty folder on your computer to save the files. Alternatively,
-   you can enable **Create Folder** option to automatically create a new sub-folder
+   you can enable :btn:`Create Folder` option to automatically create a new sub-folder
    with the project name, following the directory naming convention set in the
    settings. An empty folder will show a green tick on the right.
 3. Select one of the rendering backends (this can also be changed later).
-4. Click the **Create & Edit** button to create the project folder and open it in the editor.
+4. Click the :btn:`Create & Edit` button to create the project folder and open it in the editor.
 
 .. image:: img/editor_ui_intro_project_manager_04.webp
 
@@ -50,9 +50,9 @@ To create a new project:
 Using the file browser
 ~~~~~~~~~~~~~~~~~~~~~~
 
-From the **Create New Project** window, click the **Browse** button to open
+From the :wndw:`Create New Project` window, click the :btn:`Browse` button to open
 Godot's file browser. You can pick a location or type the folder's path in the
-**Path** field, after choosing a drive.
+:field:`Path` field, after choosing a drive.
 
 Left of the path field on the top row contains arrows to navigate backward and forward through the last
 visited locations.
@@ -65,9 +65,9 @@ are seen.
 
 The last button on the right will create a new folder.
 
-Favorited folders will be displayed on the left side under the **Favorites** section. You can sort the
+Favorited folders will be displayed on the left side under the :ui:`Favorites` section. You can sort the
 favorites using the up and down buttons in this section.
-Last chosen folders will be listed under the **Recent** list.
+Last chosen folders will be listed under the :ui:`Recent` list.
 
 .. image:: img/editor_ui_intro_project_manager_05.webp
 
@@ -79,7 +79,7 @@ list. Double click on it to open it in the editor.
 
 .. image:: img/editor_ui_intro_project_manager_06.webp
 
-You can similarly import existing projects using the **Import** button. Locate the
+You can similarly import existing projects using the :btn:`Import` button. Locate the
 folder that contains the project or the **project.godot** file to import and
 edit it.
 
@@ -96,13 +96,13 @@ When the folder path is correct, you'll see a green checkmark.
 Downloading demos and templates
 -------------------------------
 
-From the **Asset Library** tab you can download open source project
+From the :tab:`Asset Library` tab you can download open source project
 templates and demos from the :ref:`Asset Library <toc-learn-features-assetlib>` to help
 you get started faster.
 
 The first time you open this tab you'll notice that it's asking you to go online.
 For privacy reasons the project manager, and Godot editor, can't access the internet
-by default. To enable accessing the internet click the **Go Online** button. This will
+by default. To enable accessing the internet click the :btn:`Go Online` button. This will
 also allow project manager to notify you about updates. If you wish to turn this off
 in the future go into project manager settings and change **Network Mode** to "Offline"
 
@@ -121,7 +121,7 @@ Managing projects with tags
 
 For users with a lot of projects on one PC it can be a lot to keep track of. To aid
 in this Godot allows you to create project tags. To add a tag to a project click on the
-project in the project manager, then click on the **Manage Tags** button
+project in the project manager, then click on the :btn:`Manage Tags` button
 
 .. image:: img/editor_ui_intro_project_manager_11.webp
 
@@ -129,7 +129,7 @@ This will open up the manage project tags window. To add a tag click the plus bu
 
 .. image:: img/editor_ui_intro_project_manager_12.webp
 
-Type out the tag name, and click **OK**. Your project will now have a tag added to it.
+Type out the tag name, and click :btn:`OK`. Your project will now have a tag added to it.
 These tags can be used for any other project in your project manager.
 
 To show projects with a specific tag only, you can click on the tags or write ``tag:`` 

@@ -49,7 +49,7 @@ Transparency
 
 By default, materials in Godot are opaque. This is fast to render, but it means
 the material can't be seen through even if you use a transparent texture in the
-**Albedo > Texture** property (or set **Albedo > Color** to a transparent color).
+:uiproperty:`Albedo > Texture` property (or set **Albedo > Color** to a transparent color).
 
 To be able to see through a material, the material needs to be made *transparent*.
 Godot offers several transparency modes:
@@ -149,8 +149,8 @@ There are 3 alpha antialiasing modes available:
   between opaque and transparent areas. Also known as "alpha to coverage + alpha
   to one".
 
-When the alpha antialiasing mode is set to **Alpha Edge Blend** or **Alpha Edge
-Clip**, a new **Alpha Antialiasing Edge** property becomes visible below in the
+When the alpha antialiasing mode is set to **Alpha Edge Blend** or **Alpha Edge Clip**,
+a new **Alpha Antialiasing Edge** property becomes visible below in the
 inspector. This property controls the threshold below which pixels should be
 made transparent. While you've already defined an alpha scissor threshold (when
 using **Alpha Scissor** only), this additional threshold is used to smoothly
@@ -638,7 +638,7 @@ faces the camera:
 
 .. image:: img/spatial_material9.png
 
-The **Particles Anim** section is only visible when the billboard mode is **Particle Billboard**.
+The :uisection:`Particles Anim` section is only visible when the billboard mode is **Particle Billboard**.
 
 Billboard Keep Scale
 ~~~~~~~~~~~~~~~~~~~~

@@ -135,7 +135,7 @@ the ``GodotEngine.epub`` file in an e-book reader application.
    contributing/workflow/index
    contributing/development/index
    contributing/documentation/index
-   contributing/sandbox:
+   contributing/sandbox
 
 
 .. toctree::

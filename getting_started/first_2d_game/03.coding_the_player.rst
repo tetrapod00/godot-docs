@@ -56,7 +56,7 @@ override the value written in the script.
 
     If you're using C#, you need to (re)build the project assemblies
     whenever you want to see new export variables or signals. This
-    build can be manually triggered by clicking the **Build** button at
+    build can be manually triggered by clicking the :btn:`Build` button at
     the top right of the editor.
 
     .. image:: img/build_dotnet.webp

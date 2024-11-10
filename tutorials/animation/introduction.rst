@@ -175,7 +175,7 @@ switches are blue.
 
 Click on the key button to create the first keyframe. Since we don't have a
 track set up for the Position property yet, Godot will offer to
-create it for us. Click **Create**.
+create it for us. Click :btn:`Create`.
 
 Godot will create a new track and insert our first keyframe at the beginning of
 the timeline:
@@ -363,15 +363,15 @@ then add tracks for each property that you want to reset.
 The only keyframe should be at time 0, and give it the desired default value
 for each track.
 
-If AnimationPlayer's **Reset On Save** property is set to ``true``,
+If AnimationPlayer's :uiproperty:`Reset On Save` property is set to ``true``,
 the scene will be saved with the effects of the reset animation applied
 (as if it had been seeked to time ``0.0``).
 This only affects the saved file – the property tracks in the editor stay
 where they were.
 
 If you want to reset the tracks in the editor, select the AnimationPlayer node,
-open the **Animation** bottom panel then choose **Apply Reset** in the
-animation editor's **Edit** dropdown menu.
+open the :panel:`Animation` bottom panel then choose :btn:`Apply Reset` in the
+animation editor's :btn:`Edit` dropdown menu.
 
 When using the keyframe icon next to a property in the inspector the editor will
 ask you to automatically create a RESET track.

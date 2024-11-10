@@ -56,7 +56,7 @@ methods, properties, constants, etc. from the value:
 .. tip::
 
     If you prefer static typing, we recommend enabling the
-    **Text Editor > Completion > Add Type Hints** editor setting. Also consider
+    :path:`Text Editor > Completion > Add Type Hints` editor setting. Also consider
     enabling `some warnings <Warning system_>`_ that are disabled by default.
 
 Also, typed GDScript improves performance by using optimized opcodes when operand/argument

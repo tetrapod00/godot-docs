@@ -40,16 +40,16 @@ Creating a type variation
 -------------------------
 
 To create a type variation open the theme editor, then click the plus icon
-next to the **Type** dropdown on the right side of the editor. Type in what
-you want to name your theme type variation in the text box, then click **Add Type**.
+next to the :btn:`Type` dropdown on the right side of the editor. Type in what
+you want to name your theme type variation in the text box, then click :btn:`Add Type`.
 
-Below the **Type** dropdown are the property tabs. Switch to the tab with a wrench
+Below the :btn:`Type` dropdown are the property tabs. Switch to the tab with a wrench
 and screwdriver icon.
 
 .. figure:: img/base_type.png
    :align: center
 
-Click on the plus icon next to the **Base Type** field. You can select the base type
+Click on the plus icon next to the :field:`Base Type` field. You can select the base type
 there, which would typically be the name of a control node class (e.g., ``Button``, ``Label``, etc).
 Type variations can also chain and extend other type variations. This works in the
 same way control nodes inherit styling of their base class. For example, ``CheckButton``
@@ -62,8 +62,8 @@ Using a type variation
 ----------------------
 
 Now that a type variation has been created you can apply it to your nodes.
-In the inspector dock, under the **Theme** property of a control node,
-you can find the **Theme Type Variation** property. It is empty by default,
+In the inspector dock, under the :uiproperty:`Theme` property of a control node,
+you can find the :uiproperty:`Theme Type Variation` property. It is empty by default,
 which means that only the base type has an effect on this node.
 
 You can either select a type variation from a dropdown list, or input its name

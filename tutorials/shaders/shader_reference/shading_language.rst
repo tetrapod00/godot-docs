@@ -1029,9 +1029,9 @@ Global uniforms are especially useful for environmental effects that affect many
 objects in a scene, like having foliage bend when the player is nearby, or having
 objects move with the wind.
 
-To create a global uniform, open the **Project Settings** then go to the
-**Shader Globals** tab. Specify a name for the uniform (case-sensitive) and a
-type, then click **Add** in the top-right corner of the dialog. You can then
+To create a global uniform, open the :wndw:`Project Settings` then go to the
+:tab:`Shader Globals` tab. Specify a name for the uniform (case-sensitive) and a
+type, then click :btn:`Add` in the top-right corner of the dialog. You can then
 edit the value assigned to the uniform by clicking the value in the list of
 uniforms:
 

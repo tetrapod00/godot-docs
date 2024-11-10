@@ -31,7 +31,7 @@ or split it to a separate window by choosing **Make Floating** in the submenu th
    Moving a dock in the editor
 
 To move a floating dock back to the editor window, close the dock window using
-the **×** button in the top-right corner of the window (or in the top-left
+the :btn:`×` button in the top-right corner of the window (or in the top-left
 corner on macOS). Alternatively, you can press :kbd:`Alt + F4` while the split
 window is focused.
 
@@ -73,7 +73,7 @@ the top-right corner of the script editor:
    Splitting the shader editor to its own window
 
 To go back to the previous state (with the script/shader editor embedded in the
-editor window), close the split window using the **×** button in the top-right
+editor window), close the split window using the :btn:`×` button in the top-right
 corner of the window (or in the top-left corner on macOS). Alternatively, you
 can press :kbd:`Alt + F4` while the split window is focused.
 
@@ -101,13 +101,13 @@ following changes are persisted to the saved layout:
     Splitting the script or shader editor to its own window is *not* persisted
     as part of a layout.
 
-After making changes, open the **Editor** menu at the top of the editor then
-choose **Editor Layouts > Save**. Enter a name for the layout, then click
-**Save**. If you've already saved an editor layout, you can choose to override
+After making changes, open the :ui:`Editor` menu at the top of the editor then
+choose :path:`Editor Layouts > Save`. Enter a name for the layout, then click
+:btn:`Save`. If you've already saved an editor layout, you can choose to override
 an existing layout using the list.
 
 After making changes, open the **Editor** menu at the top of the editor then
-choose **Editor Layouts**. In the dropdown list, you will see a list of saved
+choose :btn:`Editor Layouts`. In the dropdown list, you will see a list of saved
 editor layouts, plus **Default** which is a hardcoded editor layout that can't
 be removed. The default layout matches a fresh Godot installation with no
 changes made to the docks' position and size, and no floating docks.
@@ -145,32 +145,32 @@ are not saved in the project files.
 
 Some commonly changed settings are:
 
-- **Interface > Editor > Editor Language:** Controls the language the editor
+- :path:`Interface > Editor > Editor Language`: Controls the language the editor
   displays in. To make English tutorials easier to follow, you may want to
   change this to English so that menu names are identical to names referred to
   by tutorials. The language can also be changed in the top-right corner of the
   project manager.
-- **Interface > Editor > Display Scale:** Controls how large UI elements display
+- :path:`Interface > Editor > Display Scale`: Controls how large UI elements display
   on screen. The default **Auto** setting finds a suitable value based on your
   display's DPI and resolution. Due to engine limitations, it only takes the
   display-provided scaling factor on macOS, not on Windows or Linux.
-- **Interface > Editor > Single Window Mode:** If enabled, this forces the
+- :path:`Interface > Editor > Single Window Mode`: If enabled, this forces the
   editor to use a single window. This disables certain features such as
   splitting the script/shaders editor to their own window. Single-window mode
   can be more stable, especially on Linux when using Wayland.
-- **Interface > Theme > Preset:** The editor theme preset to use. The **Light** theme
+- :path:`Interface > Theme > Preset`: The editor theme preset to use. The **Light** theme
   preset may be easier to read if you're outdoors or in a room with sunlight.
   The **Black (OLED)** preset can reduce power consumption on OLED displays,
   which are increasingly common in laptops and phones/tablets.
-- **FileSystem > Directories > Autoscan Project Path:** This can be set to a
+- :path:`FileSystem > Directories > Autoscan Project Path`: This can be set to a
   folder path that will be automatically scanned for projects in the project
   manager every time it starts.
-- **FileSystem > Directories > Default Project Path:** Controls the default
+- :path:`FileSystem > Directories > Default Project Path`: Controls the default
   location where new projects are created in the project manager.
-- **Editors > 3D > Emulate Numpad:** This allows using the top row 0-9 keys in
+- :path:`Editors > 3D > Emulate Numpad`: This allows using the top row 0-9 keys in
   the 3D editor as their equivalent numpad keys. It's recommended to enable this
   option if you don't have a number pad on your keyboard.
-- **Editors > 3D > Emulate 3 Button Mouse:** This allows using the pan, zoom and
+- :path:`Editors > 3D > Emulate 3 Button Mouse`: This allows using the pan, zoom and
   orbit modifiers in the 3D editor even when not holding down any mouse button.
   It's recommended to enable this option if you're using a trackpad.
 

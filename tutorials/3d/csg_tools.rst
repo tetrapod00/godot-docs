@@ -274,7 +274,7 @@ to quickly apply textures to CSG-based levels.
 There are two ways to apply a material to a CSG node:
 
 - Applying it to a CSGCombiner3D node as a material override
-  (**Geometry > Material Override** in the Inspector). This will affect its
+  (:path:`Geometry > Material Override` in the Inspector). This will affect its
   children automatically, but will make it impossible to change the material in
   individual children.
 - Applying a material to individual nodes (**Material** in the Inspector). This
@@ -283,18 +283,18 @@ There are two ways to apply a material to a CSG node:
 
 To apply triplanar mapping to a CSG node, select it, go to the Inspector, click
 the **[empty]** text next to **Material Override** (or **Material** for
-individual CSG nodes). Choose **New StandardMaterial3D**. Click the newly created
-material's icon to edit it. Unfold the **Albedo** section and load a texture
-into the **Texture** property. Now, unfold the **Uv1** section and check
+individual CSG nodes). Choose :btn:`New StandardMaterial3D`. Click the newly created
+material's icon to edit it. Unfold the :uisection:`Albedo` section and load a texture
+into the :uiproperty:`Texture` property. Now, unfold the :uisection:`Uv1` section and check
 **Triplanar**. You can change the texture offset and scale on each axis by
 playing with the **Scale** and **Offset** properties just above. Higher values
 in the **Scale** property will cause the texture to repeat more often.
 
 .. tip:: You can copy a StandardMaterial3D to reuse it across CSG nodes. To do so,
          click the dropdown arrow next to a material property in the Inspector
-         and choose **Copy**. To paste it, select the node you'd like to apply
+         and choose :btn:`Copy`. To paste it, select the node you'd like to apply
          the material onto, click the dropdown arrow next to its material
-         property then choose **Paste**.
+         property then choose :btn:`Paste`.
 
 Exporting as glTF
 ------------------------

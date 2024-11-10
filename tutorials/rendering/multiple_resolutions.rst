@@ -161,7 +161,7 @@ and a diagonal :ref:`Line2D <class_Line2D>` is added on top of it:
 
 -  **Stretch Mode = Viewport**: Viewport scaling means that the size of
    the root :ref:`Viewport <class_Viewport>` is set precisely to the
-   base size specified in the Project Settings' **Display** section.
+   base size specified in the Project Settings' :projsection:`Display` section.
    The scene is rendered to this viewport first. Finally, this viewport
    is scaled to fit the screen (taking the **Stretch Aspect** setting into
    account).
@@ -248,7 +248,7 @@ to the region outside the blue frame you see in the 2D editor.
     Project Settings.
 
     To allow the user to choose their preferred screen orientation at runtime,
-    remember to set **Display > Window > Handheld > Orientation** to ``sensor``.
+    remember to set :path:`Display > Window > Handheld > Orientation` to ``sensor``.
 
 To configure the stretch aspect at runtime from a script, use the
 ``get_tree().root.content_scale_aspect`` property (see
@@ -441,7 +441,7 @@ Mobile game in portrait mode
   Note that this will make non-mipmapped textures grainy on low resolution devices,
   so make sure to follow the instructions described in
   :ref:`doc_multiple_resolutions_reducing_aliasing_on_downsampling`.
-- Set **Display > Window > Handheld > Orientation** to ``portrait``.
+- Set :path:`Display > Window > Handheld > Orientation` to ``portrait``.
 - Set the stretch mode to ``canvas_items``.
 - Set the stretch aspect to ``expand``. This allows for supporting multiple aspect ratios
   and makes better use of tall smartphone displays (such as 18:9 or 19:9 aspect ratios).
@@ -535,7 +535,7 @@ done using :ref:`anchors <doc_size_and_anchors>` and/or :ref:`containers
 Field of view scaling
 ---------------------
 
-The 3D Camera node's **Keep Aspect** property defaults to the **Keep Height**
+The 3D Camera node's :uiproperty:`Keep Aspect` property defaults to the **Keep Height**
 scaling mode (also called *Hor+*). This is usually the best value for desktop
 games and mobile games in landscape mode, as widescreen displays will
 automatically use a wider field of view.
