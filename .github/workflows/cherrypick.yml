@@ -8,27 +8,29 @@ on:
         - 'dev'
 
 jobs:
-  if_merged:
+  Create-cherrypick-PR:
     if: github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3')
     runs-on: ubuntu-latest
     env:
       commit-hash: ${{ github.event.pull_request.head.sha }}
       pr-number: ${{ github.event.number }}
-      stable-branch: '5.3'
+      target-branch: '5.3'
+      # TODO use a Godot email and username for this.
+      username: 'github-actions[bot]'
+      email: '41898282+github-actions[bot]@users.noreply.github.com'
 
     steps:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        # Use the appropriate branch for the documentation version.
-        ref: ${{ env.stable-branch }}
+        ref: ${{ env.target-branch }}
 
     - name: Create branch for cherrypick
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config user.name "${{ env.username }}"
+        git config user.email "${{ env.email }}"
         git fetch
-        git checkout -b cherrypick-${{ env.pr-number }} ${{ env.stable-branch }}
+        git checkout -b cherrypick-${{ env.target-branch }}-${{ env.pr-number }} ${{ env.target-branch }}
 
     - name: Cherrypick the commit
       id: actually_cherrypick
@@ -36,14 +38,26 @@ jobs:
       run: |
         git cherry-pick -m 1 ${{ env.commit-hash }}
 
+    - name: Create Pull Request
+      if: steps.actually_cherrypick.outcome == 'success'
+      uses: peter-evans/create-pull-request@v7
+      with:
+        commit-message: 'Cherrypick to ${{ env.target-branch }}'
+        branch: 'cherrypick-${{ env.target-branch }}-${{ env.pr-number }}'
+        delete-branch: true
+
+        # Configure the commit author.
+        author: '${{ env.username }} <${{ env.email }}>'
+        committer: '${{ env.username }} <${{ env.email }}>'
+
+        # Configure the pull-request.
+        title: '${{ env.target-branch }} cherrypick'
+        body: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }}.'
+        labels: 'bug,enhancement'
+
     - name: Failed
       if: steps.actually_cherrypick.outcome == 'failure'
       run: |
         echo Failed
 
-    - name: Succeeded
-      if: steps.actually_cherrypick.outcome == 'success'
-      run: |
-        echo Succeeded
-
-  
+   
