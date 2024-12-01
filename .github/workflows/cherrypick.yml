@@ -15,6 +15,7 @@ jobs:
       commit-hash: ${{ github.event.pull_request.head.sha }}
       pr-number: ${{ github.event.number }}
       target-branch: '5.3'
+      target-branch-short: '53'
       # TODO use a Godot email and username for this.
       username: 'github-actions[bot]'
       email: '41898282+github-actions[bot]@users.noreply.github.com'
@@ -30,7 +31,7 @@ jobs:
         git config user.name "${{ env.username }}"
         git config user.email "${{ env.email }}"
         git fetch
-        git checkout -b cherrypick-local-${{ env.target-branch }}-${{ env.pr-number }} ${{ env.target-branch }}
+        git checkout -b cherrypick-local-${{ env.target-branch-short }}-${{ env.pr-number }} ${{ env.target-branch }}
 
     - name: Cherrypick the commit
       id: actually_cherrypick
@@ -43,7 +44,7 @@ jobs:
       uses: peter-evans/create-pull-request@v7
       with:
         commit-message: 'Cherrypick to ${{ env.target-branch }}'
-        branch: 'cherrypick-${{ env.target-branch }}-${{ env.pr-number }}'
+        branch: 'cherrypick-${{ env.target-branch-short }}-${{ env.pr-number }}'
         delete-branch: true
 
         # Configure the commit author.
