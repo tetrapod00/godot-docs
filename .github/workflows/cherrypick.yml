@@ -25,6 +25,8 @@ jobs:
 
     - name: Create branch for cherrypick 
       run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git fetch
         git checkout -b cherrypick-${{ env.pr-number }} ${{ env.stable-branch }}
         git cherry-pick -m 1 ${{ env.commit-hash }}
