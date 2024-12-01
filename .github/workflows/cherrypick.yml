@@ -13,16 +13,20 @@ jobs:
     runs-on: ubuntu-latest
     env:
       commit-hash: ${{ github.event.pull_request.head.sha }}
+      pr-number: ${{ github.event.number }}
+      stable-branch: '5.3'
 
     steps:
     - name: Checkout
       uses: actions/checkout@v4
       with:
         # Use the appropriate branch for the documentation version.
-        ref: '5.3'
+        ref: ${{ env.stable-branch }}
 
     - name: Create branch for cherrypick 
-      run: git cherry-pick -m 1 ${{ env.commit-hash }}
+      run: |
+        git checkout -b cherrypick-${{ env.pr-number }} ${{ env.stable-branch }}
+        git cherry-pick -m 1 ${{ env.commit-hash }}
 
     - run: |
         echo The PR was merged and is a cherrypick for 5.3
