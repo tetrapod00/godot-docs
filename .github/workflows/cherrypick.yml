@@ -23,14 +23,27 @@ jobs:
         # Use the appropriate branch for the documentation version.
         ref: ${{ env.stable-branch }}
 
-    - name: Create branch for cherrypick 
+    - name: Create branch for cherrypick
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git fetch
         git checkout -b cherrypick-${{ env.pr-number }} ${{ env.stable-branch }}
+
+    - name: Cherrypick the commit
+      id: actually_cherrypick
+      continue-on-error: true
+      run: |
         git cherry-pick -m 1 ${{ env.commit-hash }}
 
-    - run: |
-        echo The PR was merged and is a cherrypick for 5.3
+    - name: Failed
+      if: steps.actually_cherrypick.outcome == 'failure'
+      run: |
+        echo Failed
+
+    - name: Succeeded
+      if: steps.actually_cherrypick.outcome == 'success'
+      run: |
+        echo Succeeded
+
   
