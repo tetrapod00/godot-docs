@@ -1,0 +1,16 @@
+name: Create cherrypick PR
+
+on:
+  pull_request:
+      types:
+        - closed
+      branches:
+        - 'dev'
+
+jobs:
+  if_merged:
+      if: github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3')
+      runs-on: ubuntu-latest
+      steps:
+      - run: |
+          echo The PR was merged and is a cherrypick for 5.3
