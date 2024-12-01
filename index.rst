@@ -3,9 +3,6 @@
 Godot Docs – *master* branch
 ============================
 
-Hello! Goodbye! Hello!
-Fifth
-
 .. only:: not i18n
 
   .. note:: Godot's documentation is available in various languages and versions.
