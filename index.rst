@@ -55,6 +55,8 @@ into your language, or talk to us on the ``#documentation`` channel on the
 Offline documentation
 ---------------------
 
+PR 10.
+
 To browse the documentation offline, you can download an HTML copy (updated every Monday): `stable <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__, `latest <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__, `3.6 <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-3.6.zip>`__. Extract the ZIP archive then open
 the top-level ``index.html`` in a web browser.
 
