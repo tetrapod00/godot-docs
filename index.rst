@@ -63,7 +63,7 @@ the top-level ``index.html`` in a web browser.
 New line.
 
 For mobile devices or e-readers, you can also download an ePub copy (updated every Monday): `stable <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-epub-stable.zip>`__, `latest <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-epub-master.zip>`__, `3.6 <https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-epub-3.6.zip>`__. Extract the ZIP archive then open
-the ``GodotEngine.epub`` file in an e-book reader application.
+the ``GodotEngine.epub`` file in an e-book reader application. New line 16.
 
 .. Below is the main table-of-content tree of the documentation website.
    It is hidden on the page itself, but it makes up the sidebar for navigation.
