@@ -43,7 +43,7 @@ Godot Engine is an open source project developed by a community of volunteers.
 The documentation team can always use your feedback and help to improve the
 tutorials and class reference. If you don't understand something, or cannot find
 what you are looking for in the docs, help us make the documentation better
-by letting us know!
+by letting us know! new line 18.
 
 Submit an issue or pull request on the `GitHub repository <https://github.com/godotengine/godot-docs/issues>`_,
 help us `translate the documentation <https://hosted.weblate.org/engage/godot-engine/>`_
