@@ -3,7 +3,7 @@
 Godot Docs – *master* branch
 ============================
 
-Hello!
+Hello! Goodbye!
 
 .. only:: not i18n
 
