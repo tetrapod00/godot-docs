@@ -25,6 +25,7 @@ jobs:
 
     - name: Create branch for cherrypick 
       run: |
+        git fetch
         git checkout -b cherrypick-${{ env.pr-number }} ${{ env.stable-branch }}
         git cherry-pick -m 1 ${{ env.commit-hash }}
 
