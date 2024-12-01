@@ -9,8 +9,21 @@ on:
 
 jobs:
   if_merged:
-      if: github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3')
-      runs-on: ubuntu-latest
-      steps:
-      - run: |
-          echo The PR was merged and is a cherrypick for 5.3
+    if: github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3')
+    runs-on: ubuntu-latest
+    env:
+      commit-hash: ${{ github.event.pull_request.head.sha }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        # Use the appropriate branch for the documentation version.
+        ref: '5.3'
+
+    - name: Create branch for cherrypick 
+      run: git cherry-pick -m 1 ${{ env.commit-hash }}
+
+    - run: |
+        echo The PR was merged and is a cherrypick for 5.3
+  
