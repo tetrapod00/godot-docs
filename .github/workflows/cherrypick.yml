@@ -30,7 +30,7 @@ jobs:
         git config user.name "${{ env.username }}"
         git config user.email "${{ env.email }}"
         git fetch
-        git checkout -b cherrypick-${{ env.target-branch }}-${{ env.pr-number }} ${{ env.target-branch }}
+        git checkout -b cherrypick-local-${{ env.target-branch }}-${{ env.pr-number }} ${{ env.target-branch }}
 
     - name: Cherrypick the commit
       id: actually_cherrypick
