@@ -506,7 +506,6 @@ Audio
   with dozens of effects included.
 - Support for polyphony (playing several sounds from a single AudioStreamPlayer node).
 - Support for random volume and pitch.
-- Support for real-time pitch scaling.
 - Support for sequential/random sample selection, including repetition prevention
   when using random sample selection.
 - Listener2D and Listener3D nodes to listen from a position different than the camera.
