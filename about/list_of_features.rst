@@ -681,7 +681,6 @@ The editor UI can easily be extended in many ways using add-ons.
 - RichTextLabel for :ref:`text formatted using BBCode <doc_bbcode_in_richtextlabel>`,
   with support for animated custom effects.
 - Trees (can also be used to represent tables).
-- Color picker with RGB and HSV modes.
 - Controls can be rotated and scaled.
 
 **Sizing:**
