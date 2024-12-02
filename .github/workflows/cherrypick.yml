@@ -11,8 +11,8 @@ on:
 env:
   # TODO add a way to handle multiple potential cherrypick targets.
   TARGET_BRANCH: '5.3'
-  GHA_BOT_USERNAME: 'Godot Organization'
-  GHA_BOT_EMAIL: 'noreply@godotengine.org'
+  USERNAME: 'Godot Organization'
+  EMAIL: 'noreply@godotengine.org'
 
 jobs:
   Create-cherrypick-PR:
@@ -37,11 +37,10 @@ jobs:
     - name: Cherrypick Commit
       id: cherrypick_commit
       continue-on-error: true
-      # The GitHub Actions bot credentials are required here to be able to cherrypick.
       # TODO maybe only fetch some branches?
       run: |
-        git config user.name "${{ env.GHA_BOT_USERNAME }}"
-        git config user.email "${{ env.GHA_BOT_EMAIL }}"
+        git config user.name "${{ env.USERNAME }}"
+        git config user.email "${{ env.EMAIL }}"
         git fetch
         git cherry-pick -m 1 ${{ env.COMMIT_HASH }}
 
@@ -54,8 +53,8 @@ jobs:
         delete-branch: true
 
         # Configure the commit author.
-        author: 'Godot Organization <noreply@godotengine.org>'
-        committer: 'Godot Organization <noreply@godotengine.org>'
+        author: '${{ env.USERNAME }} <${{ env.EMAIL }}>'
+        committer: '${{ env.USERNAME }} <${{ env.EMAIL }}>'
 
         # Configure the pull request.
         title: 'Cherrypick ${{ env.PR_NUMBER }} to ${{ env.TARGET_BRANCH }}'
