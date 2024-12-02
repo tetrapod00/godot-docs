@@ -63,6 +63,7 @@ jobs:
         # Configure the pull request.
         title: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }}'
         body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
+        # TODO only add the bug or enhancement label, depending on which the original PR uses.
         labels: 'bug,enhancement'
 
     - name: Handle failure
