@@ -1,4 +1,4 @@
-name: Create cherrypick PR
+name: Create Cherrypick PR
 
 on:
   pull_request:
@@ -9,16 +9,18 @@ on:
 
 env:
   target-branch: '5.3'
-  target-branch-short: '53'
   cherrypick-label: 'cherrypick:5.3'
-  # TODO use a Godot email and username for this.
+  # TODO maybe use a Godot email and username for this.
+  # This email and username may need to remain the GH Actions bot, actually.
   username: 'github-actions[bot]'
   email: '41898282+github-actions[bot]@users.noreply.github.com'
 
 jobs:
   Create-cherrypick-PR:
+    # Only attempt to cherrypick PRs with a single commit. 
+    # PRs with multiple commits are merged with "Squash and merge" and are structured differently.
     # The cherrypick label is hardcoded because contains() doesn't seem to be able to use an environment variable as a second argument.
-    if: ${{ github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3' ) }}
+    if: ${{ github.event.pull_request.merged == true && github.event.pull_request.commits == 1 && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3' ) }}
     runs-on: ubuntu-latest
     env:
       # In the typical case of a PR with a single commit, merged with a merge commit,
@@ -27,17 +29,14 @@ jobs:
       pr-number: ${{ github.event.number }}
 
     steps:
-    - name: Count commits in PR
-      run: |
-        echo Commits: ${{ github.event.pull_request.commits }}
-
+  
     - name: Checkout
       uses: actions/checkout@v4
       with:
         ref: ${{ env.target-branch }}
 
-    - name: Cherrypick the commit
-      id: actually_cherrypick
+    - name: Cherrypick Commit
+      id: cherrypick_commit
       continue-on-error: true
       run: |
         git config user.name "${{ env.username }}"
@@ -46,13 +45,15 @@ jobs:
         git cherry-pick -m 1 ${{ env.commit-hash }}
 
     - name: Create Pull Request
-      if: steps.actually_cherrypick.outcome == 'success'
+      if: steps.cherrypick_commit.outcome == 'success'
       uses: peter-evans/create-pull-request@v7
       with:
         commit-message: 'Cherrypick to ${{ env.target-branch }}'
-        branch: 'cherrypick-${{ env.target-branch-short }}-${{ env.pr-number }}'
+        branch: 'cherrypick-${{ env.pr-number }}-${{ env.target-branch }}'
         delete-branch: true
 
+        # TODO use a Godot email and username for this.
+        # This email and username may need to be different than the email used earlier.
         # Configure the commit author.
         author: '${{ env.username }} <${{ env.email }}>'
         committer: '${{ env.username }} <${{ env.email }}>'
@@ -62,9 +63,9 @@ jobs:
         body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
         labels: 'bug,enhancement'
 
-    - name: Failed
-      if: steps.actually_cherrypick.outcome == 'failure'
+    - name: Handle failure
+      if: steps.cherrypick_commit.outcome == 'failure'
       run: |
-        echo Failed
+        echo Can't automatically cherrypick.
 
    
