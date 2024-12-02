@@ -5,13 +5,15 @@ on:
       types:
         - closed
       branches:
+        # TODO extract this to an env variable?
         - 'dev'
 
 env:
+  # TODO add a way to handle multiple potential cherrypick targets.
   target-branch: '5.3'
-  cherrypick-label: 'cherrypick:5.3'
   # TODO maybe use a Godot email and username for this.
-  # This email and username may need to remain the GH Actions bot, actually.
+  # These are the credentials for the GH Actions bot, and I needed to use them so that git commands worked.
+  # This email and username may need to remain the GH Actions bot.
   username: 'github-actions[bot]'
   email: '41898282+github-actions[bot]@users.noreply.github.com'
 
@@ -59,7 +61,7 @@ jobs:
         committer: '${{ env.username }} <${{ env.email }}>'
 
         # Configure the pull request.
-        title: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }})'
+        title: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }}'
         body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
         labels: 'bug,enhancement'
 
