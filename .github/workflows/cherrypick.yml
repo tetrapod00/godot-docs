@@ -59,7 +59,7 @@ jobs:
         committer: '${{ env.username }} <${{ env.email }}>'
 
         # Configure the pull request.
-        title: '${{ env.target-branch }} cherrypick'
+        title: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }})'
         body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
         labels: 'bug,enhancement'
 
