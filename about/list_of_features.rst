@@ -56,6 +56,7 @@ Editor
 
 **Features:**
 
+- Foo bar.
 - Game development.
 - Scene tree editor.
 - Built-in script editor.
