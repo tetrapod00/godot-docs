@@ -674,7 +674,6 @@ The editor UI can easily be extended in many ways using add-ons.
 **Nodes:**
 
 - Buttons.
-- Checkboxes, check buttons, radio buttons.
 - Text entry using :ref:`class_LineEdit` (single line) and :ref:`class_TextEdit` (multiple lines).
   TextEdit also supports code editing features such as displaying line numbers
   and syntax highlighting.
