@@ -278,7 +278,6 @@ See :ref:`doc_renderers` for a detailed comparison of the rendering methods.
   on transparent surfaces.
 - Fast baked reflections or slow real-time reflections using ReflectionProbe.
   Parallax box correction can optionally be enabled.
-- Screen-space reflections with support for material roughness.
 - Reflection techniques can be mixed together for greater accuracy or scalability.
 - When using the Forward+ renderer (default on desktop), reflection probes are
   rendered with clustered forward optimizations to decrease their individual cost.
