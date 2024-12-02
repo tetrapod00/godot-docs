@@ -7,35 +7,42 @@ on:
       branches:
         - 'dev'
 
+env:
+  target-branch: '5.3'
+  target-branch-short: '53'
+  cherrypick-label: 'cherrypick:5.3'
+  # TODO use a Godot email and username for this.
+  username: 'github-actions[bot]'
+  email: '41898282+github-actions[bot]@users.noreply.github.com'
+
 jobs:
   Create-cherrypick-PR:
-    if: github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3')
+    # The cherrypick label is hardcoded because contains() doesn't seem to be able to use an environment variable as a second argument.
+    if: ${{ github.event.pull_request.merged == true && contains( github.event.pull_request.labels.*.name, 'cherrypick:5.3' ) }}
     runs-on: ubuntu-latest
     env:
+      # In the typical case of a PR with a single commit, merged with a merge commit,
+      # this will be the commit to cherrypick.
       commit-hash: ${{ github.event.pull_request.head.sha }}
       pr-number: ${{ github.event.number }}
-      target-branch: '5.3'
-      target-branch-short: '53'
-      # TODO use a Godot email and username for this.
-      username: 'github-actions[bot]'
-      email: '41898282+github-actions[bot]@users.noreply.github.com'
 
     steps:
+    - name: Count commits in PR
+      run: |
+        echo Commits: ${{ github.event.pull_request.commits }}
+
     - name: Checkout
       uses: actions/checkout@v4
       with:
         ref: ${{ env.target-branch }}
 
-    - name: Create branch for cherrypick
-      run: |
-        git config user.name "${{ env.username }}"
-        git config user.email "${{ env.email }}"
-        git fetch
-
     - name: Cherrypick the commit
       id: actually_cherrypick
       continue-on-error: true
       run: |
+        git config user.name "${{ env.username }}"
+        git config user.email "${{ env.email }}"
+        git fetch
         git cherry-pick -m 1 ${{ env.commit-hash }}
 
     - name: Create Pull Request
@@ -50,7 +57,7 @@ jobs:
         author: '${{ env.username }} <${{ env.email }}>'
         committer: '${{ env.username }} <${{ env.email }}>'
 
-        # Configure the pull-request.
+        # Configure the pull request.
         title: '${{ env.target-branch }} cherrypick'
         body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
         labels: 'bug,enhancement'
