@@ -11,8 +11,8 @@ on:
 env:
   # TODO add a way to handle multiple potential cherrypick targets.
   TARGET_BRANCH: '5.3'
-  GHA_BOT_USERNAME: 'github-actions[bot]'
-  GHA_BOT_EMAIL: '41898282+github-actions[bot]@users.noreply.github.com'
+  GHA_BOT_USERNAME: 'Godot Organization'
+  GHA_BOT_EMAIL: 'noreply@godotengine.org'
 
 jobs:
   Create-cherrypick-PR:
