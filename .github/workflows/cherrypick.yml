@@ -10,12 +10,9 @@ on:
 
 env:
   # TODO add a way to handle multiple potential cherrypick targets.
-  target-branch: '5.3'
-  # TODO maybe use a Godot email and username for this.
-  # These are the credentials for the GH Actions bot, and I needed to use them so that git commands worked.
-  # This email and username may need to remain the GH Actions bot.
-  username: 'github-actions[bot]'
-  email: '41898282+github-actions[bot]@users.noreply.github.com'
+  TARGET_BRANCH: '5.3'
+  GHA_BOT_USERNAME: 'github-actions[bot]'
+  GHA_BOT_EMAIL: '41898282+github-actions[bot]@users.noreply.github.com'
 
 jobs:
   Create-cherrypick-PR:
@@ -27,46 +24,48 @@ jobs:
     env:
       # In the typical case of a PR with a single commit, merged with a merge commit,
       # this will be the commit to cherrypick.
-      commit-hash: ${{ github.event.pull_request.head.sha }}
-      pr-number: ${{ github.event.number }}
+      COMMIT_HASH: ${{ github.event.pull_request.head.sha }}
+      PR_NUMBER: ${{ github.event.number }}
 
     steps:
   
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: ${{ env.target-branch }}
+        ref: ${{ env.TARGET_BRANCH }}
 
     - name: Cherrypick Commit
       id: cherrypick_commit
       continue-on-error: true
+      # The GitHub Actions bot credentials are required here to be able to cherrypick.
+      # TODO maybe only fetch some branches?
       run: |
+        git config user.name "${{ env.GHA_BOT_USERNAME }}"
+        git config user.email "${{ env.GHA_BOT_EMAIL }}"
         git fetch
-        git cherry-pick -m 1 ${{ env.commit-hash }}
+        git cherry-pick -m 1 ${{ env.COMMIT_HASH }}
 
     - name: Create Pull Request
       if: steps.cherrypick_commit.outcome == 'success'
       uses: peter-evans/create-pull-request@v7
       with:
-        commit-message: 'Cherrypick to ${{ env.target-branch }}'
-        branch: 'cherrypick-${{ env.pr-number }}-${{ env.target-branch }}'
+        commit-message: 'Cherrypick to ${{ env.TARGET_BRANCH }}'
+        branch: 'cherrypick-${{ env.PR_NUMBER }}-${{ env.TARGET_BRANCH }}'
         delete-branch: true
 
-        # TODO use a Godot email and username for this.
-        # This email and username may need to be different than the email used earlier.
         # Configure the commit author.
-        author: '${{ env.username }} <${{ env.email }}>'
-        committer: '${{ env.username }} <${{ env.email }}>'
+        author: 'Godot Organization <noreply@godotengine.org>'
+        committer: 'Godot Organization <noreply@godotengine.org>'
 
         # Configure the pull request.
-        title: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }}'
-        body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
+        title: 'Cherrypick ${{ env.PR_NUMBER }} to ${{ env.TARGET_BRANCH }}'
+        body: 'Cherrypick #${{ env.PR_NUMBER }} to ${{ env.TARGET_BRANCH }}.'
         # TODO only add the bug or enhancement label, depending on which the original PR uses.
         labels: 'bug,enhancement'
 
     - name: Handle failure
       if: steps.cherrypick_commit.outcome == 'failure'
       run: |
-        echo Can't automatically cherrypick.
-
-   
+        echo "Can't automatically cherrypick. Potential causes:"
+        echo "- PR has multiple commits. Did you squash and merge?"
+        echo "- Cherrypick did not apply cleanly and can't be auto-merged."
