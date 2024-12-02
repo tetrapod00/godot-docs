@@ -71,7 +71,6 @@ Editor
   rendering pipeline.
 - Performance monitoring tools, including
   :ref:`custom performance monitors <doc_custom_performance_monitors>`.
-- Live script reloading.
 - Live scene editing.
 
    - Changes will reflect in the editor and will be kept after closing the running project.
