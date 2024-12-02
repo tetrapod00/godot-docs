@@ -387,8 +387,6 @@ See :ref:`doc_renderers` for a detailed comparison of the rendering methods.
 - Support for :ref:`rendering 3D at a lower resolution <doc_resolution_scaling>`
   while keeping 2D rendering at the original scale. This can be used to improve
   performance on low-end systems or improve visuals on high-end systems.
-- Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution
-  1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2).
 - Texture mipmap LOD bias is adjusted automatically to improve quality at lower
   resolution scales. It can also be modified with a manual offset.
 
