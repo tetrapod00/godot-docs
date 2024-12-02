@@ -56,7 +56,7 @@ Editor
 
 **Features:**
 
-- Foo bar.
+- Foo bar. Baz.
 - Game development.
 - Scene tree editor.
 - Built-in script editor.
