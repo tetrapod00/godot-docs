@@ -54,6 +54,8 @@ Godot aims to be as platform-independent as possible and can be
 Editor
 ------
 
+- Add something.
+
 **Features:**
 
 - Scene tree editor.
