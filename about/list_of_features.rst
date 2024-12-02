@@ -56,6 +56,7 @@ Editor
 
 **Features:**
 
+- Game development.
 - Scene tree editor.
 - Built-in script editor.
 - Support for :ref:`external script editors <doc_external_editor>` such as
