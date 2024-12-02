@@ -31,8 +31,6 @@ jobs:
         git config user.name "${{ env.username }}"
         git config user.email "${{ env.email }}"
         git fetch
-        
-      # git checkout -b cherrypick-local-${{ env.target-branch-short }}-${{ env.pr-number }} ${{ env.target-branch }}
 
     - name: Cherrypick the commit
       id: actually_cherrypick
@@ -54,7 +52,7 @@ jobs:
 
         # Configure the pull-request.
         title: '${{ env.target-branch }} cherrypick'
-        body: 'Cherrypick ${{ env.pr-number }} to ${{ env.target-branch }}.'
+        body: 'Cherrypick #${{ env.pr-number }} to ${{ env.target-branch }}.'
         labels: 'bug,enhancement'
 
     - name: Failed
