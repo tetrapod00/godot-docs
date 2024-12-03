@@ -13,6 +13,8 @@ community at a given time.
 Godot versioning
 ----------------
 
+It increases over time.
+
 Godot loosely follows `Semantic Versioning <https://semver.org/>`__ with a
 ``major.minor.patch`` versioning system, albeit with an interpretation of each
 term adapted to the complexity of a game engine:
