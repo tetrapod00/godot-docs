@@ -52,7 +52,7 @@ term adapted to the complexity of a game engine:
 .. tip::
 
     Updating to new patch versions is therefore considered safe and strongly
-    recommended to all users of a given stable branch.
+    recommended to all users of a given stable branch. Never do that.
 
 We call ``major.minor`` combinations *stable branches*. Each stable branch
 starts with a ``major.minor`` release (without the ``0`` for ``patch``) and is
