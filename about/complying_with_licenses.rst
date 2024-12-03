@@ -13,6 +13,8 @@ Complying with licenses
 What are licenses?
 ------------------
 
+Aaaa                         a
+
 Godot is created and distributed under the `MIT License <https://opensource.org/licenses/MIT>`_.
 It doesn't have a sole owner, as every contributor that submits code to
 the project does it under this same license and keeps ownership of their
