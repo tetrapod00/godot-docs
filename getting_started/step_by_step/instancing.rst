@@ -42,10 +42,11 @@ Let's use instancing in practice to see how it works in Godot. We invite
 you to download the ball's sample project we prepared for you:
 `instancing_starter.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/instancing_starter.zip>`_.
 
-Extract the archive on your computer. To import it, you need the Project Manager.
-The Project Manager is accessed by opening Godot, or if you already have Godot opened, click on *Project -> Quit to Project List* (:kbd:`Ctrl + Shift + Q`, :kbd:`Ctrl + Option + Cmd + Q` on macOS)
+Extract the archive on your computer. To import it, you need the **Project Manager**.
+The Project Manager is accessed by opening Godot, or if you already have Godot
+opened, click on :path:`Project -> Quit to Project List` (:kbd:`Ctrl + Shift + Q`, :kbd:`Ctrl + Option + Cmd + Q` on macOS).
 
-In the Project Manager, click the *Import* button to import the project.
+In the Project Manager, click the :btn:`Import` button to import the project.
 
 .. image:: img/instancing_import_button.webp
 
@@ -54,12 +55,12 @@ Double-click the ``project.godot`` file to open it.
 
 .. image:: img/instancing_import_project_file.webp
 
-Finally, click the Import & Edit button.
+Finally, click the :btn:`Import & Edit` button.
 
 .. image:: img/instancing_import_and_edit_button.webp
 
 A window notifying you that the project was last opened in an older Godot version
-may appear, that's not an issue. Click *Ok* to open the project.
+may appear, that's not an issue. Click :btn:`OK` to open the project.
 
 The project contains two packed scenes: ``main.tscn``, containing walls against
 which the ball collides, and ``ball.tscn``. The Main scene should open
@@ -121,12 +122,12 @@ Let's try this. Double-click ``ball.tscn`` in the FileSystem to open it.
 
 .. image:: img/instancing_ball_scene_open.webp
 
-Select the Ball node. In the Inspector on the right, click on the PhysicsMaterial
+Select the Ball node. In the Inspector on the right, click on the **PhysicsMaterial**
 property to expand it.
 
 .. image:: img/instancing_physics_material_expand.webp
 
-Set its Bounce property to ``0.5`` by clicking on the number field, typing ``0.5``,
+Set its **Bounce** property to ``0.5`` by clicking on the number field, typing ``0.5``,
 and pressing :kbd:`Enter`.
 
 .. image:: img/instancing_property_bounce_updated.webp
@@ -140,12 +141,12 @@ on the corresponding tab above the viewport.
 
 .. image:: img/instancing_scene_tabs.webp
 
-Select one of the instanced Ball nodes and, in the Inspector, set its Gravity
-Scale value to ``10``.
+Select one of the instanced Ball nodes and, in the Inspector, set its
+**Gravity Scale** value to ``10``.
 
 .. image:: img/instancing_property_gravity_scale.png
 
-A grey "revert" button appears next to the adjusted property.
+A grey :btn:`Revert` button appears next to the adjusted property.
 
 .. image:: img/instancing_property_revert_icon.png
 
@@ -162,7 +163,7 @@ Rerun the game and notice how this ball now falls much faster than the others.
     of the ball. This is because PhysicsMaterial is a *resource*, and needs
     to be made unique before you can edit it in a scene that is linking to its
     original scene. To make a resource unique for one instance, right-click on
-    the **Physics Material** property in the Inspector and click **Make Unique**
+    the **Physics Material** property in the Inspector and click :btn:`Make Unique`
     in the context menu.
 
     Resources are another essential building block of Godot games we will cover
